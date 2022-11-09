@@ -1,0 +1,22 @@
+{% if option.name == 'Size' and section.settings.ring_size_guide and product.type == 'Rings' %}
+  <modal-opener
+    class='product-popup-modal__opener no-js-hidden quick-add-hidden tw-ml-1'
+    data-modal='#PopupModal-ring-size-guide'
+    {{ block.shopify_attributes }}
+  >
+    <button
+      id='ProductPopup-ring-size-guide'
+      class='product-popup-modal__button link tw-text-xs'
+      type='button'
+      aria-haspopup='dialog'
+    >
+      Sizing Help?
+    </button>
+  </modal-opener>
+  <a
+    href='{{ section.settings.ring_size_guide.url }}'
+    class='product-popup-modal__button link no-js'
+  >
+    Sizing Help?
+  </a>
+{% endif %}

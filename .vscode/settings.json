@@ -1,0 +1,40 @@
+{
+  "[liquid]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "prettier.documentSelectors": [
+    "**/*.liquid"
+  ],
+  "prettier.prettierPath": ".",
+  "editor.detectIndentation": false,
+  "editor.tabSize": 2,
+  "css.validate": false,
+  "tailwindCSS.colorDecorators": false,
+  "tailwindCSS.experimental.classRegex": [
+    // catch any attributes has format *class or *Class
+    "(?:.+)(?:C|c)lass=\\s*(?:\"|'|`)([^(?:\"|'|`)]*)",
+    "classnames=\\s*(?:\"|'|`)([^(?:\"|'|`)]*)",
+    "/\\* w \\*/\\s*(?:\"|'|`)([^(?:\"|'|`)]*)",
+    [
+      "classNames\\(([^)]*)\\)",
+      "\\s*(?:\"|'|`)([^(?:\"|'|`)]*)"
+    ]
+  ],
+  "tailwindCSS.includeLanguages": {
+    "imba": "html"
+  },
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/bower_components": true,
+    "**/*.code-search": true,
+    "assets/**/*": true,
+  },
+  "themeCheck.checkOnChange": false,
+  "themeCheck.checkOnOpen": false,
+  "themeCheck.checkOnSave": true,
+  "themeCheck.onlySingleFileChecks": true,
+  "files.eol": "\n",
+  "css.styleSheets": [
+    "../assets/base.css",
+  ]
+}

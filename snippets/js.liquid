@@ -1,0 +1,22 @@
+{% liquid
+  assign script_attr = ''
+
+  if async == true
+    assign script_attr = script_attr | append: ' ' | append: "async='async'"
+  else
+    unless defer == false
+      assign script_attr = script_attr | append: ' ' | append: "defer='defer'"
+    endunless
+  endif
+
+  unless type == false
+    assign script_attr = script_attr | append: ' ' | append: "type='module'"
+  endunless
+%}
+
+{% comment %}theme-check-disable ParserBlockingJavaScript{% endcomment %}
+<script
+  src='{{ filename | append: '.js' | asset_url }}'
+  {{ script_attr }}
+></script>
+{% comment %}theme-check-enable ParserBlockingJavaScript{% endcomment %}

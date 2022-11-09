@@ -1,0 +1,535 @@
+{
+  "sections": {
+    "c54e082c-385d-439a-b60b-6582168be307": {
+      "type": "image-banner-2",
+      "blocks": {
+        "78c8169f-920d-4d04-8779-65dea62f29d1": {
+          "type": "text",
+          "settings": {
+            "text": "WE ARE",
+            "text_style": "caption-with-letter-spacing"
+          }
+        },
+        "template--15416234016966__c54e082c-385d-439a-b60b-6582168be307-166610654583232602-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "KIERA",
+            "heading_size": "h0",
+            "heading_style": "2"
+          }
+        }
+      },
+      "block_order": [
+        "78c8169f-920d-4d04-8779-65dea62f29d1",
+        "template--15416234016966__c54e082c-385d-439a-b60b-6582168be307-166610654583232602-0"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/03.23b.jpg",
+        "image_2": "shopify:\/\/shop_images\/03.09b.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "adapt_height_first_image": false,
+        "desktop_content_position": "middle-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "accent-1",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true,
+        "full_width": true
+      }
+    },
+    "95b804dd-b5ee-4a00-b0b7-b22f991f662d": {
+      "type": "rich-text-2",
+      "blocks": {
+        "template--15416234016966__95b804dd-b5ee-4a00-b0b7-b22f991f662d-1666107481659de1b9-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>\"KIERA BELIEVES EVERY WOMAN HAS THE RIGHT TO BE BEAUTIFUL. BY BRINGING TOGETHER ART AND SCIENCE, WE LAUNCHED A MOVEMENT THAT MADE THIS DREAM A REALITY.\"<\/p>"
+          }
+        },
+        "2d63f3e7-8994-4e7c-80b6-f0a5b3358ac5": {
+          "type": "caption",
+          "settings": {
+            "caption": "- KIERA 2022 -",
+            "text_style": "caption-with-letter-spacing",
+            "text_size": "medium"
+          }
+        }
+      },
+      "block_order": [
+        "template--15416234016966__95b804dd-b5ee-4a00-b0b7-b22f991f662d-1666107481659de1b9-1",
+        "2d63f3e7-8994-4e7c-80b6-f0a5b3358ac5"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "accent-2",
+        "full_width": true,
+        "padding_top": 80,
+        "padding_bottom": 80
+      }
+    },
+    "bd097474-f7da-4c8b-8541-870a6161458c": {
+      "type": "rich-text-2",
+      "blocks": {
+        "template--15416234016966__bd097474-f7da-4c8b-8541-870a6161458c-1666107481659de1b9-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>INSPIRATION & VISION <\/p>",
+            "heading_size": "h1",
+            "heading_style": "2"
+          }
+        },
+        "template--15416234016966__bd097474-f7da-4c8b-8541-870a6161458c-1666107481659de1b9-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Inspired by Couturier Charles Frederick Worth's focus on preserving exquisitely tailored craftsmanship within a rapidly modernizing fashion industry, Kiera embraces the idea of an <em><strong>Haute<\/strong><\/em> fantasy, where luxurious detail is realized and made available to all women.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--15416234016966__bd097474-f7da-4c8b-8541-870a6161458c-1666107481659de1b9-0",
+        "template--15416234016966__bd097474-f7da-4c8b-8541-870a6161458c-1666107481659de1b9-1"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-2",
+        "full_width": true,
+        "padding_top": 80,
+        "padding_bottom": 56
+      }
+    },
+    "37f549e1-f77b-4499-9b4c-0e8533aff832": {
+      "type": "multicolumn-2",
+      "blocks": {
+        "template--15416234016966__37f549e1-f77b-4499-9b4c-0e8533aff832-16661225334403543f-0": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/9.19.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "icon": "",
+            "icon_size": 18
+          }
+        },
+        "fa15aa35-af1b-48e9-929a-cc016054dbd3": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/9.23.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "icon": "",
+            "icon_size": 18
+          }
+        },
+        "5fcefccd-48f7-45ff-a971-151e32de1991": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/8.21.jpg",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": "",
+            "icon": "",
+            "icon_size": 18
+          }
+        }
+      },
+      "block_order": [
+        "template--15416234016966__37f549e1-f77b-4499-9b4c-0e8533aff832-16661225334403543f-0",
+        "fa15aa35-af1b-48e9-929a-cc016054dbd3",
+        "5fcefccd-48f7-45ff-a971-151e32de1991"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "portrait",
+        "columns_desktop": 3,
+        "column_alignment": "center",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "background-2",
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "46d8fcbd-26ae-4e48-9cee-1d237bccb35b": {
+      "type": "rich-text-2",
+      "blocks": {
+        "template--15416234016966__46d8fcbd-26ae-4e48-9cee-1d237bccb35b-166612427297fd5b4c-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p><em>\"Every woman can afford the luxury of Kiera’s precisely crafted allure that channels the spirit of an <\/em><em><strong>Haute <\/strong><\/em><em>fantasy in a form that is sustainable and conflict-free.\"<\/em><\/p>"
+          }
+        },
+        "af7b03b6-2efb-4b9d-8e4b-4a5f7157ca4c": {
+          "type": "caption",
+          "settings": {
+            "caption": "- KIERA -",
+            "text_style": "caption-with-letter-spacing",
+            "text_size": "medium"
+          }
+        }
+      },
+      "block_order": [
+        "template--15416234016966__46d8fcbd-26ae-4e48-9cee-1d237bccb35b-166612427297fd5b4c-1",
+        "af7b03b6-2efb-4b9d-8e4b-4a5f7157ca4c"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-2",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 40
+      }
+    },
+    "93e93db0-2ba8-4f0e-bc23-7a9881da3f32": {
+      "type": "rich-text-2",
+      "blocks": {
+        "template--15416234016966__93e93db0-2ba8-4f0e-bc23-7a9881da3f32-1666107481659de1b9-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>DISCOVER<\/p>",
+            "heading_size": "h1",
+            "heading_style": "2"
+          }
+        },
+        "template--15416234016966__93e93db0-2ba8-4f0e-bc23-7a9881da3f32-1666107481659de1b9-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Without transferring the products from one factory to another to complete the jewelry production stages, everything happens at our factory in Vietnam to ensure the performance and product quality.<\/p>"
+          }
+        },
+        "0949a4ea-9910-4b6b-bcc6-366d916a58c0": {
+          "type": "button",
+          "settings": {
+            "button_label": "CATEGORIES & COLLECTIONS",
+            "button_link": "shopify:\/\/collections",
+            "button_style_secondary": true,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "template--15416234016966__93e93db0-2ba8-4f0e-bc23-7a9881da3f32-1666107481659de1b9-0",
+        "template--15416234016966__93e93db0-2ba8-4f0e-bc23-7a9881da3f32-1666107481659de1b9-1",
+        "0949a4ea-9910-4b6b-bcc6-366d916a58c0"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 80,
+        "padding_bottom": 60
+      }
+    },
+    "83924569-dd37-43a2-b792-01fb0a35a07c": {
+      "type": "collection-list-2",
+      "settings": {
+        "collection_list": [
+          "prebook",
+          "new-arrivals",
+          "essentials",
+          "bracelets",
+          "earrings",
+          "necklace",
+          "rings",
+          "hoops",
+          "kiera-new-york",
+          "watches"
+        ],
+        "title": "",
+        "heading_size": "h1",
+        "heading_style": "2",
+        "image_ratio": "portrait",
+        "color_scheme": "background-1",
+        "layout_fullwidth": false,
+        "slider_type": "slide",
+        "slider_auto_rotate": true,
+        "slider_change_slides_speed": 3,
+        "columns_desktop": 4,
+        "swipe_on_desktop": true,
+        "show_view_all": false,
+        "view_all_label": "",
+        "view_all_type": "primary",
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 0,
+        "padding_bottom": 36
+      }
+    },
+    "c349900a-2e41-411d-85cb-8d00171bbfb2": {
+      "type": "image-with-text-2",
+      "blocks": {
+        "a0658cb7-fcbb-4864-93b2-54b9a4e9a8c6": {
+          "type": "heading",
+          "settings": {
+            "heading": "OUR HISTORY",
+            "heading_size": "h2",
+            "heading_style": "2"
+          }
+        },
+        "2ec45d5a-746e-4971-9efa-b9a5c87914e9": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Elite Group International debuted Kiera in 2005, placing its 30 years of experience and its trusted partnerships with select retailers and distributors in Europe and Asia at Kiera’s service.<\/p><p>As a result, Kiera's affordable prices have built a following of devoted customers by offering them the kind of quality they never thought they could afford.<\/p>",
+            "text_style": "body"
+          }
+        },
+        "2b3af94d-84d8-47b4-b9f1-506e12e23665": {
+          "type": "button",
+          "settings": {
+            "button_label": "Sustainability",
+            "button_link": "shopify:\/\/pages\/sustainability"
+          }
+        }
+      },
+      "block_order": [
+        "a0658cb7-fcbb-4864-93b2-54b9a4e9a8c6",
+        "2ec45d5a-746e-4971-9efa-b9a5c87914e9",
+        "2b3af94d-84d8-47b4-b9f1-506e12e23665"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/03.09b.jpg",
+        "height": "small",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "accent-1",
+        "full_width": true,
+        "no_page_padding": false,
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "6fad4a3e-139e-45c3-b5ea-05320bc03d43": {
+      "type": "image-banner-2",
+      "blocks": {
+        "template--15416234016966__6fad4a3e-139e-45c3-b5ea-05320bc03d43-16661225324c3a2f4b-1": {
+          "type": "text",
+          "settings": {
+            "text": "Things That We Care About",
+            "text_style": "caption-with-letter-spacing"
+          }
+        },
+        "ca25dc76-4abb-43b7-9cc1-14919a85927e": {
+          "type": "heading",
+          "settings": {
+            "heading": "We only have one earth. And we believe everyone on it is precious.",
+            "heading_size": "h2",
+            "heading_style": "default"
+          }
+        }
+      },
+      "block_order": [
+        "template--15416234016966__6fad4a3e-139e-45c3-b5ea-05320bc03d43-16661225324c3a2f4b-1",
+        "ca25dc76-4abb-43b7-9cc1-14919a85927e"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/9.08.jpg",
+        "image_overlay_opacity": 10,
+        "image_height": "small",
+        "adapt_height_first_image": false,
+        "desktop_content_position": "middle-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "accent-2",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true,
+        "full_width": false
+      }
+    },
+    "43b1f0a3-d52a-4551-9078-19ebe34c4a27": {
+      "type": "decor-gaurantee",
+      "settings": {
+        "color_scheme": "accent-1",
+        "full_width": false,
+        "no_page_padding": true,
+        "padding_top": 24,
+        "padding_bottom": 24
+      }
+    },
+    "d84851ea-e41c-471b-b61c-33fb9b422ce4": {
+      "type": "rich-text-2",
+      "blocks": {
+        "template--15416234016966__d84851ea-e41c-471b-b61c-33fb9b422ce4-166612427297fd5b4c-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We are proud that our diamond simulants are ethically and environmentally responsible in addition to being stunningly beautiful. Compared to natural diamonds, our man-made gemstones are a win-win.<\/p>"
+          }
+        },
+        "ca9b2dc3-f303-4408-bb1e-51162c7f52ae": {
+          "type": "button",
+          "settings": {
+            "button_label": "OUR MISSION",
+            "button_link": "shopify:\/\/pages\/sustainability",
+            "button_style_secondary": true,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "template--15416234016966__d84851ea-e41c-471b-b61c-33fb9b422ce4-166612427297fd5b4c-1",
+        "ca9b2dc3-f303-4408-bb1e-51162c7f52ae"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "accent-2",
+        "full_width": true,
+        "padding_top": 80,
+        "padding_bottom": 20
+      }
+    },
+    "b016114d-0446-482d-a239-2aa4ac7498ce": {
+      "type": "multicolumn-2",
+      "blocks": {
+        "template--15416234016966__b016114d-0446-482d-a239-2aa4ac7498ce-16661225334403543f-0": {
+          "type": "column",
+          "settings": {
+            "title": "THEY’RE ECO-FRIENDLY",
+            "text": "<p>They have a low carbon footprint and they don’t deplete natural resources.<\/p>",
+            "link_label": "",
+            "link": "",
+            "icon": "arcticons:bejeweled-stars",
+            "icon_size": 50
+          }
+        },
+        "template--15416234016966__b016114d-0446-482d-a239-2aa4ac7498ce-16661225334403543f-1": {
+          "type": "column",
+          "settings": {
+            "title": "THEY’RE CONFLICT-FREE",
+            "text": "<p>Their production fosters ethically conscious labor practices<\/p>",
+            "link_label": "",
+            "link": "",
+            "icon": "arcticons:bejeweled-stars",
+            "icon_size": 50
+          }
+        },
+        "template--15416234016966__b016114d-0446-482d-a239-2aa4ac7498ce-16661225334403543f-2": {
+          "type": "column",
+          "settings": {
+            "title": "WE PRACTICE SUSTAINABILITY",
+            "text": "<p>We use only 100% recycled and recyclable materials in our packaging.<\/p>",
+            "link_label": "",
+            "link": "",
+            "icon": "arcticons:bejeweled-stars",
+            "icon_size": 50
+          }
+        },
+        "0c8a4d33-b5cd-442e-a61a-4dfaf052e6c7": {
+          "type": "column",
+          "settings": {
+            "title": "THEY’RE EXTREMELY DURABLE AND LONG-LASTING",
+            "text": "<p>Cubic Zirconia is harder than most natural gems.<\/p>",
+            "link_label": "",
+            "link": "",
+            "icon": "arcticons:bejeweled-stars",
+            "icon_size": 50
+          }
+        },
+        "1165bc4c-7178-436c-bcfe-b98bfe445ad4": {
+          "type": "column",
+          "settings": {
+            "title": "THEY’RE AFFORDABLE",
+            "text": "<p>We produce our own gemstones to meet our exacting specifications, eliminating unnecessary steps and reducing mark-ups.<\/p>",
+            "link_label": "",
+            "link": "",
+            "icon": "arcticons:bejeweled-stars",
+            "icon_size": 50
+          }
+        },
+        "bb63985d-ebad-4619-8ea5-4af6b9d6258d": {
+          "type": "column",
+          "settings": {
+            "title": "THEY’RE EXQUISITE",
+            "text": "<p>They have a spectacular luster that will make you feel radiant.<\/p>",
+            "link_label": "",
+            "link": "",
+            "icon": "arcticons:bejeweled-stars",
+            "icon_size": 50
+          }
+        }
+      },
+      "block_order": [
+        "template--15416234016966__b016114d-0446-482d-a239-2aa4ac7498ce-16661225334403543f-0",
+        "template--15416234016966__b016114d-0446-482d-a239-2aa4ac7498ce-16661225334403543f-1",
+        "template--15416234016966__b016114d-0446-482d-a239-2aa4ac7498ce-16661225334403543f-2",
+        "0c8a4d33-b5cd-442e-a61a-4dfaf052e6c7",
+        "1165bc4c-7178-436c-bcfe-b98bfe445ad4",
+        "bb63985d-ebad-4619-8ea5-4af6b9d6258d"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "square",
+        "columns_desktop": 3,
+        "column_alignment": "center",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "accent-2",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 40,
+        "padding_bottom": 40
+      }
+    },
+    "16661081966609fe89": {
+      "type": "apps",
+      "blocks": {
+        "1d745b63-688e-4ca0-81b9-66dff58c65ff": {
+          "type": "shopify:\/\/apps\/instafeed-instagram-feed\/blocks\/app-block\/c447db20-095d-4a10-9725-b5977662c9d5",
+          "settings": {
+            "heading_size": 20,
+            "feed_width": 100,
+            "html_area": ""
+          }
+        }
+      },
+      "block_order": [
+        "1d745b63-688e-4ca0-81b9-66dff58c65ff"
+      ],
+      "settings": {
+        "include_margins": true,
+        "no_page_padding": true
+      }
+    }
+  },
+  "order": [
+    "c54e082c-385d-439a-b60b-6582168be307",
+    "95b804dd-b5ee-4a00-b0b7-b22f991f662d",
+    "bd097474-f7da-4c8b-8541-870a6161458c",
+    "37f549e1-f77b-4499-9b4c-0e8533aff832",
+    "46d8fcbd-26ae-4e48-9cee-1d237bccb35b",
+    "93e93db0-2ba8-4f0e-bc23-7a9881da3f32",
+    "83924569-dd37-43a2-b792-01fb0a35a07c",
+    "c349900a-2e41-411d-85cb-8d00171bbfb2",
+    "6fad4a3e-139e-45c3-b5ea-05320bc03d43",
+    "43b1f0a3-d52a-4551-9078-19ebe34c4a27",
+    "d84851ea-e41c-471b-b61c-33fb9b422ce4",
+    "b016114d-0446-482d-a239-2aa4ac7498ce",
+    "16661081966609fe89"
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "sections": {
+    "72cbf933-5de0-4e47-b9ba-52a7dba9b828": {
+      "type": "image-banner-2",
+      "blocks": {
+        "c6b04359-e940-49cb-a426-b3ea60e223f4": {
+          "type": "text",
+          "settings": {
+            "text": "KIERA",
+            "text_style": "caption-with-letter-spacing"
+          }
+        },
+        "template--16690310906138__72cbf933-5de0-4e47-b9ba-52a7dba9b828-1666362571b54e9be1-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "{{ page.title }}",
+            "heading_size": "h1",
+            "heading_style": "2"
+          }
+        }
+      },
+      "block_order": [
+        "c6b04359-e940-49cb-a426-b3ea60e223f4",
+        "template--16690310906138__72cbf933-5de0-4e47-b9ba-52a7dba9b828-1666362571b54e9be1-0"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/9.12.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "small",
+        "adapt_height_first_image": false,
+        "desktop_content_position": "middle-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "accent-1",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true,
+        "full_width": true
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "padding_top": 8,
+        "padding_bottom": 80,
+        "show_heading": false
+      }
+    },
+    "166636296256fbce97": {
+      "type": "apps",
+      "blocks": {
+        "0344c416-d360-411f-92a4-9f2480fa2e0a": {
+          "type": "shopify:\/\/apps\/instafeed-instagram-feed\/blocks\/app-block\/c447db20-095d-4a10-9725-b5977662c9d5",
+          "settings": {
+            "heading_size": 20,
+            "feed_width": 100,
+            "html_area": ""
+          }
+        }
+      },
+      "block_order": [
+        "0344c416-d360-411f-92a4-9f2480fa2e0a"
+      ],
+      "settings": {
+        "include_margins": true,
+        "no_page_padding": true
+      }
+    }
+  },
+  "order": [
+    "72cbf933-5de0-4e47-b9ba-52a7dba9b828",
+    "main",
+    "166636296256fbce97"
+  ]
+}

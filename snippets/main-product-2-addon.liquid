@@ -1,0 +1,25 @@
+{% comment %} ring size guide {% endcomment %}
+{% if section.settings.ring_size_guide and product.type == 'Rings' %}
+  <modal-dialog id='PopupModal-ring-size-guide' class='product-popup-modal'>
+    <div
+      role='dialog'
+      aria-label='Ring size guide'
+      aria-modal='true'
+      class='product-popup-modal__content'
+      tabindex='-1'
+    >
+      <button
+        id='ModalClose-ring-size-guide'
+        type='button'
+        class='product-popup-modal__toggle'
+        aria-label='{{ 'accessibility.close' | t }}'
+      >
+        {% render 'icon-close' %}
+      </button>
+      <div class='product-popup-modal__content-info'>
+        <h1 class='h2'>{{ section.settings.ring_size_guide.title }}</h1>
+        {{ section.settings.ring_size_guide.content }}
+      </div>
+    </div>
+  </modal-dialog>
+{% endif %}

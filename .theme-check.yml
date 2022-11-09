@@ -1,0 +1,10 @@
+MatchingTranslations:
+  enabled: false
+TemplateLength:
+  enabled: false
+
+SchemaJsonFormat:
+  enabled: false
+
+AssetPreload:
+  enabled: false

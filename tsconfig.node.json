@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "composite": true,
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "allowJs": true,
+    "noEmit": true
+  },
+  "include": [
+    "./vite.config.ts",
+    "./scripts/*.*"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}

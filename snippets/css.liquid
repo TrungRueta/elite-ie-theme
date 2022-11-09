@@ -1,0 +1,15 @@
+{{ filename | append: '.css' | asset_url | preload_tag: as: 'style' }}
+
+{% unless once == false %}
+  <link
+    rel='stylesheet'
+    href='{{ filename | append: '.css' | asset_url }}'
+    media='print'
+    onload="this.media='all'"
+  >
+{% else %}
+  <link
+    rel='stylesheet'
+    href='{{ filename | append: '.css' | asset_url }}'
+  >
+{% endunless %}

@@ -1,0 +1,78 @@
+<div class='
+    slideshow__media banner__media
+    media
+    {% if block.settings.image == blank and block.settings.image_2 == blank %}placeholder{% endif %}
+    {% if block.settings.image_2 %}
+      tw-grid
+      {% if block.settings.image_2_mobile_hide %}
+        tw-grid-cols-1 md:tw-grid-cols-2
+      {% else %}
+        tw-grid-cols-2
+      {% endif %}
+    {% endif %}
+  '>
+  {% if block.settings.image_2 == blank %}
+    {%- if block.settings.image -%}
+      {%- assign height = block.settings.image.width
+        | divided_by: block.settings.image.aspect_ratio
+        | round
+      -%}
+
+      {{
+        block.settings.image
+        | image_url: width: 3840
+        | image_tag:
+          loading: 'lazy',
+          height: height,
+          sizes: '100vw',
+          widths: '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840'
+      }}
+    {%- else -%}
+      {{ 'lifestyle-2' | placeholder_svg_tag: 'placeholder-svg' }}
+    {%- endif -%}
+  {% else %}
+    <div class='tw-relative tw-min-h-0'>
+      {%- if block.settings.image -%}
+        {%- assign height = block.settings.image.width
+          | divided_by: block.settings.image.aspect_ratio
+          | round
+        -%}
+
+        {{
+          block.settings.image
+          | image_url: width: 3840
+          | image_tag:
+            loading: 'lazy',
+            height: height,
+            sizes: '100vw',
+            widths: '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840',
+            class: 'tw-object-cover tw-w-full tw-h-full tw-object-center'
+        }}
+      {%- else -%}
+        {{ 'lifestyle-2' | placeholder_svg_tag: 'placeholder-svg' }}
+      {%- endif -%}
+    </div>
+    <div class='
+        tw-relative tw-min-h-0
+        {% if block.settings.image_2_mobile_hide %}
+          tw-hidden md:tw-block
+        {% endif %}
+      '>
+      {%- assign height = block.settings.image_2.width
+        | divided_by: block.settings.image_2.aspect_ratio
+        | round
+      -%}
+
+      {{
+        block.settings.image_2
+        | image_url: width: 3840
+        | image_tag:
+          loading: 'lazy',
+          height: height,
+          sizes: '100vw',
+          widths: '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840',
+          class: 'tw-object-cover tw-w-full tw-h-full tw-object-center'
+      }}
+    </div>
+  {% endif %}
+</div>

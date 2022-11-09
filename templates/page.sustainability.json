@@ -1,0 +1,300 @@
+{
+  "sections": {
+    "39e64e18-3f0e-4873-8098-f5fd22dcb8f0": {
+      "type": "rich-text-2",
+      "blocks": {
+        "template--16689943773466__39e64e18-3f0e-4873-8098-f5fd22dcb8f0-1666336147034b9027-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p><em>We only have one Earth. And we believe everyone on it is precious.<br\/>We create jewelry to be a permanent part of our lives for generations, all the while challenging ourselves to keep improving our teams, our suppliers, our customers, the communities, and the environment we operate within.<\/em><\/p>"
+          }
+        },
+        "23b5ae95-e6b4-438b-a258-329b86868079": {
+          "type": "caption",
+          "settings": {
+            "caption": "- KIERA -",
+            "text_style": "caption-with-letter-spacing",
+            "text_size": "large"
+          }
+        }
+      },
+      "block_order": [
+        "template--16689943773466__39e64e18-3f0e-4873-8098-f5fd22dcb8f0-1666336147034b9027-1",
+        "23b5ae95-e6b4-438b-a258-329b86868079"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-2",
+        "full_width": true,
+        "padding_top": 92,
+        "padding_bottom": 92
+      }
+    },
+    "8087d3bb-d94f-4768-b5c5-e93d453e23e3": {
+      "type": "image-banner-2",
+      "blocks": {
+        "template--16689943773466__8087d3bb-d94f-4768-b5c5-e93d453e23e3-16663360046ce4f539-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Our Sustainability",
+            "heading_size": "h0",
+            "heading_style": "2"
+          }
+        },
+        "template--16689943773466__8087d3bb-d94f-4768-b5c5-e93d453e23e3-16663360046ce4f539-1": {
+          "type": "text",
+          "settings": {
+            "text": "We make jewelry with a conscience.",
+            "text_style": "body"
+          }
+        },
+        "a6e217fa-8145-488d-add5-38eaa4fb5472": {
+          "type": "text",
+          "settings": {
+            "text": "When Kiera was founded in 2005, we were focused on sustainability and commited to conflict-free materials, reducing the environmental impact while also seeking transparency and fair pricing along the supply chain.",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "template--16689943773466__8087d3bb-d94f-4768-b5c5-e93d453e23e3-16663360046ce4f539-0",
+        "template--16689943773466__8087d3bb-d94f-4768-b5c5-e93d453e23e3-16663360046ce4f539-1",
+        "a6e217fa-8145-488d-add5-38eaa4fb5472"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/9.12.jpg",
+        "image_overlay_opacity": 20,
+        "image_height": "medium",
+        "adapt_height_first_image": false,
+        "desktop_content_position": "middle-center",
+        "show_text_box": false,
+        "desktop_content_alignment": "center",
+        "color_scheme": "accent-1",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true,
+        "full_width": true
+      }
+    },
+    "demo": {
+      "type": "decor-gaurantee",
+      "settings": {
+        "color_scheme": "accent-1",
+        "full_width": false,
+        "no_page_padding": true,
+        "padding_top": 24,
+        "padding_bottom": 24
+      }
+    },
+    "08765dc2-865c-450a-b231-6d4b371740d3": {
+      "type": "image-with-text-2",
+      "blocks": {
+        "template--16689943773466__08765dc2-865c-450a-b231-6d4b371740d3-1666336005a1d5fa64-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Production",
+            "heading_size": "h2",
+            "heading_style": "default"
+          }
+        },
+        "template--16689943773466__08765dc2-865c-450a-b231-6d4b371740d3-1666336005a1d5fa64-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Without transferring the products from one factory to another to complete the jewelry production stages, everything happens at our factory in Vietnam to ensure the performance and product quality. This also means that a lot of shipping costs are cut out, reducing carbon footprint and paying workers fairly.<\/p>",
+            "text_style": "body"
+          }
+        },
+        "97cfa918-11a3-4076-ad12-23a336d3c905": {
+          "type": "heading",
+          "settings": {
+            "heading": "Conflict-free Material",
+            "heading_size": "h2",
+            "heading_style": "default"
+          }
+        },
+        "8028218d-eadd-4004-816d-cac6a8ddd2ff": {
+          "type": "text",
+          "settings": {
+            "text": "<p>90% of our stones are man-made and recycled silver has been used in production. We use Cubic zirconia (commonly referred to as CZ) to replace a simulated diamond because of its brilliance and crystal clarity, but it is a man-made crystalline material that is hard, flawless and minimizes mineral extraction.<\/p>",
+            "text_style": "body"
+          }
+        },
+        "b5799121-0c7b-4aff-a0bf-2631dab2e3fe": {
+          "type": "heading",
+          "settings": {
+            "heading": "Packaging",
+            "heading_size": "h2",
+            "heading_style": "default"
+          }
+        },
+        "037eef22-f1a7-4cdc-b14b-41518c1db833": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We prioritize sustainability, the boxes are constructed of recycled paper, and the inserts inside the box are sourced from FSC-certified suppliers.<\/p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "template--16689943773466__08765dc2-865c-450a-b231-6d4b371740d3-1666336005a1d5fa64-0",
+        "template--16689943773466__08765dc2-865c-450a-b231-6d4b371740d3-1666336005a1d5fa64-1",
+        "97cfa918-11a3-4076-ad12-23a336d3c905",
+        "8028218d-eadd-4004-816d-cac6a8ddd2ff",
+        "b5799121-0c7b-4aff-a0bf-2631dab2e3fe",
+        "037eef22-f1a7-4cdc-b14b-41518c1db833"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/9.08.jpg",
+        "height": "large",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-2",
+        "full_width": false,
+        "no_page_padding": false,
+        "mobile_content_alignment": "left",
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "7dbd014c-575a-4994-8dcc-0cdf531ec20c": {
+      "type": "rich-text-2",
+      "blocks": {
+        "3032955f-1452-4dec-a94a-d541e00760ba": {
+          "type": "caption",
+          "settings": {
+            "caption": "OUR GOALS NEXT STEPS",
+            "text_style": "caption-with-letter-spacing",
+            "text_size": "large"
+          }
+        },
+        "39bd4762-2479-43c1-8048-d5bee715c517": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>BY 2024<\/p>",
+            "heading_size": "h0",
+            "heading_style": "2"
+          }
+        }
+      },
+      "block_order": [
+        "3032955f-1452-4dec-a94a-d541e00760ba",
+        "39bd4762-2479-43c1-8048-d5bee715c517"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "accent-2",
+        "full_width": true,
+        "padding_top": 92,
+        "padding_bottom": 40
+      }
+    },
+    "b4e802e4-9cd8-42df-b4ae-b40122609f4f": {
+      "type": "multicolumn-2",
+      "blocks": {
+        "template--16689943773466__b4e802e4-9cd8-42df-b4ae-b40122609f4f-16663360071c91a896-0": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/9.12.jpg",
+            "title": "PRODUCTS",
+            "text": "<p>Using conflict-free, traceable and recycled materials<\/p>",
+            "link_label": "",
+            "link": "",
+            "icon": "",
+            "icon_size": 18
+          }
+        },
+        "template--16689943773466__b4e802e4-9cd8-42df-b4ae-b40122609f4f-16663360071c91a896-1": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/9.25.jpg",
+            "title": "ENVIRONMENT",
+            "text": "<p>Reducing emissions. We promise to be carbon neutral by 2024<\/p><p><br\/>Investing in renewable energy and resources especially water waste and power<\/p><p><br\/>Reduce our packaging and switch to sustainable alternatives<\/p><p><br\/>Launching<\/p>",
+            "link_label": "",
+            "link": "",
+            "icon": "",
+            "icon_size": 18
+          }
+        },
+        "template--16689943773466__b4e802e4-9cd8-42df-b4ae-b40122609f4f-16663360071c91a896-2": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/6.23.png",
+            "title": "PEOPLE",
+            "text": "<p>Make us a great, trusted place to work with Kiera’s Social Project by 2023<\/p><p><br\/>Giving back more to our community<\/p>",
+            "link_label": "",
+            "link": "",
+            "icon": "",
+            "icon_size": 18
+          }
+        }
+      },
+      "block_order": [
+        "template--16689943773466__b4e802e4-9cd8-42df-b4ae-b40122609f4f-16663360071c91a896-0",
+        "template--16689943773466__b4e802e4-9cd8-42df-b4ae-b40122609f4f-16663360071c91a896-1",
+        "template--16689943773466__b4e802e4-9cd8-42df-b4ae-b40122609f4f-16663360071c91a896-2"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "portrait",
+        "columns_desktop": 3,
+        "column_alignment": "left",
+        "background_style": "none",
+        "button_label": "OUR NEW PRODUCTS",
+        "button_link": "shopify:\/\/collections\/all",
+        "color_scheme": "accent-2",
+        "columns_mobile": "1",
+        "swipe_on_mobile": true,
+        "padding_top": 0,
+        "padding_bottom": 60
+      }
+    },
+    "f5591d68-379e-4a5e-a571-48b50575bb09": {
+      "type": "collection-list-2",
+      "settings": {
+        "collection_list": [
+          "new-arrivals",
+          "pearly-collection",
+          "paper-clip-collection",
+          "rainbow-collection",
+          "dreamer-collection",
+          "croissant-dome-collection",
+          "dainty-collection"
+        ],
+        "title": "DISCOVER MORE",
+        "heading_size": "h2",
+        "heading_style": "2",
+        "image_ratio": "portrait",
+        "color_scheme": "accent-1",
+        "layout_fullwidth": false,
+        "slider_type": "slide",
+        "slider_auto_rotate": true,
+        "slider_change_slides_speed": 5,
+        "columns_desktop": 4,
+        "swipe_on_desktop": true,
+        "show_view_all": false,
+        "view_all_label": "",
+        "view_all_type": "primary",
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    }
+  },
+  "order": [
+    "39e64e18-3f0e-4873-8098-f5fd22dcb8f0",
+    "8087d3bb-d94f-4768-b5c5-e93d453e23e3",
+    "demo",
+    "08765dc2-865c-450a-b231-6d4b371740d3",
+    "7dbd014c-575a-4994-8dcc-0cdf531ec20c",
+    "b4e802e4-9cd8-42df-b4ae-b40122609f4f",
+    "f5591d68-379e-4a5e-a571-48b50575bb09"
+  ]
+}

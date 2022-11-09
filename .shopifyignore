@@ -1,0 +1,10 @@
+./node_modules
+./scripts
+./src
+./pnpm-lock.*
+./postcss.*
+./tailwind.*
+./vite.*
+./docs
+package.json
+tsconfig.*

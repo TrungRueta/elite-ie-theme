@@ -1,0 +1,19 @@
+<div class='tw-space-y-3'>
+  {% for link in section.settings.sidebar_menu.links %}
+    {% if link.links.size > 0 %}
+      <div class='tw-uppercase tw-pt-6 tw-text-xs tw-opacity-50'>
+        <span>{{ link.title | capitalize }}</span>
+      </div>
+
+      {% for link2 in link.links %}
+        <div>
+          <a href='{{ link2.url }}' title='{{ link2.title }}'>{{ link2.title }}</a>
+        </div>
+      {% endfor %}
+    {% else %}
+      <div>
+        <a href='{{ link.url }}' title='{{ link.title }}'>{{ link.title }}</a>
+      </div>
+    {% endif %}
+  {% endfor %}
+</div>

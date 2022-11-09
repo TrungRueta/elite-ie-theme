@@ -1,0 +1,297 @@
+{
+  "sections": {
+    "b81ecfd2-30c6-4cd2-8a7c-ba432971fffa": {
+      "type": "slideshow-2",
+      "blocks": {
+        "template--15414915989702__b81ecfd2-30c6-4cd2-8a7c-ba432971fffa-1666007816c34c7561-0": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/9.19.jpg",
+            "image_2_mobile_hide": true,
+            "heading": "KIERA",
+            "heading_size": "h0",
+            "subheading": "Trendings & Categories",
+            "button_label": "",
+            "link": "shopify:\/\/collections\/serpent-collection",
+            "button_style_secondary": true,
+            "box_align": "middle-left",
+            "show_text_box": false,
+            "text_alignment": "left",
+            "image_overlay_opacity": 10,
+            "color_scheme": "accent-1",
+            "text_alignment_mobile": "center"
+          }
+        }
+      },
+      "block_order": [
+        "template--15414915989702__b81ecfd2-30c6-4cd2-8a7c-ba432971fffa-1666007816c34c7561-0"
+      ],
+      "settings": {
+        "layout": "full_bleed",
+        "slide_height": "small",
+        "slider_type": "loop",
+        "auto_rotate": false,
+        "change_slides_speed": 5,
+        "show_text_below": true,
+        "accessibility_info": "Slideshow about our brand"
+      }
+    },
+    "f33352bc-8d3a-4930-bc45-ec33f30ca035": {
+      "type": "rich-text-2",
+      "blocks": {
+        "template--15414915989702__f33352bc-8d3a-4930-bc45-ec33f30ca035-1666018402e753d441-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>\"Inspired by Couturier Charles Frederick Worth's focus on preserving exquisitely tailored craftsmanship within a rapidly modernizing fashion industry, <strong>Kiera<\/strong> embraces the idea of an <strong>Haute<\/strong> fantasy, where luxurious detail is realized and made available to all women.\"<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--15414915989702__f33352bc-8d3a-4930-bc45-ec33f30ca035-1666018402e753d441-1"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "accent-1",
+        "full_width": true,
+        "padding_top": 16,
+        "padding_bottom": 16
+      }
+    },
+    "a7ae12a3-7034-415a-b85a-d9519b691b2f": {
+      "type": "rich-text-2",
+      "blocks": {
+        "template--15414915989702__a7ae12a3-7034-415a-b85a-d9519b691b2f-16660228329ef0e80b-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>CATEGORIES<\/p>",
+            "heading_size": "h1",
+            "heading_style": "2"
+          }
+        },
+        "608eba51-96bb-4b11-a65a-9b604f50ea03": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Kiera <\/strong>embraces the idea of an <strong>Haute<\/strong> fantasy, <\/p><p>where luxurious detail is realized and made available to all women<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--15414915989702__a7ae12a3-7034-415a-b85a-d9519b691b2f-16660228329ef0e80b-0",
+        "608eba51-96bb-4b11-a65a-9b604f50ea03"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-2",
+        "full_width": true,
+        "padding_top": 80,
+        "padding_bottom": 40
+      }
+    },
+    "e8c4696f-5a9e-4756-8afd-62f764511c16": {
+      "type": "collection-list-2",
+      "settings": {
+        "collection_list": [
+          "rings",
+          "necklace",
+          "earrings",
+          "bracelets",
+          "kiera-new-york",
+          "watches"
+        ],
+        "title": "",
+        "heading_size": "h1",
+        "heading_style": "default",
+        "image_ratio": "portrait",
+        "color_scheme": "background-2",
+        "layout_fullwidth": false,
+        "slider_type": "slide",
+        "slider_auto_rotate": false,
+        "slider_change_slides_speed": 5,
+        "columns_desktop": 5,
+        "swipe_on_desktop": true,
+        "show_view_all": false,
+        "view_all_label": "",
+        "view_all_type": "primary",
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 0,
+        "padding_bottom": 36
+      }
+    },
+    "4bff139c-d04c-41cb-bef0-147d1fc1117d": {
+      "type": "rich-text-2",
+      "blocks": {
+        "template--15414915989702__4bff139c-d04c-41cb-bef0-147d1fc1117d-1666038557ece91193-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>TRENDINGS<\/p>",
+            "heading_size": "h1",
+            "heading_style": "2"
+          }
+        },
+        "template--15414915989702__4bff139c-d04c-41cb-bef0-147d1fc1117d-1666038557ece91193-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Popular jewelry, perfect for gifting or keeping all to yourself.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--15414915989702__4bff139c-d04c-41cb-bef0-147d1fc1117d-1666038557ece91193-0",
+        "template--15414915989702__4bff139c-d04c-41cb-bef0-147d1fc1117d-1666038557ece91193-1"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "accent-2",
+        "full_width": true,
+        "padding_top": 80,
+        "padding_bottom": 40
+      }
+    },
+    "86e130fa-a7fe-4dcd-9656-de6b63794107": {
+      "type": "collection-list-2",
+      "settings": {
+        "collection_list": [
+          "new-arrivals",
+          "essentials",
+          "stackable-rings",
+          "special-stones",
+          "hoops"
+        ],
+        "title": "",
+        "heading_size": "h1",
+        "heading_style": "default",
+        "image_ratio": "portrait",
+        "color_scheme": "accent-2",
+        "layout_fullwidth": false,
+        "slider_type": "slide",
+        "slider_auto_rotate": false,
+        "slider_change_slides_speed": 5,
+        "columns_desktop": 5,
+        "swipe_on_desktop": true,
+        "show_view_all": false,
+        "view_all_label": "",
+        "view_all_type": "primary",
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "padding_top": 0,
+        "padding_bottom": 36
+      }
+    },
+    "51a575b5-ad99-447f-8dcf-736203d02948": {
+      "type": "decor-gaurantee",
+      "settings": {
+        "color_scheme": "accent-1",
+        "full_width": false,
+        "no_page_padding": true,
+        "padding_top": 24,
+        "padding_bottom": 24
+      }
+    },
+    "2472e213-fb60-4a87-b42e-f13158609fad": {
+      "type": "rich-text-2",
+      "blocks": {
+        "template--15414915989702__2472e213-fb60-4a87-b42e-f13158609fad-1666021399e4e991a9-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>COLLECTIONS<\/p>",
+            "heading_size": "h1",
+            "heading_style": "2"
+          }
+        },
+        "7fa57c2b-ff83-4da1-b0e1-bd483291301e": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Because everyday jewelry elevates every outfit. <\/p><p>Meet the staples that work with your style—all year round.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "template--15414915989702__2472e213-fb60-4a87-b42e-f13158609fad-1666021399e4e991a9-0",
+        "7fa57c2b-ff83-4da1-b0e1-bd483291301e"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 80,
+        "padding_bottom": 40
+      }
+    },
+    "b9aed636-5ac7-4724-b3b0-f66164f79896": {
+      "type": "collection-list-2",
+      "settings": {
+        "collection_list": [
+          "croissant-dome-collection",
+          "couture-collection",
+          "dainty-collection",
+          "dreamer-collection",
+          "link-chain-collection",
+          "key-and-padlock-pendants",
+          "paper-clip-collection",
+          "mix-shape-stones",
+          "pearly-collection",
+          "set-20-baguette-cascade",
+          "set-18-black-and-white-baguette",
+          "set-17-enamel",
+          "set-5-solitaire",
+          "set-4-sapphire-multi-row",
+          "set-11-cross",
+          "set-7-dreamer-2",
+          "set-12-droplet-stairway",
+          "set-10-eclat-hollow",
+          "set-27-emerald",
+          "set-30-glasses-chain",
+          "set-24-figaro-link",
+          "set-29-halo-heart",
+          "set-16-halo-gem",
+          "set-26-loop-de-loop",
+          "set-love-knot",
+          "set-8-milkyway",
+          "set-19-baguette-round",
+          "set-9-geo-bar",
+          "set-1-blue-agate",
+          "set-33",
+          "set-28-pearl",
+          "set-21-open",
+          "set-23-pave-link",
+          "set-22-pave-clip",
+          "set-6-dreamer"
+        ],
+        "title": "",
+        "heading_size": "h1",
+        "heading_style": "default",
+        "image_ratio": "portrait",
+        "color_scheme": "background-1",
+        "layout_fullwidth": false,
+        "slider_type": "slide",
+        "slider_auto_rotate": false,
+        "slider_change_slides_speed": 5,
+        "columns_desktop": 4,
+        "swipe_on_desktop": false,
+        "show_view_all": false,
+        "view_all_label": "",
+        "view_all_type": "primary",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 0,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "b81ecfd2-30c6-4cd2-8a7c-ba432971fffa",
+    "f33352bc-8d3a-4930-bc45-ec33f30ca035",
+    "a7ae12a3-7034-415a-b85a-d9519b691b2f",
+    "e8c4696f-5a9e-4756-8afd-62f764511c16",
+    "4bff139c-d04c-41cb-bef0-147d1fc1117d",
+    "86e130fa-a7fe-4dcd-9656-de6b63794107",
+    "51a575b5-ad99-447f-8dcf-736203d02948",
+    "2472e213-fb60-4a87-b42e-f13158609fad",
+    "b9aed636-5ac7-4724-b3b0-f66164f79896"
+  ]
+}

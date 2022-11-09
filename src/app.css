@@ -1,0 +1,87 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* custom title font style */
+.heading-style--2 {
+  --font-heading-family: var(--font-heading-family-2);
+  --font-heading-style: var(--font-heading-style-2);
+  --font-heading-weight: var(--font-heading-weight-2);
+  --font-heading-scale: var(--font-heading-scale-2);
+}
+
+.theme-gap-normal {
+  column-gap: var(--grid-mobile-horizontal-spacing);
+  row-gap: var(--grid-mobile-vertical-spacing);
+}
+
+@screen md {
+  .theme-gap-normal {
+    column-gap: var(--grid-desktop-horizontal-spacing);
+    row-gap: var(--grid-desktop-vertical-spacing);
+  }
+}
+
+/* typo override */
+.subtitle {
+  color: rgba(var(--color-foreground), 1);
+}
+
+.color-background-1,
+.color-background-2,
+.color-inverse,
+.color-accent-1,
+.color-accent-2 {
+  color: rgba(var(--color-foreground), 1);
+}
+
+/* fix instafeed */
+#insta-feed {
+  @apply !tw-mt-0;
+}
+
+#insta-feed img,
+.instafeed-shopify img {
+  @apply !tw-w-full !tw-h-full;
+}
+#insta-feed .instafeed-overlay,
+.instafeed-shopify .instafeed-overlay {
+  @apply !tw-w-full !tw-h-full;
+}
+
+/* fix rich text box */
+/* .rich-text__blocks > * + * {
+  @apply !tw-mt-2;
+} */
+/* .rich-text__blocks .rich-text__buttons {
+  @apply !tw-mt-4;
+} */
+
+/* fix main product accorditon */
+.product__accordion.accordion details .accordion__content {
+  font-family: var(--font-heading-family);
+  font-style: var(--font-heading-style);
+  font-size: calc(var(--font-heading-scale) * 1.5rem);
+
+  @apply !tw-opacity-90;
+  @apply !tw-space-y-2;
+}
+.product__accordion.accordion details .accordion__content strong {
+  @apply !tw-font-body;
+}
+
+.product__accordion.accordion details .accordion__content a {
+  @apply !tw-underline;
+}
+
+/* fix image with text */
+.image-with-text__media {
+  @apply !tw-border-none;
+}
+
+
+/* fix multi column */
+.multicolumn-card__info > h3 {
+  @apply tw-font-medium;
+  @apply !tw-mb-2;
+}

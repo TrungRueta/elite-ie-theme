@@ -1,0 +1,69 @@
+<div class='color-{{ section.settings.color_scheme }} tw-overflow-x-auto tw-flex tw-justify-center'>
+  <div class='tw-min-w-fit tw-flex tw-space-x-3 tw-text-sm tw-font-light tw-h-10 tw-items-center'>
+    {% for block in section.blocks %}
+      <a href='/' class='tw-uppercase'>{{ block.title }}</a>
+    {% endfor %}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": {
+    "en": "Menu lite"
+  },
+  "settings": [
+    {
+      "type": "select",
+      "id": "color_scheme",
+      "options": [
+        {
+          "value": "accent-1",
+          "label": "Accent-1"
+        },
+        {
+          "value": "accent-2",
+          "label": "Accent-2"
+        },
+        {
+          "value": "background-1",
+          "label": "Background-1"
+        },
+        {
+          "value": "background-2",
+          "label": "Background-2"
+        },
+        {
+          "value": "inverse",
+          "label": "Inverse"
+        }
+      ],
+      "default": "background-1",
+      "label": "Color scheme",
+      "info": "Choose color scheme"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "link",
+      "name": "Link",
+      "settings": [
+        {
+          "type": "text",
+          "id": "label",
+          "label": "Label"
+        },
+        {
+          "type": "url",
+          "id": "url",
+          "label": "url"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Menu lite"
+    }
+  ]
+}
+{% endschema %}

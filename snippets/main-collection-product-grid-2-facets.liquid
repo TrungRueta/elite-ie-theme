@@ -1,0 +1,22 @@
+<aside
+  aria-labelledby='verticalTitle'
+  class='
+    facets-wrapper
+    {% unless section.settings.enable_filtering %}facets-wrapper--no-filters{% endunless %}
+    {% if section.settings.filter_type != 'vertical' and no_padding != true %}page-width{% endif %}
+  '
+  id='main-collection-filters'
+  data-id='{{ section.id }}'
+>
+  {% render 'facets',
+    results: collection,
+    enable_filtering: section.settings.enable_filtering,
+    enable_sorting: section.settings.enable_sorting,
+    filter_type: section.settings.filter_type
+  %}
+
+  {% comment %} put menu here {% endcomment %}
+  {% if section.settings.filter_type == 'vertical' %}
+    {% render 'main-collection-product-grid-2-menu', section: section %}
+  {% endif %}
+</aside>
