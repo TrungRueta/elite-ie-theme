@@ -1,25 +1,92 @@
 {
   "sections": {
-    "main": {
-      "type": "main-page",
+    "22d123df-7b2a-4552-ab12-8c46044c4ce9": {
+      "type": "image-banner-2",
+      "blocks": {
+        "9f5f8548-db8c-4938-90a9-80de37a3e410": {
+          "type": "image",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/ie-logo.png",
+            "width": "400"
+          }
+        },
+        "2d4e262a-7fe6-455b-b7e0-1b81cd677751": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p>Opening hours:<\/p><p>Mon-Sun, 10:00 - 20:00<\/p>",
+            "text_style": "body"
+          }
+        },
+        "65eb6421-33b6-451c-be66-fc6accfc1792": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p>T +212 827 0277 F +212 827 0577<br\/>15w 37th st 3rd fl New York, NY10018<\/p>",
+            "text_style": "body"
+          }
+        },
+        "634387de-c1b9-4abc-95fc-398cffc67780": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p>(212)827-0277<\/p><p>sales@InfiniteElements.com<\/p>",
+            "text_style": "body"
+          }
+        },
+        "template--16875088085292__22d123df-7b2a-4552-ab12-8c46044c4ce9-1668030299b53e8413-2": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Map",
+            "button_link_1": "https:\/\/goo.gl\/maps\/e21GGc5WKGdKCtBN7",
+            "button_style_secondary_1": true,
+            "button_label_2": "Contact us",
+            "button_link_2": "tel:(212)827-0277",
+            "button_style_secondary_2": true
+          }
+        }
+      },
+      "block_order": [
+        "9f5f8548-db8c-4938-90a9-80de37a3e410",
+        "2d4e262a-7fe6-455b-b7e0-1b81cd677751",
+        "65eb6421-33b6-451c-be66-fc6accfc1792",
+        "634387de-c1b9-4abc-95fc-398cffc67780",
+        "template--16875088085292__22d123df-7b2a-4552-ab12-8c46044c4ce9-1668030299b53e8413-2"
+      ],
       "settings": {
-        "padding_top": 36,
-        "padding_bottom": 36
+        "image": "shopify:\/\/shop_images\/ie-banner-19.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "large",
+        "adapt_height_first_image": false,
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true,
+        "full_width": true
       }
     },
     "form": {
-      "type": "contact-form",
+      "type": "contact-form-2",
       "settings": {
-        "heading": "",
-        "heading_size": "h1",
+        "heading": "Contact us",
+        "heading_size": "h2",
         "color_scheme": "background-1",
-        "padding_top": 36,
-        "padding_bottom": 36
+        "padding_top": 80,
+        "padding_bottom": 80
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "show_heading": false
       }
     }
   },
   "order": [
-    "main",
-    "form"
+    "22d123df-7b2a-4552-ab12-8c46044c4ce9",
+    "form",
+    "main"
   ]
 }

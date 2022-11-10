@@ -52,11 +52,7 @@
       {% endif %}
     >
       <div class='splide'>
-        {%
-          render 'multicolumn-2-track',
-          section: section,
-          show_mobile_slider: show_mobile_slider
-        %}
+        {% render 'multicolumn-2-track', section: section, show_mobile_slider: show_mobile_slider %}
       </div>
     </multicolumn-2-component>
 
@@ -153,6 +149,14 @@
       "default": "adapt",
       "label": "t:sections.multicolumn.settings.image_ratio.label"
     },
+
+    {
+      "type": "checkbox",
+      "id": "no_padding_column",
+      "label": "No put padding in column",
+      "default": false
+    },
+
     {
       "type": "range",
       "id": "columns_desktop",
@@ -299,6 +303,50 @@
           "id": "title",
           "default": "Column",
           "label": "t:sections.multicolumn.blocks.column.settings.title.label"
+        },
+        {
+          "type": "select",
+          "id": "title_size",
+          "options": [
+            {
+              "value": "h4",
+              "label": "Heading h4"
+            },
+            {
+              "value": "h3",
+              "label": "Heading h3"
+            },
+            {
+              "value": "h2",
+              "label": "Heading h2"
+            },
+            {
+              "value": "h1",
+              "label": "Heading h1"
+            },
+            {
+              "value": "h0",
+              "label": "Heading h0"
+            }
+          ],
+          "default": "h1",
+          "label": "Title size"
+        },
+        {
+          "type": "select",
+          "id": "title_style",
+          "label": "Title style",
+          "options": [
+            {
+              "value": "default",
+              "label": "Default"
+            },
+            {
+              "value": "2",
+              "label": "Style 2"
+            }
+          ],
+          "default": "default"
         },
         {
           "type": "richtext",

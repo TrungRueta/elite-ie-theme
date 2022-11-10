@@ -196,6 +196,9 @@
         --variant-pills-shadow-horizontal-offset: {{ settings.variant_pills_shadow_horizontal_offset }}px;
         --variant-pills-shadow-vertical-offset: {{ settings.variant_pills_shadow_vertical_offset }}px;
         --variant-pills-shadow-blur-radius: {{ settings.variant_pills_shadow_blur }}px;
+
+        /* more custom */
+        --page-width-max-md: {{ settings.page_width_max_md }}px;
       }
 
       *,
@@ -325,7 +328,7 @@
       {{ content_for_layout }}
     </main>
 
-    {% section 'footer' %}
+    {% section 'footer2' %}
 
     <ul hidden>
       <li id='a11y-refresh-page-message'>{{ 'accessibility.refresh_page' | t }}</li>

@@ -30,6 +30,8 @@
     {% if section.settings.full_width == false %}page-width{% endif %}
     {% if section.settings.full_width and show_desktop_slider == false %}md:tw-px-page_desktop{% endif %}
     {% if section.settings.full_width and show_mobile_slider == false %}<md:tw-px-page_mobile{% endif %}
+    {% if show_desktop_slider == false %}tw-overflow-visible{% endif %}
+    page-width-max--{{ section.settings.page_width_max }}
   '>
   <ul
     id='Slider-{{ section.id }}'
@@ -46,6 +48,7 @@
           splide__slide grid__item
           {% if show_mobile_slider == false %} <md:tw-m-0 {% endif %}
           {% if show_desktop_slider == false %} md:tw-m-0 {% endif %}
+          tw-py-6
         '
       >
         {% render 'card-product',

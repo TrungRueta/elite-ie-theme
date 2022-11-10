@@ -51,6 +51,7 @@ module.exports = {
     // preflight: false,
   },
   plugins: [
+    require('@tailwindcss/typography'),
     plugin(({ addUtilities }) => {
       // theme gap grid
       addUtilities({

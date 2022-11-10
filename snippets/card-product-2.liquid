@@ -31,7 +31,9 @@
       assign ratio = 1
     endif
   -%}
-  <div class='card-wrapper product-card-wrapper underline-links-hover tw-shadow-[0_0_10px_rgba(0,0,0,0.1)]'>
+  <div class='
+      card-wrapper product-card-wrapper underline-links-hover tw-shadow-lg
+    '>
     <div
       class='
         card
@@ -145,8 +147,7 @@
         <div class='card__information'>
           <h3
             class='
-              card__heading tw-border-t
-              tw-text-center tw-pt-2
+              card__heading
               {% if card_product.featured_media or settings.card_style == 'standard' %}h5{% endif %}
             '
             {% if card_product.featured_media or settings.card_style == 'card' %}

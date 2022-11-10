@@ -24,9 +24,9 @@
         "template--16690310906138__72cbf933-5de0-4e47-b9ba-52a7dba9b828-1666362571b54e9be1-0"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/9.12.jpg",
-        "image_overlay_opacity": 0,
-        "image_height": "small",
+        "image": "shopify:\/\/shop_images\/ie-banner-9.jpg",
+        "image_overlay_opacity": 40,
+        "image_height": "collapsed",
         "adapt_height_first_image": false,
         "desktop_content_position": "middle-center",
         "show_text_box": false,
@@ -41,26 +41,13 @@
     "main": {
       "type": "main-page",
       "settings": {
-        "padding_top": 8,
+        "padding_top": 80,
         "padding_bottom": 80,
         "show_heading": false
       }
     },
     "166636296256fbce97": {
       "type": "apps",
-      "blocks": {
-        "0344c416-d360-411f-92a4-9f2480fa2e0a": {
-          "type": "shopify:\/\/apps\/instafeed-instagram-feed\/blocks\/app-block\/c447db20-095d-4a10-9725-b5977662c9d5",
-          "settings": {
-            "heading_size": 20,
-            "feed_width": 100,
-            "html_area": ""
-          }
-        }
-      },
-      "block_order": [
-        "0344c416-d360-411f-92a4-9f2480fa2e0a"
-      ],
       "settings": {
         "include_margins": true,
         "no_page_padding": true

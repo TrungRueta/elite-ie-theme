@@ -21,6 +21,22 @@
     "unit": "px",
     "label": "t:sections.all.padding.padding_bottom",
     "default": 36
+  },
+  {
+    "type": "select",
+    "id": "page_width_max",
+    "label": "Set max width",
+    "options": [
+      {
+        "value": "",
+        "label": "No limit"
+      },
+      {
+        "value": "md",
+        "label": "Medium"
+      }
+    ],
+    "default": ""
   }
 ]
 ```

@@ -2,6 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
+/* page width setup */
+.page-width-max--md {
+  max-width: var(--page-width-max-md);
+}
+
+.heading-align--left {
+  @apply tw-text-left;
+}
+
+.heading-align--center {
+  @apply tw-text-center;
+}
+
+.heading-align--right {
+  @apply tw-text-right;
+}
+
 /* custom title font style */
 .heading-style--2 {
   --font-heading-family: var(--font-heading-family-2);
@@ -32,7 +49,13 @@
 .color-inverse,
 .color-accent-1,
 .color-accent-2 {
-  color: rgba(var(--color-foreground), 1);
+  /* color: rgba(var(--color-foreground), 1); */
+}
+
+.color-accent-2 {
+  --color-button: var(--color-base-text);
+  --color-foreground: var(--color-base-text);
+  /* color: rgba(var(--color-base-text), 1); */
 }
 
 /* fix instafeed */
@@ -79,9 +102,54 @@
   @apply !tw-border-none;
 }
 
-
 /* fix multi column */
 .multicolumn-card__info > h3 {
   @apply tw-font-medium;
   @apply !tw-mb-2;
+}
+
+/* product card */
+.card--standard > .card__content .card__information {
+  @apply !tw-p-5 !tw-pb-0;
+}
+
+.card--standard > .card__content .card__heading {
+  @apply tw-text-center;
+  @apply !tw-py-5;
+}
+
+/* .collage */
+.collage-2 {
+  @apply tw-grid;
+  /* @apply tw-gap-x-[var(--grid-desktop-horizontal-spacing)];
+  @apply tw-gap-y-[var(--grid-desktop-vertical-spacing)]; */
+  @apply tw-gap-x-[0.5rem];
+  @apply tw-gap-y-[0.5rem];
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+@screen md {
+  .collage-2 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .collage-2 .collage__item--left,
+  .collage-2 .collage__item--right {
+    @apply !tw-col-span-1 !tw-row-span-1;
+  }
+
+  .collage-2 .collage__item--left:last-child,
+  .collage-2 .collage__item--right:last-child {
+    @apply !tw-col-span-1 !tw-row-span-1;
+  }
+
+  .collage-2 .collage__item--left:first-child {
+    grid-column: 1 / 3 !important;
+    grid-row: 1 / 3 !important;
+  }
+
+  .collage-2 .collage__item--right:first-child {
+    grid-column: 3 / 5 !important;
+    grid-row: 1 / 3 !important;
+  }
 }

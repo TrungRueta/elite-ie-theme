@@ -124,6 +124,26 @@
             >
               <span>{{ block.settings.text | escape }}</span>
             </div>
+          {%- when 'richtext' -%}
+            <div
+              class='banner__text {{ block.settings.text_style }}'
+              {{ block.shopify_attributes }}
+            >
+              <span>{{ block.settings.text }}</span>
+            </div>
+          {%- when 'image' -%}
+            <div
+              class='banner__text {{ block.settings.text_style }}'
+              {{ block.shopify_attributes }}
+            >
+              <img
+                src="{{ block.settings.image | image_url }}"
+                width="{{ block.settings.width }}"
+                loading="lazy"
+                height="auto"
+                class="tw-mx-auto"
+              >
+            </div>
           {%- when 'buttons' -%}
             <div
               class='banner__buttons{% if block.settings.button_label_1 != blank and block.settings.button_label_2 != blank %} banner__buttons--multiple{% endif %}'
@@ -190,6 +210,10 @@
       "type": "select",
       "id": "image_height",
       "options": [
+        {
+          "value": "collapsed",
+          "label": "Collapse height"
+        },
         {
           "value": "small",
           "label": "t:sections.image-banner.settings.image_height.options__1.label"
@@ -434,6 +458,54 @@
           ],
           "default": "body",
           "label": "t:sections.image-banner.blocks.text.settings.text_style.label"
+        }
+      ]
+    },
+    {
+      "type": "richtext",
+      "name": "Rich text",
+      "settings": [
+        {
+          "type": "richtext",
+          "id": "text",
+          "label": "text",
+          "default": "<p>Default <em>richtext</em> <a href=\"https://example.com/\">content</a></p>"
+        },
+        {
+          "type": "select",
+          "id": "text_style",
+          "options": [
+            {
+              "value": "body",
+              "label": "t:sections.image-banner.blocks.text.settings.text_style.options__1.label"
+            },
+            {
+              "value": "subtitle",
+              "label": "t:sections.image-banner.blocks.text.settings.text_style.options__2.label"
+            },
+            {
+              "value": "caption-with-letter-spacing",
+              "label": "t:sections.image-banner.blocks.text.settings.text_style.options__3.label"
+            }
+          ],
+          "default": "body",
+          "label": "t:sections.image-banner.blocks.text.settings.text_style.label"
+        }
+      ]
+    },
+    {
+      "type": "image",
+      "name": "Image",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Image"
+        },
+        {
+          "type": "text",
+          "id": "width",
+          "label": "Width (px)"
         }
       ]
     },

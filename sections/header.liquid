@@ -395,7 +395,7 @@
 
     {%- if section.settings.menu != blank -%}
       {%- if section.settings.menu_type_desktop == 'dropdown' -%}
-        <nav class="header__inline-menu">
+        <nav class="header__inline-menu ">
           <ul class="list-menu list-menu--inline" role="list">
             {%- for link in section.settings.menu.links -%}
               <li>
@@ -445,7 +445,7 @@
           </ul>
         </nav>
       {%- else -%}
-        <nav class="header__inline-menu">
+        <nav class="header__inline-menu tw-border-t">
           <ul class="list-menu list-menu--inline" role="list">
             {%- for link in section.settings.menu.links -%}
               <li>

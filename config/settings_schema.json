@@ -1,11 +1,32 @@
 [
   {
     "name": "theme_info",
-    "theme_name": "Kiera v2",
+    "theme_name": "Infinite Elements v2",
     "theme_version": "1.0.0-dawn-7.0.1",
     "theme_author": "Elite group",
     "theme_documentation_url": "https://www.elitegny.com/",
     "theme_support_url": "https://www.elitegny.com/"
+  },
+  {
+    "name": "General",
+    "settings": [
+      {
+        "type": "checkbox",
+        "id": "product_can_sell",
+        "default": true,
+        "label": "Product can sell"
+      },
+      {
+        "type": "range",
+        "id": "page_width_max_md",
+        "min": 400,
+        "max": 1400,
+        "step": 100,
+        "unit": "px",
+        "label": "Set max width at medium range",
+        "default": 900
+      }
+    ]
   },
   {
     "name": "t:settings_schema.colors.name",

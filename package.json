@@ -6,10 +6,10 @@
   "scripts": {
     "dev": "vite build --watch --minify false",
     "build": "vite build",
-    "theme": "shopify theme serve --theme-editor-sync",
+    "theme": "shopify theme serve --theme-editor-sync --theme elite-ie-theme-dev",
     "push": "shopify theme push",
     "pull": "shopify theme pull",
-    "login": "shopify login --store kiera-ny-jewelry.myshopify.com",
+    "login": "shopify login --store elite-infinite-elements.myshopify.com",
     "dawn:update": "git pull upstream main",
     "dawn:fetch": "git fetch upstream",
     "dawn:upstream": "git remote add upstream https://github.com/Shopify/dawn.git"
@@ -20,6 +20,7 @@
   "license": "ISC",
   "devDependencies": {
     "@shopify/prettier-plugin-liquid": "^0.4.0",
+    "@tailwindcss/typography": "^0.5.8",
     "@types/scrollbooster": "^2.2.2",
     "autoprefixer": "^10.4.13",
     "fast-glob": "^3.2.12",

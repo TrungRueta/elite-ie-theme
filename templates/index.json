@@ -6,39 +6,31 @@
         "template--15414917234886__50fcdf4b-a4c4-404b-8f74-fa84b9966be2-1665997760409a2fd3-0": {
           "type": "heading",
           "settings": {
-            "heading": "KIERA",
-            "heading_size": "h0",
-            "heading_style": "default"
-          }
-        },
-        "template--15414917234886__50fcdf4b-a4c4-404b-8f74-fa84b9966be2-1665997760409a2fd3-1": {
-          "type": "text",
-          "settings": {
-            "text": "Jewelry for your best self.",
-            "text_style": "caption-with-letter-spacing"
+            "heading": "Explore the many facets",
+            "heading_size": "h1",
+            "heading_style": "2"
           }
         },
         "template--15414917234886__50fcdf4b-a4c4-404b-8f74-fa84b9966be2-1665997760409a2fd3-2": {
           "type": "buttons",
           "settings": {
-            "button_label_1": "EXPLORE OUR PRODUCTS",
+            "button_label_1": "Our Products",
             "button_link_1": "shopify:\/\/collections\/all",
-            "button_style_secondary_1": true,
-            "button_label_2": "",
-            "button_link_2": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "Discover",
+            "button_link_2": "shopify:\/\/collections",
             "button_style_secondary_2": false
           }
         }
       },
       "block_order": [
         "template--15414917234886__50fcdf4b-a4c4-404b-8f74-fa84b9966be2-1665997760409a2fd3-0",
-        "template--15414917234886__50fcdf4b-a4c4-404b-8f74-fa84b9966be2-1665997760409a2fd3-1",
         "template--15414917234886__50fcdf4b-a4c4-404b-8f74-fa84b9966be2-1665997760409a2fd3-2"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/10.19c.jpg",
+        "image": "shopify:\/\/shop_images\/ie-banner-1.jpg",
         "image_overlay_opacity": 0,
-        "image_height": "large",
+        "image_height": "medium",
         "adapt_height_first_image": false,
         "desktop_content_position": "middle-left",
         "show_text_box": false,
@@ -47,38 +39,7 @@
         "mobile_content_alignment": "center",
         "stack_images_on_mobile": true,
         "show_text_below": true,
-        "full_width": false
-      }
-    },
-    "caa5636b-5fab-45e1-96a1-9314cb5b5d77": {
-      "type": "featured-collection-2",
-      "settings": {
-        "title": "New Arrivals",
-        "heading_size": "h1",
-        "heading_style": "2",
-        "description": "",
-        "show_description": false,
-        "description_style": "body",
-        "collection": "new-arrivals",
-        "products_to_show": 8,
-        "columns_desktop": 4,
-        "full_width": false,
-        "show_view_all": true,
-        "enable_view_all_bottom": true,
-        "enable_view_all_top": true,
-        "view_all_label": "SHOP ALL",
-        "view_all_type": "secondary",
-        "enable_desktop_slider": false,
-        "color_scheme": "background-2",
-        "image_ratio": "square",
-        "show_secondary_image": true,
-        "show_vendor": false,
-        "show_rating": false,
-        "enable_quick_add": false,
-        "columns_mobile": "1",
-        "swipe_on_mobile": true,
-        "padding_top": 80,
-        "padding_bottom": 60
+        "full_width": true
       }
     },
     "e40a5e2e-f442-41e3-b983-dbedcd1bd184": {
@@ -87,40 +48,27 @@
         "template--15414917234886__e40a5e2e-f442-41e3-b983-dbedcd1bd184-16659397197568fd0f-0": {
           "type": "heading",
           "settings": {
-            "heading": "ESSENTIALS",
-            "heading_size": "h0",
+            "heading": "Excellent stones",
+            "heading_size": "h2",
             "heading_style": "2"
           }
         },
         "2269c86b-c055-441d-bc3c-bad475ac49a7": {
           "type": "text",
           "settings": {
-            "text": "From the latest to this season’s greatest, explore our thoughtfully curated edits.",
-            "text_style": "subtitle"
-          }
-        },
-        "b530c232-c7a8-4c0c-ba4b-ea2466bd9cd2": {
-          "type": "buttons",
-          "settings": {
-            "button_label_1": "SHOP NOW",
-            "button_link_1": "shopify:\/\/collections\/essentials",
-            "button_style_secondary_1": true,
-            "button_label_2": "",
-            "button_link_2": "",
-            "button_style_secondary_2": false
+            "text": "While the “excellent” cut only represents roughly the top 3% of diamond cut quality, it represents 100% of Infinite Elements’ cubic zirconia cut quality.",
+            "text_style": "body"
           }
         }
       },
       "block_order": [
         "template--15414917234886__e40a5e2e-f442-41e3-b983-dbedcd1bd184-16659397197568fd0f-0",
-        "2269c86b-c055-441d-bc3c-bad475ac49a7",
-        "b530c232-c7a8-4c0c-ba4b-ea2466bd9cd2"
+        "2269c86b-c055-441d-bc3c-bad475ac49a7"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/9.23.jpg",
-        "image_2": "shopify:\/\/shop_images\/9.01.jpg",
-        "image_overlay_opacity": 10,
-        "image_height": "medium",
+        "image": "shopify:\/\/shop_images\/ie-banner-2.jpg",
+        "image_overlay_opacity": 40,
+        "image_height": "collapsed",
         "adapt_height_first_image": false,
         "desktop_content_position": "middle-center",
         "show_text_box": false,
@@ -129,38 +77,7 @@
         "mobile_content_alignment": "center",
         "stack_images_on_mobile": false,
         "show_text_below": true,
-        "full_width": false
-      }
-    },
-    "c8e495dc-159e-4e32-ae98-430a4e528551": {
-      "type": "featured-collection-2",
-      "settings": {
-        "title": "",
-        "heading_size": "h1",
-        "heading_style": "default",
-        "description": "",
-        "show_description": false,
-        "description_style": "body",
-        "collection": "essentials",
-        "products_to_show": 12,
-        "columns_desktop": 4,
-        "full_width": false,
-        "show_view_all": false,
-        "enable_view_all_bottom": true,
-        "enable_view_all_top": true,
-        "view_all_label": "",
-        "view_all_type": "primary",
-        "enable_desktop_slider": true,
-        "color_scheme": "background-2",
-        "image_ratio": "square",
-        "show_secondary_image": true,
-        "show_vendor": false,
-        "show_rating": false,
-        "enable_quick_add": false,
-        "columns_mobile": "1",
-        "swipe_on_mobile": true,
-        "padding_top": 60,
-        "padding_bottom": 40
+        "full_width": true
       }
     },
     "6f4b4b52-09c7-46a8-986a-e447198b582a": {
@@ -169,7 +86,7 @@
         "template--15414917234886__6f4b4b52-09c7-46a8-986a-e447198b582a-166600352220d3592d-0": {
           "type": "heading",
           "settings": {
-            "heading": "<p>GOLDEN ERA<\/p>",
+            "heading": "<p>Clarity scale<\/p>",
             "heading_size": "h1",
             "heading_style": "2"
           }
@@ -177,7 +94,7 @@
         "template--15414917234886__6f4b4b52-09c7-46a8-986a-e447198b582a-166600352220d3592d-1": {
           "type": "text",
           "settings": {
-            "text": "<p>Tips on how to curate your collection, whether <\/p><p>you’re just getting started or a seasoned expert.<\/p>"
+            "text": "<p>Stone Clarity is a qualitative metric that grades the visual appearance of each stone. The fewer inclusions and blemishes a stone has, the better its clarity grade will be.<\/p>"
           }
         }
       },
@@ -194,205 +111,25 @@
         "padding_bottom": 52
       }
     },
-    "cef233a2-901f-4803-b2ef-3989a6d93fa3": {
-      "type": "collection-list-2",
-      "settings": {
-        "collection_list": [
-          "croissant-dome-collection",
-          "essentials",
-          "hoops",
-          "key-and-padlock-pendants",
-          "link-chain-collection",
-          "paper-clip-collection",
-          "pearly-collection",
-          "quilted-collection",
-          "semi-circle-collection",
-          "signet-collection",
-          "serpent-collection",
-          "special-stones",
-          "stackable-rings",
-          "toi-et-moi"
-        ],
-        "title": "",
-        "heading_size": "h1",
-        "heading_style": "default",
-        "image_ratio": "portrait",
-        "color_scheme": "background-1",
-        "layout_fullwidth": false,
-        "slider_type": "slide",
-        "slider_auto_rotate": true,
-        "slider_change_slides_speed": 3,
-        "columns_desktop": 3,
-        "swipe_on_desktop": true,
-        "show_view_all": false,
-        "view_all_label": "",
-        "view_all_type": "primary",
-        "columns_mobile": "1",
-        "swipe_on_mobile": true,
-        "padding_top": 0,
-        "padding_bottom": 36
-      }
-    },
-    "4c438485-6888-490e-9a15-ff8402886de3": {
-      "type": "rich-text-2",
-      "blocks": {
-        "template--15414917234886__4c438485-6888-490e-9a15-ff8402886de3-1666004642a7312239-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "<p>STONE LIFE<\/p>",
-            "heading_size": "h1",
-            "heading_style": "2"
-          }
-        },
-        "template--15414917234886__4c438485-6888-490e-9a15-ff8402886de3-1666004642a7312239-1": {
-          "type": "text",
-          "settings": {
-            "text": "<p>From the greatest to this season's latest,<\/p><p>explore our thoughtfully curated edits<\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "template--15414917234886__4c438485-6888-490e-9a15-ff8402886de3-1666004642a7312239-0",
-        "template--15414917234886__4c438485-6888-490e-9a15-ff8402886de3-1666004642a7312239-1"
-      ],
-      "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "background-1",
-        "full_width": true,
-        "padding_top": 80,
-        "padding_bottom": 52
-      }
-    },
-    "05f1706f-3305-41ba-94d8-60bfe93889a5": {
-      "type": "collection-list-2",
-      "settings": {
-        "collection_list": [
-          "pearly-collection",
-          "couture-collection",
-          "toi-et-moi",
-          "mix-shape-stones",
-          "paper-clip-collection",
-          "special-stones",
-          "stackable-rings",
-          "set-20-baguette-cascade",
-          "set-5-solitaire",
-          "set-12-droplet-stairway",
-          "set-27-emerald",
-          "set-10-eclat-hollow",
-          "set-love-knot",
-          "set-21-open",
-          "set-23-pave-link",
-          "set-22-pave-clip",
-          "season-aurora",
-          "set-13-snake",
-          "set-31-stackable-rings",
-          "set-15-wave-baguette"
-        ],
-        "title": "",
-        "heading_size": "h1",
-        "heading_style": "default",
-        "image_ratio": "portrait",
-        "color_scheme": "background-1",
-        "layout_fullwidth": false,
-        "slider_type": "slide",
-        "slider_auto_rotate": true,
-        "slider_change_slides_speed": 3,
-        "columns_desktop": 3,
-        "swipe_on_desktop": true,
-        "show_view_all": false,
-        "view_all_label": "",
-        "view_all_type": "primary",
-        "columns_mobile": "1",
-        "swipe_on_mobile": true,
-        "padding_top": 0,
-        "padding_bottom": 36
-      }
-    },
-    "6677c42c-c46f-465a-b3c7-5931815a30b8": {
-      "type": "image-with-text-2",
-      "blocks": {
-        "template--15414917234886__6677c42c-c46f-465a-b3c7-5931815a30b8-1665995854ca7a0c76-0": {
-          "type": "heading",
-          "settings": {
-            "heading": "Who We Are",
-            "heading_size": "h0",
-            "heading_style": "2"
-          }
-        },
-        "template--15414917234886__6677c42c-c46f-465a-b3c7-5931815a30b8-1665995854ca7a0c76-1": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Elite Group International debuted Kiera in 2005, placing its 30 years of experience and its trusted partnerships with select retailers and distributors in Europe and Asia at Kiera’s service.<\/p>",
-            "text_style": "body"
-          }
-        },
-        "4a7f5c24-2821-483f-89c4-7118d54850ab": {
-          "type": "text",
-          "settings": {
-            "text": "<p>As a result, Kiera's affordable prices have built a following of devoted customers by offering them the kind of quality they never thought they could afford.<\/p>",
-            "text_style": "body"
-          }
-        },
-        "template--15414917234886__6677c42c-c46f-465a-b3c7-5931815a30b8-1665995854ca7a0c76-2": {
-          "type": "button",
-          "settings": {
-            "button_label": "About us",
-            "button_link": "shopify:\/\/pages\/about-us"
-          }
-        }
-      },
-      "block_order": [
-        "template--15414917234886__6677c42c-c46f-465a-b3c7-5931815a30b8-1665995854ca7a0c76-0",
-        "template--15414917234886__6677c42c-c46f-465a-b3c7-5931815a30b8-1665995854ca7a0c76-1",
-        "4a7f5c24-2821-483f-89c4-7118d54850ab",
-        "template--15414917234886__6677c42c-c46f-465a-b3c7-5931815a30b8-1665995854ca7a0c76-2"
-      ],
-      "settings": {
-        "image": "shopify:\/\/shop_images\/02.04b.jpg",
-        "height": "large",
-        "desktop_image_width": "medium",
-        "layout": "image_first",
-        "desktop_content_position": "middle",
-        "desktop_content_alignment": "left",
-        "content_layout": "no-overlap",
-        "color_scheme": "accent-1",
-        "full_width": false,
-        "no_page_padding": true,
-        "mobile_content_alignment": "left",
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
-    },
-    "a01ad6c3-7602-4b97-9800-46039697321b": {
-      "type": "decor-gaurantee",
-      "settings": {
-        "color_scheme": "accent-2",
-        "full_width": false,
-        "no_page_padding": true,
-        "padding_top": 24,
-        "padding_bottom": 24
-      }
-    },
     "1625ab8b-c2a3-4789-8fdf-4ffa66a935d4": {
       "type": "featured-collection-2",
       "settings": {
-        "title": "BEST SELLERS",
+        "title": "",
         "heading_size": "h1",
         "heading_style": "2",
         "description": "",
         "show_description": false,
         "description_style": "body",
-        "collection": "rainbow-collection",
-        "products_to_show": 12,
-        "columns_desktop": 4,
+        "collection": "frontpage",
+        "products_to_show": 9,
+        "columns_desktop": 3,
         "full_width": false,
-        "show_view_all": true,
-        "enable_view_all_bottom": true,
-        "enable_view_all_top": true,
-        "view_all_label": "SHOP ALL BEST SELLERS",
-        "view_all_type": "secondary",
-        "enable_desktop_slider": true,
+        "show_view_all": false,
+        "enable_view_all_bottom": false,
+        "enable_view_all_top": false,
+        "view_all_label": "",
+        "view_all_type": "primary",
+        "enable_desktop_slider": false,
         "color_scheme": "background-1",
         "image_ratio": "square",
         "show_secondary_image": true,
@@ -401,105 +138,173 @@
         "enable_quick_add": false,
         "columns_mobile": "1",
         "swipe_on_mobile": true,
-        "padding_top": 80,
-        "padding_bottom": 60
+        "padding_top": 0,
+        "padding_bottom": 60,
+        "page_width_max": ""
       }
     },
-    "c67c4c11-a51a-49a4-ad38-9845ba25b2ea": {
-      "type": "collection-list-2",
+    "e6246c80-c5ed-4dee-9d81-8f7856f27b4f": {
+      "type": "image-banner-2",
       "settings": {
-        "collection_list": [
-          "essentials",
-          "rings",
-          "bracelets",
-          "kiera-new-york",
-          "earrings",
-          "necklace",
-          "watches"
-        ],
-        "title": "COLLECTIONS",
-        "heading_size": "h1",
-        "heading_style": "2",
-        "image_ratio": "square",
-        "color_scheme": "background-2",
-        "layout_fullwidth": false,
-        "slider_type": "slide",
-        "slider_auto_rotate": true,
-        "slider_change_slides_speed": 3,
-        "columns_desktop": 4,
-        "swipe_on_desktop": true,
-        "show_view_all": true,
-        "view_all_label": "SHOP ALL COLLECTIONS",
-        "view_all_type": "secondary",
-        "columns_mobile": "2",
-        "swipe_on_mobile": true,
-        "padding_top": 80,
-        "padding_bottom": 60
+        "image": "shopify:\/\/shop_images\/ie-banner-3.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "small",
+        "adapt_height_first_image": false,
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true,
+        "full_width": true
       }
     },
-    "40b451df-2023-4a92-b613-0b66f3be50eb": {
-      "type": "image-with-text-2",
+    "86cd2ab1-510b-4811-b0fd-f7fc15985d09": {
+      "type": "link-list",
       "blocks": {
-        "template--15414917234886__40b451df-2023-4a92-b613-0b66f3be50eb-16660059341ed0a280-0": {
-          "type": "heading",
+        "0b93c974-2b96-4886-bdc0-c7064a2aa64f": {
+          "type": "link",
           "settings": {
-            "heading": "\"You want the most dazzling jewelry created in environmentally conscious ways.\"",
-            "heading_size": "h2",
-            "heading_style": "default"
+            "title": "Triangle",
+            "image": "shopify:\/\/shop_images\/ie-icon-Triangle.png",
+            "url": "shopify:\/\/collections\/triangle"
           }
         },
-        "01b8f75c-6ced-47e0-86e8-db88d43e3240": {
-          "type": "heading",
+        "8e3f6944-4652-4f51-87af-263430571844": {
+          "type": "link",
           "settings": {
-            "heading": "We do too.",
-            "heading_size": "h1",
-            "heading_style": "default"
+            "title": "Square",
+            "image": "shopify:\/\/shop_images\/ie-icon-Square.png",
+            "url": "shopify:\/\/collections\/square"
           }
         },
-        "template--15414917234886__40b451df-2023-4a92-b613-0b66f3be50eb-16660059341ed0a280-1": {
-          "type": "text",
+        "1a8f0b94-f656-47c2-8fe1-75ca59036c24": {
+          "type": "link",
           "settings": {
-            "text": "<p>Kiera believes every woman has the right to be beautiful. By bringing together art and science, we launched a movement that made this dream a reality.<\/p>",
-            "text_style": "body"
+            "title": "Round",
+            "image": "shopify:\/\/shop_images\/ie-icon-Round.png",
+            "url": "shopify:\/\/collections\/round"
+          }
+        },
+        "b2e598c4-02d6-4fc3-b9f1-102261c79d12": {
+          "type": "link",
+          "settings": {
+            "title": "Asscher",
+            "image": "shopify:\/\/shop_images\/ie-icon-Asscher.png",
+            "url": "shopify:\/\/collections\/asscher"
+          }
+        },
+        "23f3e872-e9db-4822-a646-646efb3f1bc3": {
+          "type": "link",
+          "settings": {
+            "title": "Oval",
+            "image": "shopify:\/\/shop_images\/ie-icon-Oval.png",
+            "url": "shopify:\/\/collections\/oval"
+          }
+        },
+        "9fbc7298-7e13-46aa-a2c6-c0a16febee37": {
+          "type": "link",
+          "settings": {
+            "title": "Pear",
+            "image": "shopify:\/\/shop_images\/ie-icon-Pear.png",
+            "url": "shopify:\/\/collections\/pear"
+          }
+        },
+        "7b9ed1d5-79a9-4a22-8d7d-c166a28addef": {
+          "type": "link",
+          "settings": {
+            "title": "Marquise",
+            "image": "shopify:\/\/shop_images\/ie-icon-Marquise.png",
+            "url": "shopify:\/\/collections\/marquise"
+          }
+        },
+        "eeee6e5c-bf09-405c-8039-c260017657d8": {
+          "type": "link",
+          "settings": {
+            "title": "Emerald",
+            "image": "shopify:\/\/shop_images\/ie-icon-Emerald.png",
+            "url": "shopify:\/\/collections\/emerald"
+          }
+        },
+        "14da52c1-f8fe-4a25-a56f-8a793f0a4f91": {
+          "type": "link",
+          "settings": {
+            "title": "Heart",
+            "image": "shopify:\/\/shop_images\/ie-icon-Heart.png",
+            "url": "shopify:\/\/collections\/heart"
           }
         }
       },
       "block_order": [
-        "template--15414917234886__40b451df-2023-4a92-b613-0b66f3be50eb-16660059341ed0a280-0",
-        "01b8f75c-6ced-47e0-86e8-db88d43e3240",
-        "template--15414917234886__40b451df-2023-4a92-b613-0b66f3be50eb-16660059341ed0a280-1"
+        "0b93c974-2b96-4886-bdc0-c7064a2aa64f",
+        "8e3f6944-4652-4f51-87af-263430571844",
+        "1a8f0b94-f656-47c2-8fe1-75ca59036c24",
+        "b2e598c4-02d6-4fc3-b9f1-102261c79d12",
+        "23f3e872-e9db-4822-a646-646efb3f1bc3",
+        "9fbc7298-7e13-46aa-a2c6-c0a16febee37",
+        "7b9ed1d5-79a9-4a22-8d7d-c166a28addef",
+        "eeee6e5c-bf09-405c-8039-c260017657d8",
+        "14da52c1-f8fe-4a25-a56f-8a793f0a4f91"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/16-1.jpg",
-        "height": "large",
-        "desktop_image_width": "medium",
-        "layout": "text_first",
-        "desktop_content_position": "middle",
-        "desktop_content_alignment": "left",
-        "content_layout": "no-overlap",
-        "color_scheme": "accent-2",
-        "full_width": false,
-        "no_page_padding": true,
-        "mobile_content_alignment": "left",
-        "padding_top": 0,
-        "padding_bottom": 0
+        "title": "Our stone cuts",
+        "heading_size": "h2",
+        "heading_style": "2",
+        "heading_align": "center",
+        "image_ratio": "square",
+        "color_scheme": "background-1",
+        "layout_fullwidth": false,
+        "padding_top": 80,
+        "padding_bottom": 80,
+        "page_width_max": "md"
+      }
+    },
+    "244de9ab-6ad4-45bc-8766-548f2477b794": {
+      "type": "rich-text-2",
+      "blocks": {
+        "template--16875081335084__244de9ab-6ad4-45bc-8766-548f2477b794-166797553454d85645-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>Flawless Stones<\/p>",
+            "heading_size": "h1",
+            "heading_style": "2"
+          }
+        },
+        "template--16875081335084__244de9ab-6ad4-45bc-8766-548f2477b794-166797553454d85645-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Fewer than 1% of all diamonds are “Flawless” (FL) clarity, while Infinite Elements stones are faultless. They are 100% free of inclusions and will always look immaculate, regardless of size.<\/p>"
+          }
+        },
+        "template--16875081335084__244de9ab-6ad4-45bc-8766-548f2477b794-166797553454d85645-2": {
+          "type": "button",
+          "settings": {
+            "button_label": "Contact us",
+            "button_link": "shopify:\/\/pages\/contact",
+            "button_style_secondary": true,
+            "button_label_2": "",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "template--16875081335084__244de9ab-6ad4-45bc-8766-548f2477b794-166797553454d85645-0",
+        "template--16875081335084__244de9ab-6ad4-45bc-8766-548f2477b794-166797553454d85645-1",
+        "template--16875081335084__244de9ab-6ad4-45bc-8766-548f2477b794-166797553454d85645-2"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-2",
+        "full_width": true,
+        "padding_top": 56,
+        "padding_bottom": 72
       }
     },
     "1666006113cc356d3a": {
       "type": "apps",
-      "blocks": {
-        "a0189f61-b2e1-4e19-ade9-427d6505c59e": {
-          "type": "shopify:\/\/apps\/instafeed-instagram-feed\/blocks\/app-block\/c447db20-095d-4a10-9725-b5977662c9d5",
-          "settings": {
-            "heading_size": 20,
-            "feed_width": 100,
-            "html_area": ""
-          }
-        }
-      },
-      "block_order": [
-        "a0189f61-b2e1-4e19-ade9-427d6505c59e"
-      ],
       "settings": {
         "include_margins": true,
         "no_page_padding": true
@@ -508,18 +313,12 @@
   },
   "order": [
     "50fcdf4b-a4c4-404b-8f74-fa84b9966be2",
-    "caa5636b-5fab-45e1-96a1-9314cb5b5d77",
     "e40a5e2e-f442-41e3-b983-dbedcd1bd184",
-    "c8e495dc-159e-4e32-ae98-430a4e528551",
     "6f4b4b52-09c7-46a8-986a-e447198b582a",
-    "cef233a2-901f-4803-b2ef-3989a6d93fa3",
-    "4c438485-6888-490e-9a15-ff8402886de3",
-    "05f1706f-3305-41ba-94d8-60bfe93889a5",
-    "6677c42c-c46f-465a-b3c7-5931815a30b8",
-    "a01ad6c3-7602-4b97-9800-46039697321b",
     "1625ab8b-c2a3-4789-8fdf-4ffa66a935d4",
-    "c67c4c11-a51a-49a4-ad38-9845ba25b2ea",
-    "40b451df-2023-4a92-b613-0b66f3be50eb",
+    "e6246c80-c5ed-4dee-9d81-8f7856f27b4f",
+    "86cd2ab1-510b-4811-b0fd-f7fc15985d09",
+    "244de9ab-6ad4-45bc-8766-548f2477b794",
     "1666006113cc356d3a"
   ]
 }

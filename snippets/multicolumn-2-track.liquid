@@ -1,4 +1,6 @@
-{% capture c_mobile_cl %} grid--{{ section.settings.columns_mobile }}-col-tablet-down {% endcapture %}
+{% capture c_mobile_cl %}
+  grid--{{ section.settings.columns_mobile }}-col-tablet-down
+{% endcapture %}
 
 {% capture c_desktop_cl %} grid--{{ section.settings.columns_desktop }}-col-desktop {% endcapture %}
 
@@ -55,7 +57,13 @@
             %}
               {% assign spaced_image = true %}
             {% endif %}
-            <div class='multicolumn-card__image-wrapper multicolumn-card__image-wrapper--{{ section.settings.image_width }}-width{% if section.settings.image_width != 'full' or spaced_image %} multicolumn-card-spacing{% endif %}'>
+            <div class='
+                multicolumn-card__image-wrapper
+                multicolumn-card__image-wrapper--{{ section.settings.image_width }}-width
+                {% unless section.settings.no_padding_column %}
+                  {% if section.settings.image_width != 'full' or spaced_image %}multicolumn-card-spacing{% endif %}
+                {% endunless %}
+              '>
               <div
                 class='media media--transparent media--{{ section.settings.image_ratio }}'
                 {% if section.settings.image_ratio == 'adapt' %}
@@ -89,10 +97,16 @@
             {% endif %}
 
             {%- if block.settings.title != blank -%}
-              <h3>{{ block.settings.title | escape }}</h3>
+              <h3 class='
+                  heading-style--{{ block.settings.title_style }}
+                  {{ block.settings.title_size }}
+                  tw-font-bold
+                '>
+                {{ block.settings.title | escape }}
+              </h3>
             {%- endif -%}
             {%- if block.settings.text != blank -%}
-              <div class='rte'>{{ block.settings.text }}</div>
+              <div class='rte tw-text-sm tw-mt-5'>{{ block.settings.text }}</div>
             {%- endif -%}
             {%- if block.settings.link_label != blank -%}
               <a

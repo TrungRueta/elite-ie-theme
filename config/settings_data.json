@@ -1,25 +1,27 @@
 {
   "current": {
-    "colors_solid_button_labels": "#fff",
-    "colors_accent_1": "#1a1714",
+    "product_can_sell": false,
+    "page_width_max_md": 1000,
+    "colors_solid_button_labels": "#ffffff",
+    "colors_accent_1": "#000000",
     "gradient_accent_1": "",
-    "colors_accent_2": "#97806b",
+    "colors_accent_2": "#ebebf6",
     "gradient_accent_2": "",
     "colors_text": "#1a1714",
     "colors_outline_button_labels": "#1a1714",
     "colors_background_1": "#ffffff",
     "gradient_background_1": "",
-    "colors_background_2": "#f2ede8",
+    "colors_background_2": "#e9eef4",
     "gradient_background_2": "",
-    "type_header_font": "assistant_n4",
+    "type_header_font": "inter_n4",
     "heading_scale": 100,
-    "type_header_font_2": "fjalla_one_n4",
-    "type_body_font": "pt_sans_n4",
+    "type_header_font_2": "playfair_display_n4",
+    "type_body_font": "inter_n4",
     "body_scale": 100,
     "page_width": 1600,
     "spacing_sections": 0,
-    "spacing_grid_horizontal": 8,
-    "spacing_grid_vertical": 8,
+    "spacing_grid_horizontal": 32,
+    "spacing_grid_vertical": 32,
     "buttons_border_thickness": 1,
     "buttons_border_opacity": 100,
     "buttons_radius": 0,
@@ -41,10 +43,10 @@
     "inputs_shadow_horizontal_offset": 0,
     "inputs_shadow_vertical_offset": 4,
     "inputs_shadow_blur": 5,
-    "card_style": "standard",
+    "card_style": "card",
     "card_image_padding": 0,
     "card_text_alignment": "left",
-    "card_color_scheme": "background-2",
+    "card_color_scheme": "background-1",
     "card_border_thickness": 0,
     "card_border_opacity": 10,
     "card_corner_radius": 0,
@@ -118,7 +120,7 @@
     "predictive_search_enabled": true,
     "predictive_search_show_vendor": false,
     "predictive_search_show_price": false,
-    "favicon": "shopify:\/\/shop_images\/kiera-favicon_1cd9bbb3-fe47-4e84-bd75-a71e48bbcf00.png",
+    "favicon": "shopify:\/\/shop_images\/ie-favicon_a9cb50c6-e960-41c9-96c5-1c86cf7fe4da.png",
     "currency_code_enabled": true,
     "show_cart_note": true,
     "cart_drawer_collection": "shop-all",
@@ -132,10 +134,10 @@
           "announcement-bar-0": {
             "type": "announcement",
             "settings": {
-              "text": "Spend $150 and get a free jewelry cleaning kit (Add it to cart prior to checkout)",
+              "text": "Become our partner!",
               "text_alignment": "center",
-              "color_scheme": "accent-2",
-              "link": "shopify:\/\/collections\/new-arrivals"
+              "color_scheme": "accent-1",
+              "link": "shopify:\/\/pages\/contact"
             }
           }
         },
@@ -148,10 +150,10 @@
       "header": {
         "type": "header",
         "settings": {
-          "color_scheme": "background-2",
+          "color_scheme": "background-1",
           "logo": "{{ shop.brand.logo }}",
-          "logo_width": 90,
-          "logo_position": "middle-left",
+          "logo_width": 250,
+          "logo_position": "top-center",
           "menu": "main-menu",
           "menu_type_desktop": "mega",
           "show_line_separator": false,
@@ -217,19 +219,55 @@
         "settings": {
           "color_scheme": "background-1"
         }
+      },
+      "footer2": {
+        "type": "footer2",
+        "blocks": {
+          "footer2-0": {
+            "type": "link_list",
+            "settings": {
+              "heading": "Information",
+              "menu": "footer-information"
+            }
+          },
+          "7067c11c-5092-4f24-811a-8ce44e2d1f92": {
+            "type": "link_list",
+            "settings": {
+              "heading": "Terms & conditions",
+              "menu": "footer-terms-conditions"
+            }
+          },
+          "01cc78e9-1fdc-4201-8aa3-d736944f03e1": {
+            "type": "text",
+            "settings": {
+              "heading": "Contact us",
+              "subtext": "<p><a href=\"mailto:Sales@InfiniteElements.com\" title=\"mailto:Sales@InfiniteElements.com\">Sales@InfiniteElements.com<\/a><\/p><p><a href=\"tel:+243 4823 4976\" title=\"tel:+243 4823 4976\">+243 4823 4976<\/a><\/p>"
+            }
+          }
+        },
+        "block_order": [
+          "footer2-0",
+          "7067c11c-5092-4f24-811a-8ce44e2d1f92",
+          "01cc78e9-1fdc-4201-8aa3-d736944f03e1"
+        ],
+        "settings": {
+          "color_scheme": "inverse",
+          "logo": "shopify:\/\/shop_images\/ie-logo-white.png",
+          "newsletter_enable": false,
+          "newsletter_heading": "Subscribe to our emails",
+          "show_social": true,
+          "enable_country_selector": false,
+          "enable_language_selector": false,
+          "payment_enable": false,
+          "margin_top": 0,
+          "padding_top": 36,
+          "padding_bottom": 36
+        }
       }
     },
     "content_for_index": [
 
-    ],
-    "blocks": {
-      "16156609502398088594": {
-        "type": "shopify:\/\/apps\/omega-multi-facebook-pixels\/blocks\/app-embed-block\/ecdcc423-3dbd-480c-85e8-fdb9789cf058",
-        "disabled": false,
-        "settings": {
-        }
-      }
-    }
+    ]
   },
   "presets": {
     "Default": {
