@@ -24,11 +24,11 @@
         "template--16875088249132__6dffa976-689c-49d8-b996-0a573041ba4c-16680265120462c645-1"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/ie-banner-10.png",
-        "height": "adapt",
+        "image": "shopify:\/\/shop_images\/engin-akyurt-RFIpITqnaZw-unsplash.jpg",
+        "height": "large",
         "desktop_image_width": "medium",
         "layout": "image_first",
-        "desktop_content_position": "top",
+        "desktop_content_position": "middle",
         "desktop_content_alignment": "left",
         "content_layout": "no-overlap",
         "color_scheme": "background-1",
@@ -36,7 +36,8 @@
         "no_page_padding": true,
         "mobile_content_alignment": "left",
         "padding_top": 0,
-        "padding_bottom": 0
+        "padding_bottom": 0,
+        "page_width_max": ""
       }
     },
     "39e64e18-3f0e-4873-8098-f5fd22dcb8f0": {
@@ -64,7 +65,7 @@
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
-        "color_scheme": "background-2",
+        "color_scheme": "accent-2",
         "full_width": true,
         "padding_top": 92,
         "padding_bottom": 92
@@ -99,14 +100,15 @@
         "desktop_image_width": "medium",
         "layout": "text_first",
         "desktop_content_position": "top",
-        "desktop_content_alignment": "left",
+        "desktop_content_alignment": "right",
         "content_layout": "no-overlap",
         "color_scheme": "background-2",
         "full_width": false,
         "no_page_padding": false,
         "mobile_content_alignment": "left",
         "padding_top": 60,
-        "padding_bottom": 0
+        "padding_bottom": 0,
+        "page_width_max": "md"
       }
     },
     "81eb2a91-1801-4318-be24-c82ece53ce1f": {
@@ -134,18 +136,19 @@
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/ie-banner-12.png",
-        "height": "adapt",
+        "height": "small",
         "desktop_image_width": "medium",
         "layout": "image_first",
-        "desktop_content_position": "top",
-        "desktop_content_alignment": "center",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
         "content_layout": "no-overlap",
         "color_scheme": "background-2",
         "full_width": false,
         "no_page_padding": false,
         "mobile_content_alignment": "left",
         "padding_top": 0,
-        "padding_bottom": 0
+        "padding_bottom": 0,
+        "page_width_max": "md"
       }
     },
     "2cbf3fba-0910-4e30-962e-98412206bb40": {
@@ -176,15 +179,16 @@
         "height": "small",
         "desktop_image_width": "medium",
         "layout": "text_first",
-        "desktop_content_position": "top",
-        "desktop_content_alignment": "center",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "right",
         "content_layout": "no-overlap",
         "color_scheme": "background-2",
         "full_width": false,
         "no_page_padding": false,
         "mobile_content_alignment": "left",
         "padding_top": 0,
-        "padding_bottom": 60
+        "padding_bottom": 60,
+        "page_width_max": "md"
       }
     },
     "9da261a0-b1c5-4353-be50-dbd2ab52b02b": {
@@ -220,7 +224,7 @@
             "image": "shopify:\/\/shop_images\/ie-banner-14.jpg",
             "title": "CREATIVITY",
             "title_size": "h4",
-            "title_style": "default",
+            "title_style": "2",
             "text": "<p>From inspiration brief to collection launch, Infinite Elements’s creative process is unique prolific. With a focus on trend curation, design, and meaningful branding, every piece tells a story and embodies over 30 years of mastered craftmanship. The continuous evolution of material and technique makes Infinite Elements the leader of crystal cut creations.<\/p>",
             "link_label": "",
             "link": "",
@@ -234,7 +238,7 @@
             "image": "shopify:\/\/shop_images\/ie-banner-15.jpg",
             "title": "KNOW-HOW",
             "title_size": "h4",
-            "title_style": "default",
+            "title_style": "2",
             "text": "<p>New cuts, shades, and sizes are conceived and realized every day in the historical Wattens headquarters, pushing the boundaries of crystal. Infinite Elements’s know-how not only focuses on refining the crystal, it also explores methods that make the most incredible pieces possible. Beading, bezel and prong settings are some of the techniques used to enhance the sparke and create exquisite refinement.<\/p>",
             "link_label": "",
             "link": "",
@@ -248,7 +252,7 @@
             "image": "shopify:\/\/shop_images\/ie-banner-16.jpg",
             "title": "QUALITY",
             "title_size": "h4",
-            "title_style": "default",
+            "title_style": "2",
             "text": "<p>Infinite Elements crystal settings come to life through ou proprietary techniques such as Pointiage, which lend an ultra-precise quality to work done by hand. Our attention to detail ensures that each and every piece will always be made of the highest quality. This expertise is infused in every step of the creative process, from initial design sketches through assembly.<\/p>",
             "link_label": "",
             "link": "",
@@ -296,16 +300,25 @@
           "settings": {
             "text": "<p>Since the company was founded, five generations of the Infinite Elements family have upheld a commitment to philanthropy and charitable giving. Caring for people and the planet, qualify, craftmanship and creavity remains at the heart of our values, and today we build on this heritage through our philanthropic programs. <\/p>"
           }
+        },
+        "ffc713a1-5f31-472a-8b9a-8cdcf680b2a7": {
+          "type": "caption",
+          "settings": {
+            "caption": "- Infinite elements -",
+            "text_style": "caption-with-letter-spacing",
+            "text_size": "medium"
+          }
         }
       },
       "block_order": [
         "template--16875088249132__527247b3-61f0-4483-bb0f-39f81121c789-16680288369ebc0857-0",
-        "template--16875088249132__527247b3-61f0-4483-bb0f-39f81121c789-16680288369ebc0857-1"
+        "template--16875088249132__527247b3-61f0-4483-bb0f-39f81121c789-16680288369ebc0857-1",
+        "ffc713a1-5f31-472a-8b9a-8cdcf680b2a7"
       ],
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
-        "color_scheme": "background-1",
+        "color_scheme": "background-2",
         "full_width": true,
         "padding_top": 80,
         "padding_bottom": 80
@@ -320,7 +333,7 @@
             "image": "shopify:\/\/shop_images\/ie-banner-17.jpg",
             "title": "INFINITE ELEMENTS WATERSCHOOL",
             "title_size": "h4",
-            "title_style": "default",
+            "title_style": "2",
             "text": "<p>The Infinite Elements is our flagship communityinvestment program, set up in 2000 to help empower young people across the world to protect our most precious resource and become leaders in sustainable development.<\/p>",
             "link_label": "",
             "link": "",
@@ -334,7 +347,7 @@
             "image": "shopify:\/\/shop_images\/ie-banner-18.jpg",
             "title": "INFINITE ELEMENTS FOUNDATION",
             "title_size": "h4",
-            "title_style": "default",
+            "title_style": "2",
             "text": "<p>The Infinite Elements Foundation was established in 2013 to support charitable initiatives and organizations working in three areas: forstering culture and creavity, promoting human empowerment and preserving the environment.<\/p>",
             "link_label": "",
             "link": "",
@@ -358,7 +371,7 @@
         "background_style": "primary",
         "button_label": "",
         "button_link": "",
-        "color_scheme": "background-1",
+        "color_scheme": "background-2",
         "columns_mobile": "1",
         "swipe_on_mobile": false,
         "padding_top": 0,

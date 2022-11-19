@@ -145,19 +145,86 @@
     },
     "e6246c80-c5ed-4dee-9d81-8f7856f27b4f": {
       "type": "image-banner-2",
+      "blocks": {
+        "1cf81932-67c1-4416-96ba-65b31d2065f4": {
+          "type": "heading",
+          "settings": {
+            "heading": "COLOR OF LIFE",
+            "heading_size": "h1",
+            "heading_style": "2"
+          }
+        },
+        "14b5761b-9f45-4358-8e0e-b8957f6474ca": {
+          "type": "richtext",
+          "settings": {
+            "text": "<p>If you want a fine piece of colored gemstone jewelry, <\/p><p>selecting a high quality loose gemstone first will get you the best choice and the best value.<\/p>",
+            "text_style": "body"
+          }
+        },
+        "d35f857c-00cd-4dcf-a626-6edd9bd01155": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "See collection",
+            "button_link_1": "shopify:\/\/collections\/color-of-life",
+            "button_style_secondary_1": true,
+            "button_label_2": "All color gems",
+            "button_link_2": "shopify:\/\/collections\/stone-colorful",
+            "button_style_secondary_2": true
+          }
+        }
+      },
+      "block_order": [
+        "1cf81932-67c1-4416-96ba-65b31d2065f4",
+        "14b5761b-9f45-4358-8e0e-b8957f6474ca",
+        "d35f857c-00cd-4dcf-a626-6edd9bd01155"
+      ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/ie-banner-3.jpg",
-        "image_overlay_opacity": 0,
+        "image": "shopify:\/\/shop_images\/marek-studzinski-C4yaN9EGpPY-unsplash.jpg",
+        "image_2": "shopify:\/\/shop_images\/engin-akyurt-4IoFzrbw6bE-unsplash.jpg",
+        "image_overlay_opacity": 30,
         "image_height": "small",
         "adapt_height_first_image": false,
         "desktop_content_position": "middle-center",
-        "show_text_box": true,
+        "show_text_box": false,
         "desktop_content_alignment": "center",
         "color_scheme": "background-1",
         "mobile_content_alignment": "center",
         "stack_images_on_mobile": true,
         "show_text_below": true,
         "full_width": true
+      }
+    },
+    "58521e7e-4e0c-4876-9ac4-606abd46201b": {
+      "type": "rich-text-2",
+      "blocks": {
+        "2c80857a-686b-4687-b85a-9ea38bb61a3f": {
+          "type": "caption",
+          "settings": {
+            "caption": "our stone cut",
+            "text_style": "caption-with-letter-spacing",
+            "text_size": "medium"
+          }
+        },
+        "template--16875081335084__58521e7e-4e0c-4876-9ac4-606abd46201b-1668851825b7e933dc-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>BEAUTIFUL SHAPE<\/p>",
+            "heading_size": "h1",
+            "heading_style": "2"
+          }
+        }
+      },
+      "block_order": [
+        "2c80857a-686b-4687-b85a-9ea38bb61a3f",
+        "template--16875081335084__58521e7e-4e0c-4876-9ac4-606abd46201b-1668851825b7e933dc-0"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 80,
+        "padding_bottom": 60
       }
     },
     "86cd2ab1-510b-4811-b0fd-f7fc15985d09": {
@@ -248,14 +315,14 @@
         "14da52c1-f8fe-4a25-a56f-8a793f0a4f91"
       ],
       "settings": {
-        "title": "Our stone cuts",
-        "heading_size": "h2",
+        "title": "",
+        "heading_size": "h1",
         "heading_style": "2",
         "heading_align": "center",
         "image_ratio": "square",
         "color_scheme": "background-1",
         "layout_fullwidth": false,
-        "padding_top": 80,
+        "padding_top": 0,
         "padding_bottom": 80,
         "page_width_max": "md"
       }
@@ -317,6 +384,7 @@
     "6f4b4b52-09c7-46a8-986a-e447198b582a",
     "1625ab8b-c2a3-4789-8fdf-4ffa66a935d4",
     "e6246c80-c5ed-4dee-9d81-8f7856f27b4f",
+    "58521e7e-4e0c-4876-9ac4-606abd46201b",
     "86cd2ab1-510b-4811-b0fd-f7fc15985d09",
     "244de9ab-6ad4-45bc-8766-548f2477b794",
     "1666006113cc356d3a"

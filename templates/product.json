@@ -52,7 +52,7 @@
           "settings": {
             "heading": "Direct contact us",
             "icon": "star",
-            "content": "<p>Infinite Elements <\/p><p>Our phone num:<br\/>T +212 827 0277<br\/>F +212 827 0577<\/p><p>Or email:<br\/>sales@InfiniteElements.com<\/p><p>---<\/p><p>You can meet us and review products  also at:<br\/>15w 37th st 3rd fl New York, NY10018<\/p><p>Opening hours:<br\/>Mon-Sun, 10:00 - 20:00<\/p>",
+            "content": "<p>Infinite Elements <\/p><p>Our phone num:<br\/>T +212 827 0277<br\/>F +212 827 0577<\/p><p>Or email:<br\/>sales@InfiniteElements.com<\/p><p>---<\/p><p>You can meet us and review products  also at:<br\/>ELITE GROUP NEW YORK INTERNATIONAL, 35 WEST 36TH STREET #3E, NEW YORK, UNITED STATES, NY10018<\/p><p>Opening hours:<br\/>Mon-Sun, 10:00 - 20:00<\/p>",
             "page": ""
           }
         },
@@ -77,7 +77,7 @@
       "settings": {
         "enable_sticky_info": true,
         "media_position": "left",
-        "gallery_layout": "stacked",
+        "gallery_layout": "columns",
         "media_size": "medium",
         "mobile_thumbnails": "columns",
         "hide_variants": true,

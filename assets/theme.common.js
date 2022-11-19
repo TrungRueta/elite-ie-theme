@@ -1,4 +1,11 @@
-var Ut=Object.defineProperty;var Gt=(t,n,e)=>n in t?Ut(t,n,{enumerable:!0,configurable:!0,writable:!0,value:e}):t[n]=e;var O=(t,n,e)=>(Gt(t,typeof n!="symbol"?n+"":n,e),e);/**
+var __defProp = Object.defineProperty;
+var __defNormalProp = (obj, key, value) => key in obj ? __defProp(obj, key, { enumerable: true, configurable: true, writable: true, value }) : obj[key] = value;
+var __publicField = (obj, key, value) => {
+  __defNormalProp(obj, typeof key !== "symbol" ? key + "" : key, value);
+  return value;
+};
+const app = "";
+/**
 * (c) Iconify
 *
 * For the full copyright and license information, please view the license.txt
@@ -8,4 +15,1884 @@ var Ut=Object.defineProperty;var Gt=(t,n,e)=>n in t?Ut(t,n,{enumerable:!0,config
 *
 * @license MIT
 * @version 1.0.1
-*/const vt=Object.freeze({left:0,top:0,width:16,height:16}),L=Object.freeze({rotate:0,vFlip:!1,hFlip:!1}),_=Object.freeze({...vt,...L}),G=Object.freeze({..._,body:"",hidden:!1}),Jt=Object.freeze({width:null,height:null}),kt=Object.freeze({...Jt,...L});function Kt(t,n=0){const e=t.replace(/^-?[0-9.]*/,"");function r(o){for(;o<0;)o+=4;return o%4}if(e===""){const o=parseInt(t);return isNaN(o)?0:r(o)}else if(e!==t){let o=0;switch(e){case"%":o=25;break;case"deg":o=90}if(o){let i=parseFloat(t.slice(0,t.length-e.length));return isNaN(i)?0:(i=i/o,i%1===0?r(i):0)}}return n}const Wt=/[\s,]+/;function Xt(t,n){n.split(Wt).forEach(e=>{switch(e.trim()){case"horizontal":t.hFlip=!0;break;case"vertical":t.vFlip=!0;break}})}const At={...kt,preserveAspectRatio:""};function ct(t){const n={...At},e=(r,o)=>t.getAttribute(r)||o;return n.width=e("width",null),n.height=e("height",null),n.rotate=Kt(e("rotate","")),Xt(n,e("flip","")),n.preserveAspectRatio=e("preserveAspectRatio",e("preserveaspectratio","")),n}function Yt(t,n){for(const e in At)if(t[e]!==n[e])return!0;return!1}const v=/^[a-z0-9]+(-[a-z0-9]+)*$/,T=(t,n,e,r="")=>{const o=t.split(":");if(t.slice(0,1)==="@"){if(o.length<2||o.length>3)return null;r=o.shift().slice(1)}if(o.length>3||!o.length)return null;if(o.length>1){const u=o.pop(),c=o.pop(),a={provider:o.length>0?o[0]:r,prefix:c,name:u};return n&&!N(a)?null:a}const i=o[0],s=i.split("-");if(s.length>1){const u={provider:r,prefix:s.shift(),name:s.join("-")};return n&&!N(u)?null:u}if(e&&r===""){const u={provider:r,prefix:"",name:i};return n&&!N(u,e)?null:u}return null},N=(t,n)=>t?!!((t.provider===""||t.provider.match(v))&&(n&&t.prefix===""||t.prefix.match(v))&&t.name.match(v)):!1;function Zt(t,n){const e={};!t.hFlip!=!n.hFlip&&(e.hFlip=!0),!t.vFlip!=!n.vFlip&&(e.vFlip=!0);const r=((t.rotate||0)+(n.rotate||0))%4;return r&&(e.rotate=r),e}function ut(t,n){const e=Zt(t,n);for(const r in G)r in L?r in t&&!(r in e)&&(e[r]=L[r]):r in n?e[r]=n[r]:r in t&&(e[r]=t[r]);return e}function te(t,n){const e=t.icons,r=t.aliases||{},o=Object.create(null);function i(s){if(e[s])return o[s]=[];if(!(s in o)){o[s]=null;const u=r[s]&&r[s].parent,c=u&&i(u);c&&(o[s]=[u].concat(c))}return o[s]}return(n||Object.keys(e).concat(Object.keys(r))).forEach(i),o}function ee(t,n,e){const r=t.icons,o=t.aliases||{};let i={};function s(u){i=ut(r[u]||o[u],i)}return s(n),e.forEach(s),ut(t,i)}function Pt(t,n){const e=[];if(typeof t!="object"||typeof t.icons!="object")return e;t.not_found instanceof Array&&t.not_found.forEach(o=>{n(o,null),e.push(o)});const r=te(t);for(const o in r){const i=r[o];i&&(n(o,ee(t,o,i)),e.push(o))}return e}const ne={provider:"",aliases:{},not_found:{},...vt};function V(t,n){for(const e in n)if(e in t&&typeof t[e]!=typeof n[e])return!1;return!0}function _t(t){if(typeof t!="object"||t===null)return null;const n=t;if(typeof n.prefix!="string"||!t.icons||typeof t.icons!="object"||!V(t,ne))return null;const e=n.icons;for(const o in e){const i=e[o];if(!o.match(v)||typeof i.body!="string"||!V(i,G))return null}const r=n.aliases||{};for(const o in r){const i=r[o],s=i.parent;if(!o.match(v)||typeof s!="string"||!e[s]&&!r[s]||!V(i,G))return null}return n}const R=Object.create(null);function oe(t,n){return{provider:t,prefix:n,icons:Object.create(null),missing:new Set}}function w(t,n){const e=R[t]||(R[t]=Object.create(null));return e[n]||(e[n]=oe(t,n))}function et(t,n){return _t(n)?Pt(n,(e,r)=>{r?t.icons[e]=r:t.missing.add(e)}):[]}function re(t,n,e){try{if(typeof e.body=="string")return t.icons[n]={...e},!0}catch{}return!1}function ie(t,n){let e=[];return(typeof t=="string"?[t]:Object.keys(R)).forEach(o=>{(typeof o=="string"&&typeof n=="string"?[n]:Object.keys(R[o]||{})).forEach(s=>{const u=w(o,s);e=e.concat(Object.keys(u.icons).map(c=>(o!==""?"@"+o+":":"")+s+":"+c))})}),e}let k=!1;function Tt(t){return typeof t=="boolean"&&(k=t),k}function A(t){const n=typeof t=="string"?T(t,!0,k):t;if(n){const e=w(n.provider,n.prefix),r=n.name;return e.icons[r]||(e.missing.has(r)?null:void 0)}}function jt(t,n){const e=T(t,!0,k);if(!e)return!1;const r=w(e.provider,e.prefix);return re(r,e.name,n)}function at(t,n){if(typeof t!="object")return!1;if(typeof n!="string"&&(n=t.provider||""),k&&!n&&!t.prefix){let o=!1;return _t(t)&&(t.prefix="",Pt(t,(i,s)=>{s&&jt(i,s)&&(o=!0)})),o}const e=t.prefix;if(!N({provider:n,prefix:e,name:"a"}))return!1;const r=w(n,e);return!!et(r,t)}function se(t){return!!A(t)}function ce(t){const n=A(t);return n?{..._,...n}:null}function ue(t){const n={loaded:[],missing:[],pending:[]},e=Object.create(null);t.sort((o,i)=>o.provider!==i.provider?o.provider.localeCompare(i.provider):o.prefix!==i.prefix?o.prefix.localeCompare(i.prefix):o.name.localeCompare(i.name));let r={provider:"",prefix:"",name:""};return t.forEach(o=>{if(r.name===o.name&&r.prefix===o.prefix&&r.provider===o.provider)return;r=o;const i=o.provider,s=o.prefix,u=o.name,c=e[i]||(e[i]=Object.create(null)),a=c[s]||(c[s]=w(i,s));let l;u in a.icons?l=n.loaded:s===""||a.missing.has(u)?l=n.missing:l=n.pending;const f={provider:i,prefix:s,name:u};l.push(f)}),n}function Et(t,n){t.forEach(e=>{const r=e.loaderCallbacks;r&&(e.loaderCallbacks=r.filter(o=>o.id!==n))})}function ae(t){t.pendingCallbacksFlag||(t.pendingCallbacksFlag=!0,setTimeout(()=>{t.pendingCallbacksFlag=!1;const n=t.loaderCallbacks?t.loaderCallbacks.slice(0):[];if(!n.length)return;let e=!1;const r=t.provider,o=t.prefix;n.forEach(i=>{const s=i.icons,u=s.pending.length;s.pending=s.pending.filter(c=>{if(c.prefix!==o)return!0;const a=c.name;if(t.icons[a])s.loaded.push({provider:r,prefix:o,name:a});else if(t.missing.has(a))s.missing.push({provider:r,prefix:o,name:a});else return e=!0,!0;return!1}),s.pending.length!==u&&(e||Et([t],i.id),i.callback(s.loaded.slice(0),s.missing.slice(0),s.pending.slice(0),i.abort))})}))}let le=0;function fe(t,n,e){const r=le++,o=Et.bind(null,e,r);if(!n.pending.length)return o;const i={id:r,icons:n,callback:t,abort:o};return e.forEach(s=>{(s.loaderCallbacks||(s.loaderCallbacks=[])).push(i)}),o}const J=Object.create(null);function lt(t,n){J[t]=n}function K(t){return J[t]||J[""]}function de(t,n=!0,e=!1){const r=[];return t.forEach(o=>{const i=typeof o=="string"?T(o,n,e):o;i&&r.push(i)}),r}var he={resources:[],index:0,timeout:2e3,rotate:750,random:!1,dataAfterTimeout:!1};function pe(t,n,e,r){const o=t.resources.length,i=t.random?Math.floor(Math.random()*o):t.index;let s;if(t.random){let d=t.resources.slice(0);for(s=[];d.length>1;){const y=Math.floor(Math.random()*d.length);s.push(d[y]),d=d.slice(0,y).concat(d.slice(y+1))}s=s.concat(d)}else s=t.resources.slice(i).concat(t.resources.slice(0,i));const u=Date.now();let c="pending",a=0,l,f=null,h=[],g=[];typeof r=="function"&&g.push(r);function p(){f&&(clearTimeout(f),f=null)}function B(){c==="pending"&&(c="aborted"),p(),h.forEach(d=>{d.status==="pending"&&(d.status="aborted")}),h=[]}function j(d,y){y&&(g=[]),typeof d=="function"&&g.push(d)}function b(){return{startTime:u,payload:n,status:c,queriesSent:a,queriesPending:h.length,subscribe:j,abort:B}}function m(){c="failed",g.forEach(d=>{d(void 0,l)})}function st(){h.forEach(d=>{d.status==="pending"&&(d.status="aborted")}),h=[]}function Ht(d,y,S){const E=y!=="success";switch(h=h.filter(I=>I!==d),c){case"pending":break;case"failed":if(E||!t.dataAfterTimeout)return;break;default:return}if(y==="abort"){l=S,m();return}if(E){l=S,h.length||(s.length?q():m());return}if(p(),st(),!t.random){const I=t.resources.indexOf(d.resource);I!==-1&&I!==t.index&&(t.index=I)}c="completed",g.forEach(I=>{I(S)})}function q(){if(c!=="pending")return;p();const d=s.shift();if(d===void 0){if(h.length){f=setTimeout(()=>{p(),c==="pending"&&(st(),m())},t.timeout);return}m();return}const y={status:"pending",resource:d,callback:(S,E)=>{Ht(y,S,E)}};h.push(y),a++,f=setTimeout(q,t.rotate),e(d,n,y.callback)}return setTimeout(q),b}function Ot(t){const n={...he,...t};let e=[];function r(){e=e.filter(u=>u().status==="pending")}function o(u,c,a){const l=pe(n,u,c,(f,h)=>{r(),a&&a(f,h)});return e.push(l),l}function i(u){return e.find(c=>u(c))||null}return{query:o,find:i,setIndex:u=>{n.index=u},getIndex:()=>n.index,cleanup:r}}function nt(t){let n;if(typeof t.resources=="string")n=[t.resources];else if(n=t.resources,!(n instanceof Array)||!n.length)return null;return{resources:n,path:t.path||"/",maxURL:t.maxURL||500,rotate:t.rotate||750,timeout:t.timeout||5e3,random:t.random===!0,index:t.index||0,dataAfterTimeout:t.dataAfterTimeout!==!1}}const D=Object.create(null),C=["https://api.simplesvg.com","https://api.unisvg.com"],F=[];for(;C.length>0;)C.length===1||Math.random()>.5?F.push(C.shift()):F.push(C.pop());D[""]=nt({resources:["https://api.iconify.design"].concat(F)});function ft(t,n){const e=nt(n);return e===null?!1:(D[t]=e,!0)}function $(t){return D[t]}function ge(){return Object.keys(D)}function dt(){}const z=Object.create(null);function me(t){if(!z[t]){const n=$(t);if(!n)return;const e=Ot(n),r={config:n,redundancy:e};z[t]=r}return z[t]}function Mt(t,n,e){let r,o;if(typeof t=="string"){const i=K(t);if(!i)return e(void 0,424),dt;o=i.send;const s=me(t);s&&(r=s.redundancy)}else{const i=nt(t);if(i){r=Ot(i);const s=t.resources?t.resources[0]:"",u=K(s);u&&(o=u.send)}}return!r||!o?(e(void 0,424),dt):r.query(n,o,e)().abort}const ht="iconify2",P="iconify",Nt=P+"-count",pt=P+"-version",Ft=36e5,ye=168;function W(t,n){try{return t.getItem(n)}catch{}}function ot(t,n,e){try{return t.setItem(n,e),!0}catch{}}function gt(t,n){try{t.removeItem(n)}catch{}}function X(t,n){return ot(t,Nt,n.toString())}function Y(t){return parseInt(W(t,Nt))||0}const x={local:!0,session:!0},Lt={local:new Set,session:new Set};let rt=!1;function be(t){rt=t}let M=typeof window>"u"?{}:window;function Rt(t){const n=t+"Storage";try{if(M&&M[n]&&typeof M[n].length=="number")return M[n]}catch{}x[t]=!1}function Qt(t,n){const e=Rt(t);if(!e)return;const r=W(e,pt);if(r!==ht){if(r){const u=Y(e);for(let c=0;c<u;c++)gt(e,P+c.toString())}ot(e,pt,ht),X(e,0);return}const o=Math.floor(Date.now()/Ft)-ye,i=u=>{const c=P+u.toString(),a=W(e,c);if(typeof a=="string"){try{const l=JSON.parse(a);if(typeof l=="object"&&typeof l.cached=="number"&&l.cached>o&&typeof l.provider=="string"&&typeof l.data=="object"&&typeof l.data.prefix=="string"&&n(l,u))return!0}catch{}gt(e,c)}};let s=Y(e);for(let u=s-1;u>=0;u--)i(u)||(u===s-1?(s--,X(e,s)):Lt[t].add(u))}function Dt(){if(!rt){be(!0);for(const t in x)Qt(t,n=>{const e=n.data,r=n.provider,o=e.prefix,i=w(r,o);if(!et(i,e).length)return!1;const s=e.lastModified||-1;return i.lastModifiedCached=i.lastModifiedCached?Math.min(i.lastModifiedCached,s):s,!0})}}function we(t,n){const e=t.lastModifiedCached;if(e&&e>=n)return e===n;if(t.lastModifiedCached=n,e)for(const r in x)Qt(r,o=>{const i=o.data;return o.provider!==t.provider||i.prefix!==t.prefix||i.lastModified===n});return!0}function Ie(t,n){rt||Dt();function e(r){let o;if(!x[r]||!(o=Rt(r)))return;const i=Lt[r];let s;if(i.size)i.delete(s=Array.from(i).shift());else if(s=Y(o),!X(o,s+1))return;const u={cached:Math.floor(Date.now()/Ft),provider:t.provider,data:n};return ot(o,P+s.toString(),JSON.stringify(u))}n.lastModified&&!we(t,n.lastModified)||!Object.keys(n.icons).length||(n.not_found&&(n=Object.assign({},n),delete n.not_found),e("local")||e("session"))}function mt(){}function xe(t){t.iconsLoaderFlag||(t.iconsLoaderFlag=!0,setTimeout(()=>{t.iconsLoaderFlag=!1,ae(t)}))}function Se(t,n){t.iconsToLoad?t.iconsToLoad=t.iconsToLoad.concat(n).sort():t.iconsToLoad=n,t.iconsQueueFlag||(t.iconsQueueFlag=!0,setTimeout(()=>{t.iconsQueueFlag=!1;const{provider:e,prefix:r}=t,o=t.iconsToLoad;delete t.iconsToLoad;let i;if(!o||!(i=K(e)))return;i.prepare(e,r,o).forEach(u=>{Mt(e,u,(c,a)=>{if(typeof c!="object"){if(a!==404)return;u.icons.forEach(l=>{t.missing.add(l)})}else try{const l=et(t,c);if(!l.length)return;const f=t.pendingIcons;f&&l.forEach(h=>{f.delete(h)}),Ie(t,c)}catch(l){console.error(l)}xe(t)})})}))}const it=(t,n)=>{const e=de(t,!0,Tt()),r=ue(e);if(!r.pending.length){let c=!0;return n&&setTimeout(()=>{c&&n(r.loaded,r.missing,r.pending,mt)}),()=>{c=!1}}const o=Object.create(null),i=[];let s,u;return r.pending.forEach(c=>{const{provider:a,prefix:l}=c;if(l===u&&a===s)return;s=a,u=l,i.push(w(a,l));const f=o[a]||(o[a]=Object.create(null));f[l]||(f[l]=[])}),r.pending.forEach(c=>{const{provider:a,prefix:l,name:f}=c,h=w(a,l),g=h.pendingIcons||(h.pendingIcons=new Set);g.has(f)||(g.add(f),o[a][l].push(f))}),i.forEach(c=>{const{provider:a,prefix:l}=c;o[a][l].length&&Se(c,o[a][l])}),n?fe(n,r,i):mt},Ce=t=>new Promise((n,e)=>{const r=typeof t=="string"?T(t,!0):t;if(!r){e(t);return}it([r||t],o=>{if(o.length&&r){const i=A(r);if(i){n({..._,...i});return}}e(t)})});function ve(t){try{const n=typeof t=="string"?JSON.parse(t):t;if(typeof n.body=="string")return{...n}}catch{}}function ke(t,n){const e=typeof t=="string"?T(t,!0,!0):null;if(!e){const i=ve(t);return{value:t,data:i}}const r=A(e);if(r!==void 0||!e.prefix)return{value:t,name:e,data:r};const o=it([e],()=>n(t,e,A(e)));return{value:t,name:e,loading:o}}function H(t){return t.hasAttribute("inline")}let $t=!1;try{$t=navigator.vendor.indexOf("Apple")===0}catch{}function Ae(t,n){switch(n){case"svg":case"bg":case"mask":return n}return n!=="style"&&($t||t.indexOf("<a")===-1)?"svg":t.indexOf("currentColor")===-1?"bg":"mask"}const Pe=/(-?[0-9.]*[0-9]+[0-9.]*)/g,_e=/^-?[0-9.]*[0-9]+[0-9.]*$/g;function Z(t,n,e){if(n===1)return t;if(e=e||100,typeof t=="number")return Math.ceil(t*n*e)/e;if(typeof t!="string")return t;const r=t.split(Pe);if(r===null||!r.length)return t;const o=[];let i=r.shift(),s=_e.test(i);for(;;){if(s){const u=parseFloat(i);isNaN(u)?o.push(i):o.push(Math.ceil(u*n*e)/e)}else o.push(i);if(i=r.shift(),i===void 0)return o.join("");s=!s}}function Bt(t,n){const e={..._,...t},r={...kt,...n},o={left:e.left,top:e.top,width:e.width,height:e.height};let i=e.body;[e,r].forEach(g=>{const p=[],B=g.hFlip,j=g.vFlip;let b=g.rotate;B?j?b+=2:(p.push("translate("+(o.width+o.left).toString()+" "+(0-o.top).toString()+")"),p.push("scale(-1 1)"),o.top=o.left=0):j&&(p.push("translate("+(0-o.left).toString()+" "+(o.height+o.top).toString()+")"),p.push("scale(1 -1)"),o.top=o.left=0);let m;switch(b<0&&(b-=Math.floor(b/4)*4),b=b%4,b){case 1:m=o.height/2+o.top,p.unshift("rotate(90 "+m.toString()+" "+m.toString()+")");break;case 2:p.unshift("rotate(180 "+(o.width/2+o.left).toString()+" "+(o.height/2+o.top).toString()+")");break;case 3:m=o.width/2+o.left,p.unshift("rotate(-90 "+m.toString()+" "+m.toString()+")");break}b%2===1&&(o.left!==o.top&&(m=o.left,o.left=o.top,o.top=m),o.width!==o.height&&(m=o.width,o.width=o.height,o.height=m)),p.length&&(i='<g transform="'+p.join(" ")+'">'+i+"</g>")});const s=r.width,u=r.height,c=o.width,a=o.height;let l,f;return s===null?(f=u===null?"1em":u==="auto"?a:u,l=Z(f,c/a)):(l=s==="auto"?c:s,f=u===null?Z(l,a/c):u==="auto"?a:u),{attributes:{width:l.toString(),height:f.toString(),viewBox:o.left.toString()+" "+o.top.toString()+" "+c.toString()+" "+a.toString()},body:i}}const Te=()=>{let t;try{if(t=fetch,typeof t=="function")return t}catch{}};let Q=Te();function je(t){Q=t}function Ee(){return Q}function Oe(t,n){const e=$(t);if(!e)return 0;let r;if(!e.maxURL)r=0;else{let o=0;e.resources.forEach(s=>{o=Math.max(o,s.length)});const i=n+".json?icons=";r=e.maxURL-o-e.path.length-i.length}return r}function Me(t){return t===404}const Ne=(t,n,e)=>{const r=[],o=Oe(t,n),i="icons";let s={type:i,provider:t,prefix:n,icons:[]},u=0;return e.forEach((c,a)=>{u+=c.length+1,u>=o&&a>0&&(r.push(s),s={type:i,provider:t,prefix:n,icons:[]},u=c.length),s.icons.push(c)}),r.push(s),r};function Fe(t){if(typeof t=="string"){const n=$(t);if(n)return n.path}return"/"}const Le=(t,n,e)=>{if(!Q){e("abort",424);return}let r=Fe(n.provider);switch(n.type){case"icons":{const i=n.prefix,u=n.icons.join(","),c=new URLSearchParams({icons:u});r+=i+".json?"+c.toString();break}case"custom":{const i=n.uri;r+=i.slice(0,1)==="/"?i.slice(1):i;break}default:e("abort",400);return}let o=503;Q(t+r).then(i=>{const s=i.status;if(s!==200){setTimeout(()=>{e(Me(s)?"abort":"next",s)});return}return o=501,i.json()}).then(i=>{if(typeof i!="object"||i===null){setTimeout(()=>{e("next",o)});return}setTimeout(()=>{e("success",i)})}).catch(()=>{e("next",o)})},Re={prepare:Ne,send:Le};function yt(t,n){switch(t){case"local":case"session":x[t]=n;break;case"all":for(const e in x)x[e]=n;break}}function qt(){lt("",Re),Tt(!0);let t;try{t=window}catch{}if(t){if(Dt(),t.IconifyPreload!==void 0){const e=t.IconifyPreload,r="Invalid IconifyPreload syntax.";typeof e=="object"&&e!==null&&(e instanceof Array?e:[e]).forEach(o=>{try{(typeof o!="object"||o===null||o instanceof Array||typeof o.icons!="object"||typeof o.prefix!="string"||!at(o))&&console.error(r)}catch{console.error(r)}})}if(t.IconifyProviders!==void 0){const e=t.IconifyProviders;if(typeof e=="object"&&e!==null)for(const r in e){const o="IconifyProviders["+r+"] is invalid.";try{const i=e[r];if(typeof i!="object"||!i||i.resources===void 0)continue;ft(r,i)||console.error(o)}catch{console.error(o)}}}}return{enableCache:e=>yt(e,!0),disableCache:e=>yt(e,!1),iconExists:se,getIcon:ce,listIcons:ie,addIcon:jt,addCollection:at,calculateSize:Z,buildIcon:Bt,loadIcons:it,loadIcon:Ce,addAPIProvider:ft,_api:{getAPIConfig:$,setAPIModule:lt,sendAPIQuery:Mt,setFetch:je,getFetch:Ee,listAPIProviders:ge}}}function Vt(t,n){let e=t.indexOf("xlink:")===-1?"":' xmlns:xlink="http://www.w3.org/1999/xlink"';for(const r in n)e+=" "+r+'="'+n[r]+'"';return'<svg xmlns="http://www.w3.org/2000/svg"'+e+">"+t+"</svg>"}function Qe(t){return t.replace(/"/g,"'").replace(/%/g,"%25").replace(/#/g,"%23").replace(/</g,"%3C").replace(/>/g,"%3E").replace(/\s+/g," ")}function De(t){return'url("data:image/svg+xml,'+Qe(t)+'")'}const tt={"background-color":"currentColor"},zt={"background-color":"transparent"},bt={image:"var(--svg)",repeat:"no-repeat",size:"100% 100%"},wt={"-webkit-mask":tt,mask:tt,background:zt};for(const t in wt){const n=wt[t];for(const e in bt)n[t+"-"+e]=bt[e]}function It(t){return t+(t.match(/^[-0-9.]+$/)?"px":"")}function $e(t,n,e){const r=document.createElement("span");let o=t.body;o.indexOf("<a")!==-1&&(o+="<!-- "+Date.now()+" -->");const i=t.attributes,s=Vt(o,{...i,width:n.width+"",height:n.height+""}),u=De(s),c=r.style,a={"--svg":u,width:It(i.width),height:It(i.height),...e?tt:zt};for(const l in a)c.setProperty(l,a[l]);return r}function Be(t){const n=document.createElement("span");return n.innerHTML=Vt(t.body,t.attributes),n.firstChild}function xt(t,n){const e=n.icon.data,r=n.customisations,o=Bt(e,r);r.preserveAspectRatio&&(o.attributes.preserveAspectRatio=r.preserveAspectRatio);const i=n.renderedMode;let s;switch(i){case"svg":s=Be(o);break;default:s=$e(o,{..._,...e},i==="mask")}const u=Array.from(t.childNodes).find(c=>{const a=c.tagName&&c.tagName.toUpperCase();return a==="SPAN"||a==="SVG"});u?s.tagName==="SPAN"&&u.tagName===s.tagName?u.setAttribute("style",s.getAttribute("style")):t.replaceChild(s,u):t.appendChild(s)}const U="data-style";function St(t,n){let e=Array.from(t.childNodes).find(r=>r.hasAttribute&&r.hasAttribute(U));e||(e=document.createElement("style"),e.setAttribute(U,U),t.appendChild(e)),e.textContent=":host{display:inline-block;vertical-align:"+(n?"-0.125em":"0")+"}span,svg{display:block}"}function Ct(t,n,e){const r=e&&(e.rendered?e:e.lastRender);return{rendered:!1,inline:n,icon:t,lastRender:r}}function qe(t="iconify-icon"){let n,e;try{n=window.customElements,e=window.HTMLElement}catch{return}if(!n||!e)return;const r=n.get(t);if(r)return r;const o=["icon","mode","inline","width","height","rotate","flip"],i=class extends e{constructor(){super();O(this,"_shadowRoot");O(this,"_state");O(this,"_checkQueued",!1);const c=this._shadowRoot=this.attachShadow({mode:"open"}),a=H(this);St(c,a),this._state=Ct({value:""},a),this._queueCheck()}static get observedAttributes(){return o.slice(0)}attributeChangedCallback(c){if(c==="inline"){const a=H(this),l=this._state;a!==l.inline&&(l.inline=a,St(this._shadowRoot,a))}else this._queueCheck()}get icon(){const c=this.getAttribute("icon");if(c&&c.slice(0,1)==="{")try{return JSON.parse(c)}catch{}return c}set icon(c){typeof c=="object"&&(c=JSON.stringify(c)),this.setAttribute("icon",c)}get inline(){return H(this)}set inline(c){this.setAttribute("inline",c?"true":null)}restartAnimation(){const c=this._state;if(c.rendered){const a=this._shadowRoot;if(c.renderedMode==="svg")try{a.lastChild.setCurrentTime(0);return}catch{}xt(a,c)}}get status(){const c=this._state;return c.rendered?"rendered":c.icon.data===null?"failed":"loading"}_queueCheck(){this._checkQueued||(this._checkQueued=!0,setTimeout(()=>{this._check()}))}_check(){if(!this._checkQueued)return;this._checkQueued=!1;const c=this._state,a=this.getAttribute("icon");if(a!==c.icon.value){this._iconChanged(a);return}if(!c.rendered)return;const l=this.getAttribute("mode"),f=ct(this);(c.attrMode!==l||Yt(c.customisations,f))&&this._renderIcon(c.icon,f,l)}_iconChanged(c){const a=ke(c,(l,f,h)=>{const g=this._state;if(g.rendered||this.getAttribute("icon")!==l)return;const p={value:l,name:f,data:h};p.data?this._gotIconData(p):g.icon=p});a.data?this._gotIconData(a):this._state=Ct(a,this._state.inline,this._state)}_gotIconData(c){this._checkQueued=!1,this._renderIcon(c,ct(this),this.getAttribute("mode"))}_renderIcon(c,a,l){const f=Ae(c.data.body,l),h=this._state.inline;xt(this._shadowRoot,this._state={rendered:!0,icon:c,inline:h,customisations:a,attrMode:l,renderedMode:f})}};o.forEach(u=>{u in i.prototype||Object.defineProperty(i.prototype,u,{get:function(){return this.getAttribute(u)},set:function(c){this.setAttribute(u,c)}})});const s=qt();for(const u in s)i[u]=i.prototype[u]=s[u];return n.define(t,i),i}qe()||qt();console.log("Kiera theme common.");
+*/
+const defaultIconDimensions = Object.freeze(
+  {
+    left: 0,
+    top: 0,
+    width: 16,
+    height: 16
+  }
+);
+const defaultIconTransformations = Object.freeze({
+  rotate: 0,
+  vFlip: false,
+  hFlip: false
+});
+const defaultIconProps = Object.freeze({
+  ...defaultIconDimensions,
+  ...defaultIconTransformations
+});
+const defaultExtendedIconProps = Object.freeze({
+  ...defaultIconProps,
+  body: "",
+  hidden: false
+});
+const defaultIconSizeCustomisations = Object.freeze({
+  width: null,
+  height: null
+});
+const defaultIconCustomisations = Object.freeze({
+  ...defaultIconSizeCustomisations,
+  ...defaultIconTransformations
+});
+function rotateFromString(value, defaultValue = 0) {
+  const units = value.replace(/^-?[0-9.]*/, "");
+  function cleanup(value2) {
+    while (value2 < 0) {
+      value2 += 4;
+    }
+    return value2 % 4;
+  }
+  if (units === "") {
+    const num = parseInt(value);
+    return isNaN(num) ? 0 : cleanup(num);
+  } else if (units !== value) {
+    let split = 0;
+    switch (units) {
+      case "%":
+        split = 25;
+        break;
+      case "deg":
+        split = 90;
+    }
+    if (split) {
+      let num = parseFloat(value.slice(0, value.length - units.length));
+      if (isNaN(num)) {
+        return 0;
+      }
+      num = num / split;
+      return num % 1 === 0 ? cleanup(num) : 0;
+    }
+  }
+  return defaultValue;
+}
+const separator = /[\s,]+/;
+function flipFromString(custom, flip) {
+  flip.split(separator).forEach((str) => {
+    const value = str.trim();
+    switch (value) {
+      case "horizontal":
+        custom.hFlip = true;
+        break;
+      case "vertical":
+        custom.vFlip = true;
+        break;
+    }
+  });
+}
+const defaultCustomisations = {
+  ...defaultIconCustomisations,
+  preserveAspectRatio: ""
+};
+function getCustomisations(node) {
+  const customisations = {
+    ...defaultCustomisations
+  };
+  const attr = (key, def) => node.getAttribute(key) || def;
+  customisations.width = attr("width", null);
+  customisations.height = attr("height", null);
+  customisations.rotate = rotateFromString(attr("rotate", ""));
+  flipFromString(customisations, attr("flip", ""));
+  customisations.preserveAspectRatio = attr("preserveAspectRatio", attr("preserveaspectratio", ""));
+  return customisations;
+}
+function haveCustomisationsChanged(value1, value2) {
+  for (const key in defaultCustomisations) {
+    if (value1[key] !== value2[key]) {
+      return true;
+    }
+  }
+  return false;
+}
+const matchIconName = /^[a-z0-9]+(-[a-z0-9]+)*$/;
+const stringToIcon = (value, validate, allowSimpleName, provider = "") => {
+  const colonSeparated = value.split(":");
+  if (value.slice(0, 1) === "@") {
+    if (colonSeparated.length < 2 || colonSeparated.length > 3) {
+      return null;
+    }
+    provider = colonSeparated.shift().slice(1);
+  }
+  if (colonSeparated.length > 3 || !colonSeparated.length) {
+    return null;
+  }
+  if (colonSeparated.length > 1) {
+    const name2 = colonSeparated.pop();
+    const prefix = colonSeparated.pop();
+    const result = {
+      provider: colonSeparated.length > 0 ? colonSeparated[0] : provider,
+      prefix,
+      name: name2
+    };
+    return validate && !validateIconName(result) ? null : result;
+  }
+  const name = colonSeparated[0];
+  const dashSeparated = name.split("-");
+  if (dashSeparated.length > 1) {
+    const result = {
+      provider,
+      prefix: dashSeparated.shift(),
+      name: dashSeparated.join("-")
+    };
+    return validate && !validateIconName(result) ? null : result;
+  }
+  if (allowSimpleName && provider === "") {
+    const result = {
+      provider,
+      prefix: "",
+      name
+    };
+    return validate && !validateIconName(result, allowSimpleName) ? null : result;
+  }
+  return null;
+};
+const validateIconName = (icon, allowSimpleName) => {
+  if (!icon) {
+    return false;
+  }
+  return !!((icon.provider === "" || icon.provider.match(matchIconName)) && (allowSimpleName && icon.prefix === "" || icon.prefix.match(matchIconName)) && icon.name.match(matchIconName));
+};
+function mergeIconTransformations(obj1, obj2) {
+  const result = {};
+  if (!obj1.hFlip !== !obj2.hFlip) {
+    result.hFlip = true;
+  }
+  if (!obj1.vFlip !== !obj2.vFlip) {
+    result.vFlip = true;
+  }
+  const rotate = ((obj1.rotate || 0) + (obj2.rotate || 0)) % 4;
+  if (rotate) {
+    result.rotate = rotate;
+  }
+  return result;
+}
+function mergeIconData(parent, child) {
+  const result = mergeIconTransformations(parent, child);
+  for (const key in defaultExtendedIconProps) {
+    if (key in defaultIconTransformations) {
+      if (key in parent && !(key in result)) {
+        result[key] = defaultIconTransformations[key];
+      }
+    } else if (key in child) {
+      result[key] = child[key];
+    } else if (key in parent) {
+      result[key] = parent[key];
+    }
+  }
+  return result;
+}
+function getIconsTree(data, names) {
+  const icons = data.icons;
+  const aliases = data.aliases || {};
+  const resolved = /* @__PURE__ */ Object.create(null);
+  function resolve(name) {
+    if (icons[name]) {
+      return resolved[name] = [];
+    }
+    if (!(name in resolved)) {
+      resolved[name] = null;
+      const parent = aliases[name] && aliases[name].parent;
+      const value = parent && resolve(parent);
+      if (value) {
+        resolved[name] = [parent].concat(value);
+      }
+    }
+    return resolved[name];
+  }
+  (names || Object.keys(icons).concat(Object.keys(aliases))).forEach(resolve);
+  return resolved;
+}
+function internalGetIconData(data, name, tree) {
+  const icons = data.icons;
+  const aliases = data.aliases || {};
+  let currentProps = {};
+  function parse(name2) {
+    currentProps = mergeIconData(
+      icons[name2] || aliases[name2],
+      currentProps
+    );
+  }
+  parse(name);
+  tree.forEach(parse);
+  return mergeIconData(data, currentProps);
+}
+function parseIconSet(data, callback) {
+  const names = [];
+  if (typeof data !== "object" || typeof data.icons !== "object") {
+    return names;
+  }
+  if (data.not_found instanceof Array) {
+    data.not_found.forEach((name) => {
+      callback(name, null);
+      names.push(name);
+    });
+  }
+  const tree = getIconsTree(data);
+  for (const name in tree) {
+    const item = tree[name];
+    if (item) {
+      callback(name, internalGetIconData(data, name, item));
+      names.push(name);
+    }
+  }
+  return names;
+}
+const optionalPropertyDefaults = {
+  provider: "",
+  aliases: {},
+  not_found: {},
+  ...defaultIconDimensions
+};
+function checkOptionalProps(item, defaults) {
+  for (const prop in defaults) {
+    if (prop in item && typeof item[prop] !== typeof defaults[prop]) {
+      return false;
+    }
+  }
+  return true;
+}
+function quicklyValidateIconSet(obj) {
+  if (typeof obj !== "object" || obj === null) {
+    return null;
+  }
+  const data = obj;
+  if (typeof data.prefix !== "string" || !obj.icons || typeof obj.icons !== "object") {
+    return null;
+  }
+  if (!checkOptionalProps(obj, optionalPropertyDefaults)) {
+    return null;
+  }
+  const icons = data.icons;
+  for (const name in icons) {
+    const icon = icons[name];
+    if (!name.match(matchIconName) || typeof icon.body !== "string" || !checkOptionalProps(
+      icon,
+      defaultExtendedIconProps
+    )) {
+      return null;
+    }
+  }
+  const aliases = data.aliases || {};
+  for (const name in aliases) {
+    const icon = aliases[name];
+    const parent = icon.parent;
+    if (!name.match(matchIconName) || typeof parent !== "string" || !icons[parent] && !aliases[parent] || !checkOptionalProps(
+      icon,
+      defaultExtendedIconProps
+    )) {
+      return null;
+    }
+  }
+  return data;
+}
+const dataStorage = /* @__PURE__ */ Object.create(null);
+function newStorage(provider, prefix) {
+  return {
+    provider,
+    prefix,
+    icons: /* @__PURE__ */ Object.create(null),
+    missing: /* @__PURE__ */ new Set()
+  };
+}
+function getStorage(provider, prefix) {
+  const providerStorage = dataStorage[provider] || (dataStorage[provider] = /* @__PURE__ */ Object.create(null));
+  return providerStorage[prefix] || (providerStorage[prefix] = newStorage(provider, prefix));
+}
+function addIconSet(storage2, data) {
+  if (!quicklyValidateIconSet(data)) {
+    return [];
+  }
+  return parseIconSet(data, (name, icon) => {
+    if (icon) {
+      storage2.icons[name] = icon;
+    } else {
+      storage2.missing.add(name);
+    }
+  });
+}
+function addIconToStorage(storage2, name, icon) {
+  try {
+    if (typeof icon.body === "string") {
+      storage2.icons[name] = { ...icon };
+      return true;
+    }
+  } catch (err) {
+  }
+  return false;
+}
+function listIcons$1(provider, prefix) {
+  let allIcons = [];
+  const providers = typeof provider === "string" ? [provider] : Object.keys(dataStorage);
+  providers.forEach((provider2) => {
+    const prefixes = typeof provider2 === "string" && typeof prefix === "string" ? [prefix] : Object.keys(dataStorage[provider2] || {});
+    prefixes.forEach((prefix2) => {
+      const storage2 = getStorage(provider2, prefix2);
+      allIcons = allIcons.concat(
+        Object.keys(storage2.icons).map(
+          (name) => (provider2 !== "" ? "@" + provider2 + ":" : "") + prefix2 + ":" + name
+        )
+      );
+    });
+  });
+  return allIcons;
+}
+let simpleNames = false;
+function allowSimpleNames(allow) {
+  if (typeof allow === "boolean") {
+    simpleNames = allow;
+  }
+  return simpleNames;
+}
+function getIconData(name) {
+  const icon = typeof name === "string" ? stringToIcon(name, true, simpleNames) : name;
+  if (icon) {
+    const storage2 = getStorage(icon.provider, icon.prefix);
+    const iconName = icon.name;
+    return storage2.icons[iconName] || (storage2.missing.has(iconName) ? null : void 0);
+  }
+}
+function addIcon$1(name, data) {
+  const icon = stringToIcon(name, true, simpleNames);
+  if (!icon) {
+    return false;
+  }
+  const storage2 = getStorage(icon.provider, icon.prefix);
+  return addIconToStorage(storage2, icon.name, data);
+}
+function addCollection$1(data, provider) {
+  if (typeof data !== "object") {
+    return false;
+  }
+  if (typeof provider !== "string") {
+    provider = data.provider || "";
+  }
+  if (simpleNames && !provider && !data.prefix) {
+    let added = false;
+    if (quicklyValidateIconSet(data)) {
+      data.prefix = "";
+      parseIconSet(data, (name, icon) => {
+        if (icon && addIcon$1(name, icon)) {
+          added = true;
+        }
+      });
+    }
+    return added;
+  }
+  const prefix = data.prefix;
+  if (!validateIconName({
+    provider,
+    prefix,
+    name: "a"
+  })) {
+    return false;
+  }
+  const storage2 = getStorage(provider, prefix);
+  return !!addIconSet(storage2, data);
+}
+function iconExists$1(name) {
+  return !!getIconData(name);
+}
+function getIcon$1(name) {
+  const result = getIconData(name);
+  return result ? {
+    ...defaultIconProps,
+    ...result
+  } : null;
+}
+function sortIcons(icons) {
+  const result = {
+    loaded: [],
+    missing: [],
+    pending: []
+  };
+  const storage2 = /* @__PURE__ */ Object.create(null);
+  icons.sort((a, b) => {
+    if (a.provider !== b.provider) {
+      return a.provider.localeCompare(b.provider);
+    }
+    if (a.prefix !== b.prefix) {
+      return a.prefix.localeCompare(b.prefix);
+    }
+    return a.name.localeCompare(b.name);
+  });
+  let lastIcon = {
+    provider: "",
+    prefix: "",
+    name: ""
+  };
+  icons.forEach((icon) => {
+    if (lastIcon.name === icon.name && lastIcon.prefix === icon.prefix && lastIcon.provider === icon.provider) {
+      return;
+    }
+    lastIcon = icon;
+    const provider = icon.provider;
+    const prefix = icon.prefix;
+    const name = icon.name;
+    const providerStorage = storage2[provider] || (storage2[provider] = /* @__PURE__ */ Object.create(null));
+    const localStorage = providerStorage[prefix] || (providerStorage[prefix] = getStorage(provider, prefix));
+    let list;
+    if (name in localStorage.icons) {
+      list = result.loaded;
+    } else if (prefix === "" || localStorage.missing.has(name)) {
+      list = result.missing;
+    } else {
+      list = result.pending;
+    }
+    const item = {
+      provider,
+      prefix,
+      name
+    };
+    list.push(item);
+  });
+  return result;
+}
+function removeCallback(storages, id) {
+  storages.forEach((storage2) => {
+    const items = storage2.loaderCallbacks;
+    if (items) {
+      storage2.loaderCallbacks = items.filter((row) => row.id !== id);
+    }
+  });
+}
+function updateCallbacks(storage2) {
+  if (!storage2.pendingCallbacksFlag) {
+    storage2.pendingCallbacksFlag = true;
+    setTimeout(() => {
+      storage2.pendingCallbacksFlag = false;
+      const items = storage2.loaderCallbacks ? storage2.loaderCallbacks.slice(0) : [];
+      if (!items.length) {
+        return;
+      }
+      let hasPending = false;
+      const provider = storage2.provider;
+      const prefix = storage2.prefix;
+      items.forEach((item) => {
+        const icons = item.icons;
+        const oldLength = icons.pending.length;
+        icons.pending = icons.pending.filter((icon) => {
+          if (icon.prefix !== prefix) {
+            return true;
+          }
+          const name = icon.name;
+          if (storage2.icons[name]) {
+            icons.loaded.push({
+              provider,
+              prefix,
+              name
+            });
+          } else if (storage2.missing.has(name)) {
+            icons.missing.push({
+              provider,
+              prefix,
+              name
+            });
+          } else {
+            hasPending = true;
+            return true;
+          }
+          return false;
+        });
+        if (icons.pending.length !== oldLength) {
+          if (!hasPending) {
+            removeCallback([storage2], item.id);
+          }
+          item.callback(
+            icons.loaded.slice(0),
+            icons.missing.slice(0),
+            icons.pending.slice(0),
+            item.abort
+          );
+        }
+      });
+    });
+  }
+}
+let idCounter = 0;
+function storeCallback(callback, icons, pendingSources) {
+  const id = idCounter++;
+  const abort = removeCallback.bind(null, pendingSources, id);
+  if (!icons.pending.length) {
+    return abort;
+  }
+  const item = {
+    id,
+    icons,
+    callback,
+    abort
+  };
+  pendingSources.forEach((storage2) => {
+    (storage2.loaderCallbacks || (storage2.loaderCallbacks = [])).push(item);
+  });
+  return abort;
+}
+const storage = /* @__PURE__ */ Object.create(null);
+function setAPIModule(provider, item) {
+  storage[provider] = item;
+}
+function getAPIModule(provider) {
+  return storage[provider] || storage[""];
+}
+function listToIcons(list, validate = true, simpleNames2 = false) {
+  const result = [];
+  list.forEach((item) => {
+    const icon = typeof item === "string" ? stringToIcon(item, validate, simpleNames2) : item;
+    if (icon) {
+      result.push(icon);
+    }
+  });
+  return result;
+}
+var defaultConfig = {
+  resources: [],
+  index: 0,
+  timeout: 2e3,
+  rotate: 750,
+  random: false,
+  dataAfterTimeout: false
+};
+function sendQuery(config, payload, query, done) {
+  const resourcesCount = config.resources.length;
+  const startIndex = config.random ? Math.floor(Math.random() * resourcesCount) : config.index;
+  let resources;
+  if (config.random) {
+    let list = config.resources.slice(0);
+    resources = [];
+    while (list.length > 1) {
+      const nextIndex = Math.floor(Math.random() * list.length);
+      resources.push(list[nextIndex]);
+      list = list.slice(0, nextIndex).concat(list.slice(nextIndex + 1));
+    }
+    resources = resources.concat(list);
+  } else {
+    resources = config.resources.slice(startIndex).concat(config.resources.slice(0, startIndex));
+  }
+  const startTime = Date.now();
+  let status = "pending";
+  let queriesSent = 0;
+  let lastError;
+  let timer = null;
+  let queue = [];
+  let doneCallbacks = [];
+  if (typeof done === "function") {
+    doneCallbacks.push(done);
+  }
+  function resetTimer() {
+    if (timer) {
+      clearTimeout(timer);
+      timer = null;
+    }
+  }
+  function abort() {
+    if (status === "pending") {
+      status = "aborted";
+    }
+    resetTimer();
+    queue.forEach((item) => {
+      if (item.status === "pending") {
+        item.status = "aborted";
+      }
+    });
+    queue = [];
+  }
+  function subscribe(callback, overwrite) {
+    if (overwrite) {
+      doneCallbacks = [];
+    }
+    if (typeof callback === "function") {
+      doneCallbacks.push(callback);
+    }
+  }
+  function getQueryStatus() {
+    return {
+      startTime,
+      payload,
+      status,
+      queriesSent,
+      queriesPending: queue.length,
+      subscribe,
+      abort
+    };
+  }
+  function failQuery() {
+    status = "failed";
+    doneCallbacks.forEach((callback) => {
+      callback(void 0, lastError);
+    });
+  }
+  function clearQueue() {
+    queue.forEach((item) => {
+      if (item.status === "pending") {
+        item.status = "aborted";
+      }
+    });
+    queue = [];
+  }
+  function moduleResponse(item, response, data) {
+    const isError = response !== "success";
+    queue = queue.filter((queued) => queued !== item);
+    switch (status) {
+      case "pending":
+        break;
+      case "failed":
+        if (isError || !config.dataAfterTimeout) {
+          return;
+        }
+        break;
+      default:
+        return;
+    }
+    if (response === "abort") {
+      lastError = data;
+      failQuery();
+      return;
+    }
+    if (isError) {
+      lastError = data;
+      if (!queue.length) {
+        if (!resources.length) {
+          failQuery();
+        } else {
+          execNext();
+        }
+      }
+      return;
+    }
+    resetTimer();
+    clearQueue();
+    if (!config.random) {
+      const index = config.resources.indexOf(item.resource);
+      if (index !== -1 && index !== config.index) {
+        config.index = index;
+      }
+    }
+    status = "completed";
+    doneCallbacks.forEach((callback) => {
+      callback(data);
+    });
+  }
+  function execNext() {
+    if (status !== "pending") {
+      return;
+    }
+    resetTimer();
+    const resource = resources.shift();
+    if (resource === void 0) {
+      if (queue.length) {
+        timer = setTimeout(() => {
+          resetTimer();
+          if (status === "pending") {
+            clearQueue();
+            failQuery();
+          }
+        }, config.timeout);
+        return;
+      }
+      failQuery();
+      return;
+    }
+    const item = {
+      status: "pending",
+      resource,
+      callback: (status2, data) => {
+        moduleResponse(item, status2, data);
+      }
+    };
+    queue.push(item);
+    queriesSent++;
+    timer = setTimeout(execNext, config.rotate);
+    query(resource, payload, item.callback);
+  }
+  setTimeout(execNext);
+  return getQueryStatus;
+}
+function initRedundancy(cfg) {
+  const config = {
+    ...defaultConfig,
+    ...cfg
+  };
+  let queries = [];
+  function cleanup() {
+    queries = queries.filter((item) => item().status === "pending");
+  }
+  function query(payload, queryCallback, doneCallback) {
+    const query2 = sendQuery(
+      config,
+      payload,
+      queryCallback,
+      (data, error) => {
+        cleanup();
+        if (doneCallback) {
+          doneCallback(data, error);
+        }
+      }
+    );
+    queries.push(query2);
+    return query2;
+  }
+  function find(callback) {
+    return queries.find((value) => {
+      return callback(value);
+    }) || null;
+  }
+  const instance = {
+    query,
+    find,
+    setIndex: (index) => {
+      config.index = index;
+    },
+    getIndex: () => config.index,
+    cleanup
+  };
+  return instance;
+}
+function createAPIConfig(source) {
+  let resources;
+  if (typeof source.resources === "string") {
+    resources = [source.resources];
+  } else {
+    resources = source.resources;
+    if (!(resources instanceof Array) || !resources.length) {
+      return null;
+    }
+  }
+  const result = {
+    resources,
+    path: source.path || "/",
+    maxURL: source.maxURL || 500,
+    rotate: source.rotate || 750,
+    timeout: source.timeout || 5e3,
+    random: source.random === true,
+    index: source.index || 0,
+    dataAfterTimeout: source.dataAfterTimeout !== false
+  };
+  return result;
+}
+const configStorage = /* @__PURE__ */ Object.create(null);
+const fallBackAPISources = [
+  "https://api.simplesvg.com",
+  "https://api.unisvg.com"
+];
+const fallBackAPI = [];
+while (fallBackAPISources.length > 0) {
+  if (fallBackAPISources.length === 1) {
+    fallBackAPI.push(fallBackAPISources.shift());
+  } else {
+    if (Math.random() > 0.5) {
+      fallBackAPI.push(fallBackAPISources.shift());
+    } else {
+      fallBackAPI.push(fallBackAPISources.pop());
+    }
+  }
+}
+configStorage[""] = createAPIConfig({
+  resources: ["https://api.iconify.design"].concat(fallBackAPI)
+});
+function addAPIProvider$1(provider, customConfig) {
+  const config = createAPIConfig(customConfig);
+  if (config === null) {
+    return false;
+  }
+  configStorage[provider] = config;
+  return true;
+}
+function getAPIConfig(provider) {
+  return configStorage[provider];
+}
+function listAPIProviders() {
+  return Object.keys(configStorage);
+}
+function emptyCallback$1() {
+}
+const redundancyCache = /* @__PURE__ */ Object.create(null);
+function getRedundancyCache(provider) {
+  if (!redundancyCache[provider]) {
+    const config = getAPIConfig(provider);
+    if (!config) {
+      return;
+    }
+    const redundancy = initRedundancy(config);
+    const cachedReundancy = {
+      config,
+      redundancy
+    };
+    redundancyCache[provider] = cachedReundancy;
+  }
+  return redundancyCache[provider];
+}
+function sendAPIQuery(target, query, callback) {
+  let redundancy;
+  let send2;
+  if (typeof target === "string") {
+    const api = getAPIModule(target);
+    if (!api) {
+      callback(void 0, 424);
+      return emptyCallback$1;
+    }
+    send2 = api.send;
+    const cached = getRedundancyCache(target);
+    if (cached) {
+      redundancy = cached.redundancy;
+    }
+  } else {
+    const config = createAPIConfig(target);
+    if (config) {
+      redundancy = initRedundancy(config);
+      const moduleKey = target.resources ? target.resources[0] : "";
+      const api = getAPIModule(moduleKey);
+      if (api) {
+        send2 = api.send;
+      }
+    }
+  }
+  if (!redundancy || !send2) {
+    callback(void 0, 424);
+    return emptyCallback$1;
+  }
+  return redundancy.query(query, send2, callback)().abort;
+}
+const browserCacheVersion = "iconify2";
+const browserCachePrefix = "iconify";
+const browserCacheCountKey = browserCachePrefix + "-count";
+const browserCacheVersionKey = browserCachePrefix + "-version";
+const browserStorageHour = 36e5;
+const browserStorageCacheExpiration = 168;
+function getStoredItem(func, key) {
+  try {
+    return func.getItem(key);
+  } catch (err) {
+  }
+}
+function setStoredItem(func, key, value) {
+  try {
+    func.setItem(key, value);
+    return true;
+  } catch (err) {
+  }
+}
+function removeStoredItem(func, key) {
+  try {
+    func.removeItem(key);
+  } catch (err) {
+  }
+}
+function setBrowserStorageItemsCount(storage2, value) {
+  return setStoredItem(storage2, browserCacheCountKey, value.toString());
+}
+function getBrowserStorageItemsCount(storage2) {
+  return parseInt(getStoredItem(storage2, browserCacheCountKey)) || 0;
+}
+const browserStorageConfig = {
+  local: true,
+  session: true
+};
+const browserStorageEmptyItems = {
+  local: /* @__PURE__ */ new Set(),
+  session: /* @__PURE__ */ new Set()
+};
+let browserStorageStatus = false;
+function setBrowserStorageStatus(status) {
+  browserStorageStatus = status;
+}
+let _window = typeof window === "undefined" ? {} : window;
+function getBrowserStorage(key) {
+  const attr = key + "Storage";
+  try {
+    if (_window && _window[attr] && typeof _window[attr].length === "number") {
+      return _window[attr];
+    }
+  } catch (err) {
+  }
+  browserStorageConfig[key] = false;
+}
+function iterateBrowserStorage(key, callback) {
+  const func = getBrowserStorage(key);
+  if (!func) {
+    return;
+  }
+  const version = getStoredItem(func, browserCacheVersionKey);
+  if (version !== browserCacheVersion) {
+    if (version) {
+      const total2 = getBrowserStorageItemsCount(func);
+      for (let i = 0; i < total2; i++) {
+        removeStoredItem(func, browserCachePrefix + i.toString());
+      }
+    }
+    setStoredItem(func, browserCacheVersionKey, browserCacheVersion);
+    setBrowserStorageItemsCount(func, 0);
+    return;
+  }
+  const minTime = Math.floor(Date.now() / browserStorageHour) - browserStorageCacheExpiration;
+  const parseItem = (index) => {
+    const name = browserCachePrefix + index.toString();
+    const item = getStoredItem(func, name);
+    if (typeof item !== "string") {
+      return;
+    }
+    try {
+      const data = JSON.parse(item);
+      if (typeof data === "object" && typeof data.cached === "number" && data.cached > minTime && typeof data.provider === "string" && typeof data.data === "object" && typeof data.data.prefix === "string" && callback(data, index)) {
+        return true;
+      }
+    } catch (err) {
+    }
+    removeStoredItem(func, name);
+  };
+  let total = getBrowserStorageItemsCount(func);
+  for (let i = total - 1; i >= 0; i--) {
+    if (!parseItem(i)) {
+      if (i === total - 1) {
+        total--;
+        setBrowserStorageItemsCount(func, total);
+      } else {
+        browserStorageEmptyItems[key].add(i);
+      }
+    }
+  }
+}
+function initBrowserStorage() {
+  if (browserStorageStatus) {
+    return;
+  }
+  setBrowserStorageStatus(true);
+  for (const key in browserStorageConfig) {
+    iterateBrowserStorage(key, (item) => {
+      const iconSet = item.data;
+      const provider = item.provider;
+      const prefix = iconSet.prefix;
+      const storage2 = getStorage(
+        provider,
+        prefix
+      );
+      if (!addIconSet(storage2, iconSet).length) {
+        return false;
+      }
+      const lastModified = iconSet.lastModified || -1;
+      storage2.lastModifiedCached = storage2.lastModifiedCached ? Math.min(storage2.lastModifiedCached, lastModified) : lastModified;
+      return true;
+    });
+  }
+}
+function updateLastModified(storage2, lastModified) {
+  const lastValue = storage2.lastModifiedCached;
+  if (lastValue && lastValue >= lastModified) {
+    return lastValue === lastModified;
+  }
+  storage2.lastModifiedCached = lastModified;
+  if (lastValue) {
+    for (const key in browserStorageConfig) {
+      iterateBrowserStorage(key, (item) => {
+        const iconSet = item.data;
+        return item.provider !== storage2.provider || iconSet.prefix !== storage2.prefix || iconSet.lastModified === lastModified;
+      });
+    }
+  }
+  return true;
+}
+function storeInBrowserStorage(storage2, data) {
+  if (!browserStorageStatus) {
+    initBrowserStorage();
+  }
+  function store(key) {
+    let func;
+    if (!browserStorageConfig[key] || !(func = getBrowserStorage(key))) {
+      return;
+    }
+    const set = browserStorageEmptyItems[key];
+    let index;
+    if (set.size) {
+      set.delete(index = Array.from(set).shift());
+    } else {
+      index = getBrowserStorageItemsCount(func);
+      if (!setBrowserStorageItemsCount(func, index + 1)) {
+        return;
+      }
+    }
+    const item = {
+      cached: Math.floor(Date.now() / browserStorageHour),
+      provider: storage2.provider,
+      data
+    };
+    return setStoredItem(
+      func,
+      browserCachePrefix + index.toString(),
+      JSON.stringify(item)
+    );
+  }
+  if (data.lastModified && !updateLastModified(storage2, data.lastModified)) {
+    return;
+  }
+  if (!Object.keys(data.icons).length) {
+    return;
+  }
+  if (data.not_found) {
+    data = Object.assign({}, data);
+    delete data.not_found;
+  }
+  if (!store("local")) {
+    store("session");
+  }
+}
+function emptyCallback() {
+}
+function loadedNewIcons(storage2) {
+  if (!storage2.iconsLoaderFlag) {
+    storage2.iconsLoaderFlag = true;
+    setTimeout(() => {
+      storage2.iconsLoaderFlag = false;
+      updateCallbacks(storage2);
+    });
+  }
+}
+function loadNewIcons(storage2, icons) {
+  if (!storage2.iconsToLoad) {
+    storage2.iconsToLoad = icons;
+  } else {
+    storage2.iconsToLoad = storage2.iconsToLoad.concat(icons).sort();
+  }
+  if (!storage2.iconsQueueFlag) {
+    storage2.iconsQueueFlag = true;
+    setTimeout(() => {
+      storage2.iconsQueueFlag = false;
+      const { provider, prefix } = storage2;
+      const icons2 = storage2.iconsToLoad;
+      delete storage2.iconsToLoad;
+      let api;
+      if (!icons2 || !(api = getAPIModule(provider))) {
+        return;
+      }
+      const params = api.prepare(provider, prefix, icons2);
+      params.forEach((item) => {
+        sendAPIQuery(provider, item, (data, error) => {
+          if (typeof data !== "object") {
+            if (error !== 404) {
+              return;
+            }
+            item.icons.forEach((name) => {
+              storage2.missing.add(name);
+            });
+          } else {
+            try {
+              const parsed = addIconSet(
+                storage2,
+                data
+              );
+              if (!parsed.length) {
+                return;
+              }
+              const pending = storage2.pendingIcons;
+              if (pending) {
+                parsed.forEach((name) => {
+                  pending.delete(name);
+                });
+              }
+              storeInBrowserStorage(storage2, data);
+            } catch (err) {
+              console.error(err);
+            }
+          }
+          loadedNewIcons(storage2);
+        });
+      });
+    });
+  }
+}
+const loadIcons$1 = (icons, callback) => {
+  const cleanedIcons = listToIcons(icons, true, allowSimpleNames());
+  const sortedIcons = sortIcons(cleanedIcons);
+  if (!sortedIcons.pending.length) {
+    let callCallback = true;
+    if (callback) {
+      setTimeout(() => {
+        if (callCallback) {
+          callback(
+            sortedIcons.loaded,
+            sortedIcons.missing,
+            sortedIcons.pending,
+            emptyCallback
+          );
+        }
+      });
+    }
+    return () => {
+      callCallback = false;
+    };
+  }
+  const newIcons = /* @__PURE__ */ Object.create(null);
+  const sources = [];
+  let lastProvider, lastPrefix;
+  sortedIcons.pending.forEach((icon) => {
+    const { provider, prefix } = icon;
+    if (prefix === lastPrefix && provider === lastProvider) {
+      return;
+    }
+    lastProvider = provider;
+    lastPrefix = prefix;
+    sources.push(getStorage(provider, prefix));
+    const providerNewIcons = newIcons[provider] || (newIcons[provider] = /* @__PURE__ */ Object.create(null));
+    if (!providerNewIcons[prefix]) {
+      providerNewIcons[prefix] = [];
+    }
+  });
+  sortedIcons.pending.forEach((icon) => {
+    const { provider, prefix, name } = icon;
+    const storage2 = getStorage(provider, prefix);
+    const pendingQueue = storage2.pendingIcons || (storage2.pendingIcons = /* @__PURE__ */ new Set());
+    if (!pendingQueue.has(name)) {
+      pendingQueue.add(name);
+      newIcons[provider][prefix].push(name);
+    }
+  });
+  sources.forEach((storage2) => {
+    const { provider, prefix } = storage2;
+    if (newIcons[provider][prefix].length) {
+      loadNewIcons(storage2, newIcons[provider][prefix]);
+    }
+  });
+  return callback ? storeCallback(callback, sortedIcons, sources) : emptyCallback;
+};
+const loadIcon$1 = (icon) => {
+  return new Promise((fulfill, reject) => {
+    const iconObj = typeof icon === "string" ? stringToIcon(icon, true) : icon;
+    if (!iconObj) {
+      reject(icon);
+      return;
+    }
+    loadIcons$1([iconObj || icon], (loaded) => {
+      if (loaded.length && iconObj) {
+        const data = getIconData(iconObj);
+        if (data) {
+          fulfill({
+            ...defaultIconProps,
+            ...data
+          });
+          return;
+        }
+      }
+      reject(icon);
+    });
+  });
+};
+function testIconObject(value) {
+  try {
+    const obj = typeof value === "string" ? JSON.parse(value) : value;
+    if (typeof obj.body === "string") {
+      return {
+        ...obj
+      };
+    }
+  } catch (err) {
+  }
+}
+function parseIconValue(value, onload) {
+  const name = typeof value === "string" ? stringToIcon(value, true, true) : null;
+  if (!name) {
+    const data2 = testIconObject(value);
+    return {
+      value,
+      data: data2
+    };
+  }
+  const data = getIconData(name);
+  if (data !== void 0 || !name.prefix) {
+    return {
+      value,
+      name,
+      data
+    };
+  }
+  const loading = loadIcons$1([name], () => onload(value, name, getIconData(name)));
+  return {
+    value,
+    name,
+    loading
+  };
+}
+function getInline(node) {
+  return node.hasAttribute("inline");
+}
+let isBuggedSafari = false;
+try {
+  isBuggedSafari = navigator.vendor.indexOf("Apple") === 0;
+} catch (err) {
+}
+function getRenderMode(body, mode) {
+  switch (mode) {
+    case "svg":
+    case "bg":
+    case "mask":
+      return mode;
+  }
+  if (mode !== "style" && (isBuggedSafari || body.indexOf("<a") === -1)) {
+    return "svg";
+  }
+  return body.indexOf("currentColor") === -1 ? "bg" : "mask";
+}
+const unitsSplit = /(-?[0-9.]*[0-9]+[0-9.]*)/g;
+const unitsTest = /^-?[0-9.]*[0-9]+[0-9.]*$/g;
+function calculateSize$1(size, ratio, precision) {
+  if (ratio === 1) {
+    return size;
+  }
+  precision = precision || 100;
+  if (typeof size === "number") {
+    return Math.ceil(size * ratio * precision) / precision;
+  }
+  if (typeof size !== "string") {
+    return size;
+  }
+  const oldParts = size.split(unitsSplit);
+  if (oldParts === null || !oldParts.length) {
+    return size;
+  }
+  const newParts = [];
+  let code = oldParts.shift();
+  let isNumber = unitsTest.test(code);
+  while (true) {
+    if (isNumber) {
+      const num = parseFloat(code);
+      if (isNaN(num)) {
+        newParts.push(code);
+      } else {
+        newParts.push(Math.ceil(num * ratio * precision) / precision);
+      }
+    } else {
+      newParts.push(code);
+    }
+    code = oldParts.shift();
+    if (code === void 0) {
+      return newParts.join("");
+    }
+    isNumber = !isNumber;
+  }
+}
+function iconToSVG(icon, customisations) {
+  const fullIcon = {
+    ...defaultIconProps,
+    ...icon
+  };
+  const fullCustomisations = {
+    ...defaultIconCustomisations,
+    ...customisations
+  };
+  const box = {
+    left: fullIcon.left,
+    top: fullIcon.top,
+    width: fullIcon.width,
+    height: fullIcon.height
+  };
+  let body = fullIcon.body;
+  [fullIcon, fullCustomisations].forEach((props) => {
+    const transformations = [];
+    const hFlip = props.hFlip;
+    const vFlip = props.vFlip;
+    let rotation = props.rotate;
+    if (hFlip) {
+      if (vFlip) {
+        rotation += 2;
+      } else {
+        transformations.push(
+          "translate(" + (box.width + box.left).toString() + " " + (0 - box.top).toString() + ")"
+        );
+        transformations.push("scale(-1 1)");
+        box.top = box.left = 0;
+      }
+    } else if (vFlip) {
+      transformations.push(
+        "translate(" + (0 - box.left).toString() + " " + (box.height + box.top).toString() + ")"
+      );
+      transformations.push("scale(1 -1)");
+      box.top = box.left = 0;
+    }
+    let tempValue;
+    if (rotation < 0) {
+      rotation -= Math.floor(rotation / 4) * 4;
+    }
+    rotation = rotation % 4;
+    switch (rotation) {
+      case 1:
+        tempValue = box.height / 2 + box.top;
+        transformations.unshift(
+          "rotate(90 " + tempValue.toString() + " " + tempValue.toString() + ")"
+        );
+        break;
+      case 2:
+        transformations.unshift(
+          "rotate(180 " + (box.width / 2 + box.left).toString() + " " + (box.height / 2 + box.top).toString() + ")"
+        );
+        break;
+      case 3:
+        tempValue = box.width / 2 + box.left;
+        transformations.unshift(
+          "rotate(-90 " + tempValue.toString() + " " + tempValue.toString() + ")"
+        );
+        break;
+    }
+    if (rotation % 2 === 1) {
+      if (box.left !== box.top) {
+        tempValue = box.left;
+        box.left = box.top;
+        box.top = tempValue;
+      }
+      if (box.width !== box.height) {
+        tempValue = box.width;
+        box.width = box.height;
+        box.height = tempValue;
+      }
+    }
+    if (transformations.length) {
+      body = '<g transform="' + transformations.join(" ") + '">' + body + "</g>";
+    }
+  });
+  const customisationsWidth = fullCustomisations.width;
+  const customisationsHeight = fullCustomisations.height;
+  const boxWidth = box.width;
+  const boxHeight = box.height;
+  let width;
+  let height;
+  if (customisationsWidth === null) {
+    height = customisationsHeight === null ? "1em" : customisationsHeight === "auto" ? boxHeight : customisationsHeight;
+    width = calculateSize$1(height, boxWidth / boxHeight);
+  } else {
+    width = customisationsWidth === "auto" ? boxWidth : customisationsWidth;
+    height = customisationsHeight === null ? calculateSize$1(width, boxHeight / boxWidth) : customisationsHeight === "auto" ? boxHeight : customisationsHeight;
+  }
+  const result = {
+    attributes: {
+      width: width.toString(),
+      height: height.toString(),
+      viewBox: box.left.toString() + " " + box.top.toString() + " " + boxWidth.toString() + " " + boxHeight.toString()
+    },
+    body
+  };
+  return result;
+}
+const detectFetch = () => {
+  let callback;
+  try {
+    callback = fetch;
+    if (typeof callback === "function") {
+      return callback;
+    }
+  } catch (err) {
+  }
+};
+let fetchModule = detectFetch();
+function setFetch(fetch2) {
+  fetchModule = fetch2;
+}
+function getFetch() {
+  return fetchModule;
+}
+function calculateMaxLength(provider, prefix) {
+  const config = getAPIConfig(provider);
+  if (!config) {
+    return 0;
+  }
+  let result;
+  if (!config.maxURL) {
+    result = 0;
+  } else {
+    let maxHostLength = 0;
+    config.resources.forEach((item) => {
+      const host = item;
+      maxHostLength = Math.max(maxHostLength, host.length);
+    });
+    const url = prefix + ".json?icons=";
+    result = config.maxURL - maxHostLength - config.path.length - url.length;
+  }
+  return result;
+}
+function shouldAbort(status) {
+  return status === 404;
+}
+const prepare = (provider, prefix, icons) => {
+  const results = [];
+  const maxLength = calculateMaxLength(provider, prefix);
+  const type = "icons";
+  let item = {
+    type,
+    provider,
+    prefix,
+    icons: []
+  };
+  let length = 0;
+  icons.forEach((name, index) => {
+    length += name.length + 1;
+    if (length >= maxLength && index > 0) {
+      results.push(item);
+      item = {
+        type,
+        provider,
+        prefix,
+        icons: []
+      };
+      length = name.length;
+    }
+    item.icons.push(name);
+  });
+  results.push(item);
+  return results;
+};
+function getPath(provider) {
+  if (typeof provider === "string") {
+    const config = getAPIConfig(provider);
+    if (config) {
+      return config.path;
+    }
+  }
+  return "/";
+}
+const send = (host, params, callback) => {
+  if (!fetchModule) {
+    callback("abort", 424);
+    return;
+  }
+  let path = getPath(params.provider);
+  switch (params.type) {
+    case "icons": {
+      const prefix = params.prefix;
+      const icons = params.icons;
+      const iconsList = icons.join(",");
+      const urlParams = new URLSearchParams({
+        icons: iconsList
+      });
+      path += prefix + ".json?" + urlParams.toString();
+      break;
+    }
+    case "custom": {
+      const uri = params.uri;
+      path += uri.slice(0, 1) === "/" ? uri.slice(1) : uri;
+      break;
+    }
+    default:
+      callback("abort", 400);
+      return;
+  }
+  let defaultError = 503;
+  fetchModule(host + path).then((response) => {
+    const status = response.status;
+    if (status !== 200) {
+      setTimeout(() => {
+        callback(shouldAbort(status) ? "abort" : "next", status);
+      });
+      return;
+    }
+    defaultError = 501;
+    return response.json();
+  }).then((data) => {
+    if (typeof data !== "object" || data === null) {
+      setTimeout(() => {
+        callback("next", defaultError);
+      });
+      return;
+    }
+    setTimeout(() => {
+      callback("success", data);
+    });
+  }).catch(() => {
+    callback("next", defaultError);
+  });
+};
+const fetchAPIModule = {
+  prepare,
+  send
+};
+function toggleBrowserCache(storage2, value) {
+  switch (storage2) {
+    case "local":
+    case "session":
+      browserStorageConfig[storage2] = value;
+      break;
+    case "all":
+      for (const key in browserStorageConfig) {
+        browserStorageConfig[key] = value;
+      }
+      break;
+  }
+}
+function exportFunctions() {
+  setAPIModule("", fetchAPIModule);
+  allowSimpleNames(true);
+  let _window2;
+  try {
+    _window2 = window;
+  } catch (err) {
+  }
+  if (_window2) {
+    initBrowserStorage();
+    if (_window2.IconifyPreload !== void 0) {
+      const preload = _window2.IconifyPreload;
+      const err = "Invalid IconifyPreload syntax.";
+      if (typeof preload === "object" && preload !== null) {
+        (preload instanceof Array ? preload : [preload]).forEach((item) => {
+          try {
+            if (typeof item !== "object" || item === null || item instanceof Array || typeof item.icons !== "object" || typeof item.prefix !== "string" || !addCollection$1(item)) {
+              console.error(err);
+            }
+          } catch (e) {
+            console.error(err);
+          }
+        });
+      }
+    }
+    if (_window2.IconifyProviders !== void 0) {
+      const providers = _window2.IconifyProviders;
+      if (typeof providers === "object" && providers !== null) {
+        for (const key in providers) {
+          const err = "IconifyProviders[" + key + "] is invalid.";
+          try {
+            const value = providers[key];
+            if (typeof value !== "object" || !value || value.resources === void 0) {
+              continue;
+            }
+            if (!addAPIProvider$1(key, value)) {
+              console.error(err);
+            }
+          } catch (e) {
+            console.error(err);
+          }
+        }
+      }
+    }
+  }
+  const _api = {
+    getAPIConfig,
+    setAPIModule,
+    sendAPIQuery,
+    setFetch,
+    getFetch,
+    listAPIProviders
+  };
+  return {
+    enableCache: (storage2) => toggleBrowserCache(storage2, true),
+    disableCache: (storage2) => toggleBrowserCache(storage2, false),
+    iconExists: iconExists$1,
+    getIcon: getIcon$1,
+    listIcons: listIcons$1,
+    addIcon: addIcon$1,
+    addCollection: addCollection$1,
+    calculateSize: calculateSize$1,
+    buildIcon: iconToSVG,
+    loadIcons: loadIcons$1,
+    loadIcon: loadIcon$1,
+    addAPIProvider: addAPIProvider$1,
+    _api
+  };
+}
+function iconToHTML(body, attributes) {
+  let renderAttribsHTML = body.indexOf("xlink:") === -1 ? "" : ' xmlns:xlink="http://www.w3.org/1999/xlink"';
+  for (const attr in attributes) {
+    renderAttribsHTML += " " + attr + '="' + attributes[attr] + '"';
+  }
+  return '<svg xmlns="http://www.w3.org/2000/svg"' + renderAttribsHTML + ">" + body + "</svg>";
+}
+function encodeSVGforURL(svg) {
+  return svg.replace(/"/g, "'").replace(/%/g, "%25").replace(/#/g, "%23").replace(/</g, "%3C").replace(/>/g, "%3E").replace(/\s+/g, " ");
+}
+function svgToURL(svg) {
+  return 'url("data:image/svg+xml,' + encodeSVGforURL(svg) + '")';
+}
+const monotoneProps = {
+  "background-color": "currentColor"
+};
+const coloredProps = {
+  "background-color": "transparent"
+};
+const propsToAdd = {
+  image: "var(--svg)",
+  repeat: "no-repeat",
+  size: "100% 100%"
+};
+const propsToAddTo = {
+  "-webkit-mask": monotoneProps,
+  "mask": monotoneProps,
+  "background": coloredProps
+};
+for (const prefix in propsToAddTo) {
+  const list = propsToAddTo[prefix];
+  for (const prop in propsToAdd) {
+    list[prefix + "-" + prop] = propsToAdd[prop];
+  }
+}
+function fixSize(value) {
+  return value + (value.match(/^[-0-9.]+$/) ? "px" : "");
+}
+function renderSPAN(data, icon, useMask) {
+  const node = document.createElement("span");
+  let body = data.body;
+  if (body.indexOf("<a") !== -1) {
+    body += "<!-- " + Date.now() + " -->";
+  }
+  const renderAttribs = data.attributes;
+  const html = iconToHTML(body, {
+    ...renderAttribs,
+    width: icon.width + "",
+    height: icon.height + ""
+  });
+  const url = svgToURL(html);
+  const svgStyle = node.style;
+  const styles = {
+    "--svg": url,
+    "width": fixSize(renderAttribs.width),
+    "height": fixSize(renderAttribs.height),
+    ...useMask ? monotoneProps : coloredProps
+  };
+  for (const prop in styles) {
+    svgStyle.setProperty(prop, styles[prop]);
+  }
+  return node;
+}
+function renderSVG(data) {
+  const node = document.createElement("span");
+  node.innerHTML = iconToHTML(data.body, data.attributes);
+  return node.firstChild;
+}
+function renderIcon(parent, state) {
+  const iconData = state.icon.data;
+  const customisations = state.customisations;
+  const renderData = iconToSVG(iconData, customisations);
+  if (customisations.preserveAspectRatio) {
+    renderData.attributes["preserveAspectRatio"] = customisations.preserveAspectRatio;
+  }
+  const mode = state.renderedMode;
+  let node;
+  switch (mode) {
+    case "svg":
+      node = renderSVG(renderData);
+      break;
+    default:
+      node = renderSPAN(renderData, {
+        ...defaultIconProps,
+        ...iconData
+      }, mode === "mask");
+  }
+  const oldNode = Array.from(parent.childNodes).find((node2) => {
+    const tag = node2.tagName && node2.tagName.toUpperCase();
+    return tag === "SPAN" || tag === "SVG";
+  });
+  if (oldNode) {
+    if (node.tagName === "SPAN" && oldNode.tagName === node.tagName) {
+      oldNode.setAttribute("style", node.getAttribute("style"));
+    } else {
+      parent.replaceChild(node, oldNode);
+    }
+  } else {
+    parent.appendChild(node);
+  }
+}
+const nodeAttr = "data-style";
+function updateStyle(parent, inline) {
+  let styleNode = Array.from(parent.childNodes).find((node) => node.hasAttribute && node.hasAttribute(nodeAttr));
+  if (!styleNode) {
+    styleNode = document.createElement("style");
+    styleNode.setAttribute(nodeAttr, nodeAttr);
+    parent.appendChild(styleNode);
+  }
+  styleNode.textContent = ":host{display:inline-block;vertical-align:" + (inline ? "-0.125em" : "0") + "}span,svg{display:block}";
+}
+function setPendingState(icon, inline, lastState) {
+  const lastRender = lastState && (lastState.rendered ? lastState : lastState.lastRender);
+  return {
+    rendered: false,
+    inline,
+    icon,
+    lastRender
+  };
+}
+function defineIconifyIcon(name = "iconify-icon") {
+  let customElements;
+  let ParentClass;
+  try {
+    customElements = window.customElements;
+    ParentClass = window.HTMLElement;
+  } catch (err) {
+    return;
+  }
+  if (!customElements || !ParentClass) {
+    return;
+  }
+  const ConflictingClass = customElements.get(name);
+  if (ConflictingClass) {
+    return ConflictingClass;
+  }
+  const attributes = [
+    "icon",
+    "mode",
+    "inline",
+    "width",
+    "height",
+    "rotate",
+    "flip"
+  ];
+  const IconifyIcon = class extends ParentClass {
+    constructor() {
+      super();
+      __publicField(this, "_shadowRoot");
+      __publicField(this, "_state");
+      __publicField(this, "_checkQueued", false);
+      const root = this._shadowRoot = this.attachShadow({
+        mode: "open"
+      });
+      const inline = getInline(this);
+      updateStyle(root, inline);
+      this._state = setPendingState({
+        value: ""
+      }, inline);
+      this._queueCheck();
+    }
+    static get observedAttributes() {
+      return attributes.slice(0);
+    }
+    attributeChangedCallback(name2) {
+      if (name2 === "inline") {
+        const newInline = getInline(this);
+        const state = this._state;
+        if (newInline !== state.inline) {
+          state.inline = newInline;
+          updateStyle(this._shadowRoot, newInline);
+        }
+      } else {
+        this._queueCheck();
+      }
+    }
+    get icon() {
+      const value = this.getAttribute("icon");
+      if (value && value.slice(0, 1) === "{") {
+        try {
+          return JSON.parse(value);
+        } catch (err) {
+        }
+      }
+      return value;
+    }
+    set icon(value) {
+      if (typeof value === "object") {
+        value = JSON.stringify(value);
+      }
+      this.setAttribute("icon", value);
+    }
+    get inline() {
+      return getInline(this);
+    }
+    set inline(value) {
+      this.setAttribute("inline", value ? "true" : null);
+    }
+    restartAnimation() {
+      const state = this._state;
+      if (state.rendered) {
+        const root = this._shadowRoot;
+        if (state.renderedMode === "svg") {
+          try {
+            root.lastChild.setCurrentTime(0);
+            return;
+          } catch (err) {
+          }
+        }
+        renderIcon(root, state);
+      }
+    }
+    get status() {
+      const state = this._state;
+      return state.rendered ? "rendered" : state.icon.data === null ? "failed" : "loading";
+    }
+    _queueCheck() {
+      if (!this._checkQueued) {
+        this._checkQueued = true;
+        setTimeout(() => {
+          this._check();
+        });
+      }
+    }
+    _check() {
+      if (!this._checkQueued) {
+        return;
+      }
+      this._checkQueued = false;
+      const state = this._state;
+      const newIcon = this.getAttribute("icon");
+      if (newIcon !== state.icon.value) {
+        this._iconChanged(newIcon);
+        return;
+      }
+      if (!state.rendered) {
+        return;
+      }
+      const mode = this.getAttribute("mode");
+      const customisations = getCustomisations(this);
+      if (state.attrMode !== mode || haveCustomisationsChanged(state.customisations, customisations)) {
+        this._renderIcon(state.icon, customisations, mode);
+      }
+    }
+    _iconChanged(newValue) {
+      const icon = parseIconValue(newValue, (value, name2, data) => {
+        const state = this._state;
+        if (state.rendered || this.getAttribute("icon") !== value) {
+          return;
+        }
+        const icon2 = {
+          value,
+          name: name2,
+          data
+        };
+        if (icon2.data) {
+          this._gotIconData(icon2);
+        } else {
+          state.icon = icon2;
+        }
+      });
+      if (icon.data) {
+        this._gotIconData(icon);
+      } else {
+        this._state = setPendingState(icon, this._state.inline, this._state);
+      }
+    }
+    _gotIconData(icon) {
+      this._checkQueued = false;
+      this._renderIcon(icon, getCustomisations(this), this.getAttribute("mode"));
+    }
+    _renderIcon(icon, customisations, attrMode) {
+      const renderedMode = getRenderMode(icon.data.body, attrMode);
+      const inline = this._state.inline;
+      renderIcon(this._shadowRoot, this._state = {
+        rendered: true,
+        icon,
+        inline,
+        customisations,
+        attrMode,
+        renderedMode
+      });
+    }
+  };
+  attributes.forEach((attr) => {
+    if (!(attr in IconifyIcon.prototype)) {
+      Object.defineProperty(IconifyIcon.prototype, attr, {
+        get: function() {
+          return this.getAttribute(attr);
+        },
+        set: function(value) {
+          this.setAttribute(attr, value);
+        }
+      });
+    }
+  });
+  const functions = exportFunctions();
+  for (const key in functions) {
+    IconifyIcon[key] = IconifyIcon.prototype[key] = functions[key];
+  }
+  customElements.define(name, IconifyIcon);
+  return IconifyIcon;
+}
+defineIconifyIcon() || exportFunctions();
+console.log("Kiera theme common.");

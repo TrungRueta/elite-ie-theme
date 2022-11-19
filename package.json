@@ -6,10 +6,9 @@
   "scripts": {
     "dev": "vite build --watch --minify false",
     "build": "vite build",
-    "theme": "shopify theme serve --theme-editor-sync --theme elite-ie-theme-dev",
-    "push": "shopify theme push",
-    "pull": "shopify theme pull",
-    "login": "shopify login --store elite-infinite-elements.myshopify.com",
+    "theme": "SHOPIFY_FLAG_STORE=elite-infinite-elements.myshopify.com shopify theme dev --theme-editor-sync --theme elite-ie-theme-dev",
+    "push": "SHOPIFY_FLAG_STORE=elite-infinite-elements.myshopify.com shopify theme push",
+    "pull": "SHOPIFY_FLAG_STORE=elite-infinite-elements.myshopify.com shopify theme pull",
     "dawn:update": "git pull upstream main",
     "dawn:fetch": "git fetch upstream",
     "dawn:upstream": "git remote add upstream https://github.com/Shopify/dawn.git"

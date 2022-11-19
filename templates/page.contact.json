@@ -20,14 +20,14 @@
         "65eb6421-33b6-451c-be66-fc6accfc1792": {
           "type": "richtext",
           "settings": {
-            "text": "<p>T +212 827 0277 F +212 827 0577<br\/>15w 37th st 3rd fl New York, NY10018<\/p>",
+            "text": "<p>T +212 827 0277 F +212 827 0577<br\/>35 WEST 36TH STREET #3E, NEW YORK, NY10018<\/p>",
             "text_style": "body"
           }
         },
         "634387de-c1b9-4abc-95fc-398cffc67780": {
           "type": "richtext",
           "settings": {
-            "text": "<p>(212)827-0277<\/p><p>sales@InfiniteElements.com<\/p>",
+            "text": "<p>(212)827-0277<\/p><p><a href=\"mailto:sales@infiniteelements.com\">sales@infiniteelements.com<\/a><\/p>",
             "text_style": "body"
           }
         },

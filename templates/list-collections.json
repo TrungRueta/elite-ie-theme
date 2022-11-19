@@ -10,6 +10,7 @@
             "image_2_mobile_hide": true,
             "heading": "Varied Selection",
             "heading_size": "h1",
+            "heading_style": "2",
             "subheading": "Infinite Elements offers both colorless and colored stones to suit your needs.",
             "button_label": "See products",
             "link": "shopify:\/\/collections\/all",
@@ -28,7 +29,7 @@
       ],
       "settings": {
         "layout": "full_bleed",
-        "slide_height": "small",
+        "slide_height": "medium",
         "slider_type": "loop",
         "auto_rotate": false,
         "change_slides_speed": 5,
@@ -96,24 +97,42 @@
     "2472e213-fb60-4a87-b42e-f13158609fad": {
       "type": "rich-text-2",
       "blocks": {
+        "b460cad5-ddd9-41ad-bad1-217ecaf47b0b": {
+          "type": "caption",
+          "settings": {
+            "caption": "Best selling of year",
+            "text_style": "caption-with-letter-spacing",
+            "text_size": "medium"
+          }
+        },
         "template--15414915989702__2472e213-fb60-4a87-b42e-f13158609fad-1666021399e4e991a9-0": {
           "type": "heading",
           "settings": {
-            "heading": "<p>Products<\/p>",
+            "heading": "<p>MOISSANITE COLORLESS<\/p>",
             "heading_size": "h1",
             "heading_style": "2"
           }
         },
-        "7fa57c2b-ff83-4da1-b0e1-bd483291301e": {
+        "b212dcbf-fd2a-4c88-a81d-e7b7f2b97c57": {
           "type": "text",
           "settings": {
-            "text": ""
+            "text": "<p>With almost 20-year experience, Specialize in<em>moissanite<\/em>and Jewelry. All<em>Moissanite<\/em>With Certificate. Good Reputation Abroad. High Quality & Low Price<\/p>"
+          }
+        },
+        "35106bea-0a2a-49df-aae3-4cf76c45993a": {
+          "type": "caption",
+          "settings": {
+            "caption": "- Infinite elements -",
+            "text_style": "caption-with-letter-spacing",
+            "text_size": "medium"
           }
         }
       },
       "block_order": [
+        "b460cad5-ddd9-41ad-bad1-217ecaf47b0b",
         "template--15414915989702__2472e213-fb60-4a87-b42e-f13158609fad-1666021399e4e991a9-0",
-        "7fa57c2b-ff83-4da1-b0e1-bd483291301e"
+        "b212dcbf-fd2a-4c88-a81d-e7b7f2b97c57",
+        "35106bea-0a2a-49df-aae3-4cf76c45993a"
       ],
       "settings": {
         "desktop_content_position": "center",
@@ -121,7 +140,7 @@
         "color_scheme": "background-2",
         "full_width": true,
         "padding_top": 80,
-        "padding_bottom": 40
+        "padding_bottom": 60
       }
     },
     "af6cfad5-6c91-4220-8eb5-74239db46cd2": {
@@ -143,28 +162,78 @@
         "page_width_max": ""
       }
     },
-    "ebe008e6-4899-4e2d-a09b-57df69fa0e0f": {
-      "type": "image-with-text-2",
+    "f60ecd8c-ebf9-4134-bf8b-843fa950a758": {
+      "type": "rich-text-2",
       "blocks": {
-        "template--16875085562156__ebe008e6-4899-4e2d-a09b-57df69fa0e0f-1668021066a015b9f0-0": {
+        "template--16875085562156__f60ecd8c-ebf9-4134-bf8b-843fa950a758-16688477489ea9298d-0": {
           "type": "heading",
           "settings": {
-            "heading": "<p>10% off your first purchase<\/p>",
+            "heading": "<p>COLOR OF LIFE<\/p>",
             "heading_size": "h1",
             "heading_style": "2"
           }
         },
-        "template--16875085562156__ebe008e6-4899-4e2d-a09b-57df69fa0e0f-1668021066a015b9f0-1": {
+        "2ec6cbee-314a-403e-a39d-30b47842b1f3": {
           "type": "text",
           "settings": {
-            "text": "<p>Be first to receive updates on new collections, style inspiration, gift ideas, and exclusive access. Sign-up to Infinite Elements today and receive 10% off* on your first purchase.<\/p>",
-            "text_style": "body"
+            "text": "<p>Colour is the single most important factor when assessing coloured gemstones. But like everything to do with beauty, it is highly subjective and at the end of the day, in the eye of the beholder.<\/p>"
           }
         }
       },
       "block_order": [
-        "template--16875085562156__ebe008e6-4899-4e2d-a09b-57df69fa0e0f-1668021066a015b9f0-0",
-        "template--16875085562156__ebe008e6-4899-4e2d-a09b-57df69fa0e0f-1668021066a015b9f0-1"
+        "template--16875085562156__f60ecd8c-ebf9-4134-bf8b-843fa950a758-16688477489ea9298d-0",
+        "2ec6cbee-314a-403e-a39d-30b47842b1f3"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 80,
+        "padding_bottom": 60
+      }
+    },
+    "dc668c47-618a-4688-b77d-1d7e1c93cdb3": {
+      "type": "collage2",
+      "settings": {
+        "heading": "",
+        "heading_size": "h1",
+        "collection": "color-of-life",
+        "max_product": 12,
+        "btn_label": "SEE MORE",
+        "btn_url": "shopify:\/\/collections\/color-of-life",
+        "btn_type": "secondary",
+        "desktop_layout": "right",
+        "mobile_layout": "collage",
+        "card_styles": "product-card-wrapper",
+        "color_scheme": "background-1",
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "page_width_max": ""
+      }
+    },
+    "ebe008e6-4899-4e2d-a09b-57df69fa0e0f": {
+      "type": "image-with-text-2",
+      "blocks": {
+        "template--16875085562156__ebe008e6-4899-4e2d-a09b-57df69fa0e0f-1668021066a015b9f0-1": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>INFINITE ELEMENTS<\/strong> <\/p><p>is a professional high-end gemstone processing and jewelry custom manufacturer headquartered in New York.<\/p><p><\/p>",
+            "text_style": "subtitle"
+          }
+        },
+        "f890b04e-29ac-4655-9fe3-ffd1ecd2b6cf": {
+          "type": "caption",
+          "settings": {
+            "caption": "<p>Our logistics channels are direct, from our production to our warehouse.<\/p><p>We deliver our products through our Authorized Distributors and Online Partners.<\/p><p>Our website is a B2B portal (business-to-business) exclusively for jewelers.<\/p><p>For access to our pricing and wholesale policies you need to contact: <a href=\"mailto:sales@infiniteelements.com\" title=\"mailto:sales@infiniteelements.com\"><strong>sales@infiniteelements.com<\/strong><\/a><\/p><p>We will review and respond to your message.<\/p>",
+            "text_style": "caption-with-letter-spacing",
+            "text_size": "medium"
+          }
+        }
+      },
+      "block_order": [
+        "template--16875085562156__ebe008e6-4899-4e2d-a09b-57df69fa0e0f-1668021066a015b9f0-1",
+        "f890b04e-29ac-4655-9fe3-ffd1ecd2b6cf"
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/ie-banner-5.jpg",
@@ -174,12 +243,13 @@
         "desktop_content_position": "top",
         "desktop_content_alignment": "left",
         "content_layout": "no-overlap",
-        "color_scheme": "background-1",
+        "color_scheme": "accent-2",
         "full_width": false,
         "no_page_padding": true,
         "mobile_content_alignment": "left",
         "padding_top": 0,
-        "padding_bottom": 0
+        "padding_bottom": 0,
+        "page_width_max": ""
       }
     }
   },
@@ -189,6 +259,8 @@
     "4256e61d-002b-4488-944f-150f420debce",
     "2472e213-fb60-4a87-b42e-f13158609fad",
     "af6cfad5-6c91-4220-8eb5-74239db46cd2",
+    "f60ecd8c-ebf9-4134-bf8b-843fa950a758",
+    "dc668c47-618a-4688-b77d-1d7e1c93cdb3",
     "ebe008e6-4899-4e2d-a09b-57df69fa0e0f"
   ]
 }

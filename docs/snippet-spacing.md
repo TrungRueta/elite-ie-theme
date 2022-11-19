@@ -59,6 +59,12 @@
 class="section-{{ section.id }}-padding"
 ```
 
+# page width max limit 
+
+```liquid
+page-width {% if section.settings.page_width_max %}page-width-max--{{ section.settings.page_width_max }}{% endif %}
+```
+
 # full width
 
 ```jsonc

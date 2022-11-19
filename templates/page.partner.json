@@ -36,7 +36,8 @@
         "no_page_padding": true,
         "mobile_content_alignment": "center",
         "padding_top": 0,
-        "padding_bottom": 0
+        "padding_bottom": 0,
+        "page_width_max": ""
       }
     },
     "355e03ca-7d2b-4b56-af17-daf09566c04f": {
@@ -61,8 +62,8 @@
         "template--16882783355180__ad5592a9-98a9-450a-a947-781efdb6e43c-16680259465f8d6cf5-0": {
           "type": "heading",
           "settings": {
-            "heading": "<p>Cooperations<\/p>",
-            "heading_size": "h2",
+            "heading": "<p>COOPERATIONS<\/p>",
+            "heading_size": "h1",
             "heading_style": "2"
           }
         },
@@ -82,7 +83,7 @@
         "content_alignment": "center",
         "color_scheme": "background-2",
         "full_width": true,
-        "padding_top": 40,
+        "padding_top": 80,
         "padding_bottom": 52
       }
     },
@@ -92,20 +93,28 @@
         "template--16882783355180__dc096509-bbf2-4f18-99a9-867fde356478-1668025946232aba62-0": {
           "type": "column",
           "settings": {
-            "image": "shopify:\/\/shop_images\/ie-partner-kiera.png",
+            "image": "shopify:\/\/shop_images\/kiera-logo.png",
+            "image_link": "https:\/\/kierajewelry.com\/",
+            "image_link_alt": "Kiera Jewelry",
             "title": "",
+            "title_size": "h1",
+            "title_style": "default",
             "text": "",
             "link_label": "",
             "link": "",
             "icon": "",
-            "icon_size": 18
+            "icon_size": 20
           }
         },
         "template--16882783355180__dc096509-bbf2-4f18-99a9-867fde356478-1668025946232aba62-1": {
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/ie-partner-jadmire.png",
+            "image_link": "https:\/\/www.jadmirejewelry.com\/",
+            "image_link_alt": "Jadmire Jewelry",
             "title": "",
+            "title_size": "h1",
+            "title_style": "default",
             "text": "",
             "link_label": "",
             "link": "",
@@ -117,7 +126,11 @@
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/ie-partner-diamonbliss.png",
+            "image_link": "https:\/\/diamonbliss.com\/",
+            "image_link_alt": "Diamonbliss",
             "title": "",
+            "title_size": "h1",
+            "title_style": "default",
             "text": "",
             "link_label": "",
             "link": "",
@@ -129,7 +142,11 @@
           "type": "column",
           "settings": {
             "image": "shopify:\/\/shop_images\/ie-partner-gemour.png",
+            "image_link": "https:\/\/gemour.com\/",
+            "image_link_alt": "Gemour",
             "title": "",
+            "title_size": "h1",
+            "title_style": "default",
             "text": "",
             "link_label": "",
             "link": "",
@@ -147,8 +164,9 @@
       "settings": {
         "title": "",
         "heading_size": "h2",
-        "image_width": "full",
+        "image_width": "half",
         "image_ratio": "adapt",
+        "no_padding_column": false,
         "columns_desktop": 4,
         "column_alignment": "center",
         "background_style": "none",

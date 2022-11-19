@@ -18,6 +18,7 @@
     image-with-text image-with-text--{{ section.settings.content_layout }}
     {% if section.settings.full_width == false %}page-width{% endif %}
     {% if section.settings.no_page_padding %}tw-px-0{% endif %}
+    {% if section.settings.page_width_max %}page-width-max--{{ section.settings.page_width_max }}{% endif %}
     isolate
     {% if settings.text_boxes_border_thickness > 0 and settings.text_boxes_border_opacity > 0 and settings.media_border_thickness > 0 and settings.media_border_opacity > 0 %} collapse-borders{% endif %}{% unless section.settings.color_scheme == 'background-1' and settings.media_border_thickness > 0 and settings.text_boxes_shadow_opacity == 0 and settings.text_boxes_border_thickness == 0 or settings.text_boxes_border_opacity == 0 %}collapse-corners{% endunless %}
     section-{{ section.id }}-padding
@@ -65,7 +66,7 @@
                 class='image-with-text__text image-with-text__text--caption {{ block.settings.text_style }} {{ block.settings.text_style }}--{{ block.settings.text_size }} {{ block.settings.text_style }}'
                 {{ block.shopify_attributes }}
               >
-                {{ block.settings.caption | escape }}
+                {{ block.settings.caption }}
               </p>
             {%- when 'text' -%}
               <div
@@ -306,6 +307,22 @@
       "unit": "px",
       "label": "t:sections.all.padding.padding_bottom",
       "default": 36
+    },
+    {
+      "type": "select",
+      "id": "page_width_max",
+      "label": "Set max width",
+      "options": [
+        {
+          "value": "",
+          "label": "No limit"
+        },
+        {
+          "value": "md",
+          "label": "Medium"
+        }
+      ],
+      "default": ""
     }
   ],
   "blocks": [

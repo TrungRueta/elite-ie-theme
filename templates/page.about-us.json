@@ -36,7 +36,8 @@
         "no_page_padding": true,
         "mobile_content_alignment": "left",
         "padding_top": 0,
-        "padding_bottom": 0
+        "padding_bottom": 0,
+        "page_width_max": ""
       }
     },
     "8b11b6dc-5b21-4182-a7fc-ee4586cf944f": {
@@ -48,7 +49,7 @@
         "description": "",
         "show_description": false,
         "description_style": "body",
-        "collection": "clear-cz-stone-earrings-collection",
+        "collection": "moissanite-colorless-2022",
         "products_to_show": 12,
         "columns_desktop": 3,
         "full_width": false,
@@ -78,8 +79,8 @@
           "type": "heading",
           "settings": {
             "heading": "<p>Unique Manufacturing Process<\/p>",
-            "heading_size": "h2",
-            "heading_style": "default"
+            "heading_size": "h1",
+            "heading_style": "2"
           }
         },
         "template--16875088019756__a4eb74c9-3619-4a84-ba40-ce675fcbdd78-16680222059408a5a3-1": {
@@ -96,18 +97,19 @@
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/ie-banner-7.jpg",
-        "height": "small",
+        "height": "large",
         "desktop_image_width": "medium",
         "layout": "text_first",
         "desktop_content_position": "middle",
-        "desktop_content_alignment": "center",
+        "desktop_content_alignment": "left",
         "content_layout": "no-overlap",
         "color_scheme": "background-2",
-        "full_width": false,
+        "full_width": true,
         "no_page_padding": false,
         "mobile_content_alignment": "left",
-        "padding_top": 64,
-        "padding_bottom": 0
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "page_width_max": ""
       }
     },
     "73ad3cd6-9c1a-4e79-b71c-e5b34288da4b": {
@@ -117,8 +119,8 @@
           "type": "heading",
           "settings": {
             "heading": "<p>Top-of-the-Line<\/p>",
-            "heading_size": "h2",
-            "heading_style": "default"
+            "heading_size": "h1",
+            "heading_style": "2"
           }
         },
         "template--16875088019756__73ad3cd6-9c1a-4e79-b71c-e5b34288da4b-16680222059408a5a3-1": {
@@ -135,18 +137,19 @@
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/ie-banner-8.jpg",
-        "height": "small",
+        "height": "large",
         "desktop_image_width": "medium",
         "layout": "image_first",
-        "desktop_content_position": "top",
-        "desktop_content_alignment": "center",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
         "content_layout": "no-overlap",
         "color_scheme": "background-2",
-        "full_width": false,
+        "full_width": true,
         "no_page_padding": false,
         "mobile_content_alignment": "left",
         "padding_top": 0,
-        "padding_bottom": 64
+        "padding_bottom": 0,
+        "page_width_max": ""
       }
     },
     "355e03ca-7d2b-4b56-af17-daf09566c04f": {
