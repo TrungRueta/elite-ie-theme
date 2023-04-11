@@ -155,7 +155,7 @@
     "355e03ca-7d2b-4b56-af17-daf09566c04f": {
       "type": "image-banner",
       "settings": {
-        "image": "shopify:\/\/shop_images\/ie-map.jpg",
+        "image": "shopify:\/\/shop_images\/about-us-map.jpg",
         "image_overlay_opacity": 0,
         "image_height": "large",
         "adapt_height_first_image": true,

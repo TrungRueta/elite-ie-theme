@@ -46,6 +46,11 @@ module.exports = {
         page_desktop: '5rem',
       },
     },
+    colors: {
+      custom: {
+        'c1': '#F7F8FB'
+      }
+    }
   },
   corePlugins: {
     // preflight: false,

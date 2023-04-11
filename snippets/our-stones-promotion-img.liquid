@@ -1,0 +1,19 @@
+<div
+  class='{{ class }} tw-ease-in-out'
+  x-show='show'
+  x-transition:enter='tw-transition tw-ease-in tw-duration-300 {{ t }}'
+  x-transition:enter-start='tw-opacity-0 {{ enter_start }}'
+  x-transition:enter-end='tw-opacity-100 {{ enter_end }}'
+  x-transition:leave='tw-transition tw-ease-in tw-duration-300'
+  x-transition:leave-start='tw-opacity-100'
+  x-transition:leave-end='tw-opacity-0'
+>
+  <img
+    class='tw-object-cover tw-w-full tw-h-full'
+    src='{{ src | asset_url }}'
+    alt='{{ store.name }}'
+    loading='lazy'
+    width='713'
+    height='auto'
+  >
+</div>

@@ -1,0 +1,51 @@
+{% comment %}
+{% endcomment %}
+
+<div class='tw-py-40 tw-flex tw-flex-col tw-items-center tw-bg-custom-c1'>
+  <h2 class='tw-text-center tw-text-4xl md:tw-text-5xl tw-font-serif tw-mb-20'>5 Cs of Infinite Elements</h2>
+
+  <div class='tw-grid tw-gap-10 tw-grid-cols-1 md:tw-grid-cols-3 tw-max-w-5xl'>
+    <div class='tw-col-span-2'>
+      <div
+        class='tw-w-full tw-max-w-[600px] md:tw-min-w-[400px] tw-aspect-[713/568] tw-relative'
+        x-data='{ show: false }'
+        x-intersect.full='show = true'
+      >
+        {% liquid
+          render 'our-stones-promotion-img', src: 'our-stones-b1.png', t: 0
+          render 'our-stones-promotion-img', src: 'our-stones-b-color.png', class: 'tw-absolute tw-inset-0', t: 'tw-delay-[700ms]'
+          render 'our-stones-promotion-img', src: 'our-stones-b-cut.png', class: 'tw-absolute tw-inset-0', t: 'tw-delay-[1s]'
+          render 'our-stones-promotion-img', src: 'our-stones-b-carat.png', class: 'tw-absolute tw-inset-0', t: 'tw-delay-[1.3s]'
+          render 'our-stones-promotion-img', src: 'our-stones-b-clarity.png', class: 'tw-absolute tw-inset-0', t: 'tw-delay-[1.6s]'
+          render 'our-stones-promotion-img', src: 'our-stones-b-conflict.png', class: 'tw-absolute tw-inset-0', t: 'tw-delay-[1.9s]'
+          render 'our-stones-promotion-img', src: 'our-stones-b-stone.png', class: 'tw-absolute tw-inset-0', t: 'tw-delay-[200ms]'
+        %}
+      </div>
+    </div>
+
+    <div class='tw-scale-100 tw-rotate-0 tw-self-center'>
+      <h3 class='tw-text-4xl tw-font-serif tw-mb-5'>Color</h3>
+      <p>
+        Akin to diamonds that are GIA color-graded as D (Colorless), all of our clear stones are icy
+        white and colorless. Following the same standards as clear stones, our colored stones are
+        highly-rated for their perfect uniformity and intensity of color in addition to the largest
+        variety of shades and colors.
+      </p>
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": {
+    "en": "Our stone"
+  },
+  "settings": [],
+  "presets": [
+    {
+      "name": "Our stone promotion",
+      "category": "Our stone"
+    }
+  ]
+}
+{% endschema %}

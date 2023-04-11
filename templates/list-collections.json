@@ -1,7 +1,59 @@
 {
   "sections": {
+    "ad9bd3ef-e6f9-4ea3-b960-50c6e6820e57": {
+      "type": "image-banner-2",
+      "blocks": {
+        "template--16875085562156__ad9bd3ef-e6f9-4ea3-b960-50c6e6820e57-16812019025da2cac4-0": {
+          "type": "heading",
+          "settings": {
+            "heading": "Explore the many facets",
+            "heading_size": "h1",
+            "heading_style": "2"
+          }
+        },
+        "template--16875085562156__ad9bd3ef-e6f9-4ea3-b960-50c6e6820e57-16812019025da2cac4-1": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": "Give customers details about the banner image(s) or content on the template.",
+            "text_style": "body"
+          }
+        },
+        "template--16875085562156__ad9bd3ef-e6f9-4ea3-b960-50c6e6820e57-16812019025da2cac4-2": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "Our Products",
+            "button_link_1": "shopify:\/\/collections",
+            "button_style_secondary_1": false,
+            "button_label_2": "Discover",
+            "button_link_2": "\/collections",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "template--16875085562156__ad9bd3ef-e6f9-4ea3-b960-50c6e6820e57-16812019025da2cac4-0",
+        "template--16875085562156__ad9bd3ef-e6f9-4ea3-b960-50c6e6820e57-16812019025da2cac4-1",
+        "template--16875085562156__ad9bd3ef-e6f9-4ea3-b960-50c6e6820e57-16812019025da2cac4-2"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/ie-banner-1.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "adapt_height_first_image": false,
+        "desktop_content_position": "middle-left",
+        "show_text_box": false,
+        "desktop_content_alignment": "left",
+        "color_scheme": "background-2",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true,
+        "full_width": true
+      }
+    },
     "b81ecfd2-30c6-4cd2-8a7c-ba432971fffa": {
       "type": "slideshow-2",
+      "disabled": true,
       "blocks": {
         "template--15414915989702__b81ecfd2-30c6-4cd2-8a7c-ba432971fffa-1666007816c34c7561-0": {
           "type": "slide",
@@ -39,6 +91,7 @@
     },
     "a7ae12a3-7034-415a-b85a-d9519b691b2f": {
       "type": "rich-text-2",
+      "disabled": true,
       "blocks": {
         "template--15414915989702__a7ae12a3-7034-415a-b85a-d9519b691b2f-16660228329ef0e80b-0": {
           "type": "heading",
@@ -63,6 +116,7 @@
     },
     "4256e61d-002b-4488-944f-150f420debce": {
       "type": "collection-list-2",
+      "disabled": true,
       "settings": {
         "collection_list": [
           "emerald",
@@ -96,6 +150,7 @@
     },
     "2472e213-fb60-4a87-b42e-f13158609fad": {
       "type": "rich-text-2",
+      "disabled": true,
       "blocks": {
         "b460cad5-ddd9-41ad-bad1-217ecaf47b0b": {
           "type": "caption",
@@ -145,6 +200,7 @@
     },
     "af6cfad5-6c91-4220-8eb5-74239db46cd2": {
       "type": "collage2",
+      "disabled": true,
       "settings": {
         "heading": "",
         "heading_size": "h1",
@@ -164,6 +220,7 @@
     },
     "f60ecd8c-ebf9-4134-bf8b-843fa950a758": {
       "type": "rich-text-2",
+      "disabled": true,
       "blocks": {
         "template--16875085562156__f60ecd8c-ebf9-4134-bf8b-843fa950a758-16688477489ea9298d-0": {
           "type": "heading",
@@ -195,6 +252,7 @@
     },
     "dc668c47-618a-4688-b77d-1d7e1c93cdb3": {
       "type": "collage2",
+      "disabled": true,
       "settings": {
         "heading": "",
         "heading_size": "h1",
@@ -214,6 +272,7 @@
     },
     "ebe008e6-4899-4e2d-a09b-57df69fa0e0f": {
       "type": "image-with-text-2",
+      "disabled": true,
       "blocks": {
         "template--16875085562156__ebe008e6-4899-4e2d-a09b-57df69fa0e0f-1668021066a015b9f0-1": {
           "type": "text",
@@ -251,9 +310,29 @@
         "padding_bottom": 0,
         "page_width_max": ""
       }
+    },
+    "57428194-2bb0-4ead-93e1-b54a9816ebdf": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<div style=\"padding: 40px\">\n<video src=\"https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/3afa722693d94e6496594528b1143d23.mp4\" style=\"width: 100%; max-width: 700px; background: gray; margin: 0 auto;\" controls><\/video>\n<\/div>",
+        "color_scheme": "background-1",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "afed7791-1144-4831-89f2-96f3970e5d23": {
+      "type": "our-stones-promotion",
+      "settings": {
+      }
+    },
+    "6af4de24-ad56-4f5a-9699-83a9c99f4399": {
+      "type": "our-stones-stones",
+      "settings": {
+      }
     }
   },
   "order": [
+    "ad9bd3ef-e6f9-4ea3-b960-50c6e6820e57",
     "b81ecfd2-30c6-4cd2-8a7c-ba432971fffa",
     "a7ae12a3-7034-415a-b85a-d9519b691b2f",
     "4256e61d-002b-4488-944f-150f420debce",
@@ -261,6 +340,9 @@
     "af6cfad5-6c91-4220-8eb5-74239db46cd2",
     "f60ecd8c-ebf9-4134-bf8b-843fa950a758",
     "dc668c47-618a-4688-b77d-1d7e1c93cdb3",
-    "ebe008e6-4899-4e2d-a09b-57df69fa0e0f"
+    "ebe008e6-4899-4e2d-a09b-57df69fa0e0f",
+    "57428194-2bb0-4ead-93e1-b54a9816ebdf",
+    "afed7791-1144-4831-89f2-96f3970e5d23",
+    "6af4de24-ad56-4f5a-9699-83a9c99f4399"
   ]
 }

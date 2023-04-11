@@ -1,0 +1,25 @@
+<div class='tw-max-w-[200px] tw-group tw-cursor-pointer'>
+  <div class='tw-aspect-square tw-relative'>
+    {% assign src = fname | append: '.jpeg' %}
+    <img
+      src='{{ src | asset_url }}'
+      alt='{{ fname }}'
+      loading='lazy'
+      width='auto'
+      height='auto'
+      class='tw-pointer-events-none'
+    >
+
+    {% assign src_hover = fname | append: '.gif' %}
+    <img
+      src='{{ src_hover | asset_url }}'
+      alt='{{ fname }}'
+      loading='lazy'
+      width='auto'
+      height='auto'
+      class='group-hover:!tw-opacity-100 tw-opacity-0 tw-pointer-events-none tw-absolute tw-inset-0 tw-duration-150 tw-ease-out'
+    >
+  </div>
+
+  <h4 class='tw-text-center tw-font-medium tw-mt-3'>{{ fname }}</h4>
+</div>

@@ -1,0 +1,27 @@
+<div class='tw-flex tw-flex-col tw-items-center tw-py-40'>
+  <h2 class='tw-text-center tw-text-4xl md:tw-text-5xl tw-font-serif tw-mb-20'>Stone shapes</h2>
+
+  <div class='tw-w-full tw-container tw-max-w-[1200px] tw-flex tw-flex-wrap tw-justify-center tw-gap-x-10 tw-gap-y-14'>
+    {% assign fnames = 'Baguette, Cushion, Emerald, Heart, Marquise, Oval, Pearl, Round, Square'
+      | split: ', '
+    %}
+    {% for fname in fnames %}
+      {% render 'our-stones-stones-img', fname: fname %}
+    {% endfor %}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": {
+    "en": "Our stones stone list"
+  },
+  "settings": [],
+  "presets": [
+    {
+      "name": "Our stones stone list",
+      "category": "Our stones"
+    }
+  ]
+}
+{% endschema %}

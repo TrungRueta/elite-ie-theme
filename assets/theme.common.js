@@ -14,7 +14,7 @@ const app = "";
 * Licensed under MIT.
 *
 * @license MIT
-* @version 1.0.1
+* @version 1.0.7
 */
 const defaultIconDimensions = Object.freeze(
   {
@@ -194,7 +194,7 @@ function mergeIconData(parent, child) {
 }
 function getIconsTree(data, names) {
   const icons = data.icons;
-  const aliases = data.aliases || {};
+  const aliases = data.aliases || /* @__PURE__ */ Object.create(null);
   const resolved = /* @__PURE__ */ Object.create(null);
   function resolve(name) {
     if (icons[name]) {
@@ -215,7 +215,7 @@ function getIconsTree(data, names) {
 }
 function internalGetIconData(data, name, tree) {
   const icons = data.icons;
-  const aliases = data.aliases || {};
+  const aliases = data.aliases || /* @__PURE__ */ Object.create(null);
   let currentProps = {};
   function parse(name2) {
     currentProps = mergeIconData(
@@ -283,7 +283,7 @@ function quicklyValidateIconSet(obj) {
       return null;
     }
   }
-  const aliases = data.aliases || {};
+  const aliases = data.aliases || /* @__PURE__ */ Object.create(null);
   for (const name in aliases) {
     const icon = aliases[name];
     const parent = icon.parent;
@@ -1074,11 +1074,8 @@ function loadNewIcons(storage2, icons) {
       }
       const params = api.prepare(provider, prefix, icons2);
       params.forEach((item) => {
-        sendAPIQuery(provider, item, (data, error) => {
+        sendAPIQuery(provider, item, (data) => {
           if (typeof data !== "object") {
-            if (error !== 404) {
-              return;
-            }
             item.icons.forEach((name) => {
               storage2.missing.add(name);
             });
@@ -1277,6 +1274,7 @@ function calculateSize$1(size, ratio, precision) {
     isNumber = !isNumber;
   }
 }
+const isUnsetKeyword = (value) => value === "unset" || value === "undefined" || value === "none";
 function iconToSVG(icon, customisations) {
   const fullIcon = {
     ...defaultIconProps,
@@ -1368,15 +1366,19 @@ function iconToSVG(icon, customisations) {
     width = customisationsWidth === "auto" ? boxWidth : customisationsWidth;
     height = customisationsHeight === null ? calculateSize$1(width, boxHeight / boxWidth) : customisationsHeight === "auto" ? boxHeight : customisationsHeight;
   }
-  const result = {
-    attributes: {
-      width: width.toString(),
-      height: height.toString(),
-      viewBox: box.left.toString() + " " + box.top.toString() + " " + boxWidth.toString() + " " + boxHeight.toString()
-    },
+  const attributes = {};
+  const setAttr = (prop, value) => {
+    if (!isUnsetKeyword(value)) {
+      attributes[prop] = value.toString();
+    }
+  };
+  setAttr("width", width);
+  setAttr("height", height);
+  attributes.viewBox = box.left.toString() + " " + box.top.toString() + " " + boxWidth.toString() + " " + boxHeight.toString();
+  return {
+    attributes,
     body
   };
-  return result;
 }
 const detectFetch = () => {
   let callback;
@@ -1494,7 +1496,11 @@ const send = (host, params, callback) => {
   }).then((data) => {
     if (typeof data !== "object" || data === null) {
       setTimeout(() => {
-        callback("next", defaultError);
+        if (data === 404) {
+          callback("abort", data);
+        } else {
+          callback("next", defaultError);
+        }
       });
       return;
     }
@@ -1521,6 +1527,20 @@ function toggleBrowserCache(storage2, value) {
       }
       break;
   }
+}
+const nodeAttr = "data-style";
+let customStyle = "";
+function appendCustomStyle(style) {
+  customStyle = style;
+}
+function updateStyle(parent, inline) {
+  let styleNode = Array.from(parent.childNodes).find((node) => node.hasAttribute && node.hasAttribute(nodeAttr));
+  if (!styleNode) {
+    styleNode = document.createElement("style");
+    styleNode.setAttribute(nodeAttr, nodeAttr);
+    parent.appendChild(styleNode);
+  }
+  styleNode.textContent = ":host{display:inline-block;vertical-align:" + (inline ? "-0.125em" : "0") + "}span,svg{display:block}" + customStyle;
 }
 function exportFunctions() {
   setAPIModule("", fetchAPIModule);
@@ -1588,6 +1608,7 @@ function exportFunctions() {
     loadIcons: loadIcons$1,
     loadIcon: loadIcon$1,
     addAPIProvider: addAPIProvider$1,
+    appendCustomStyle,
     _api
   };
 }
@@ -1627,7 +1648,7 @@ for (const prefix in propsToAddTo) {
   }
 }
 function fixSize(value) {
-  return value + (value.match(/^[-0-9.]+$/) ? "px" : "");
+  return value ? value + (value.match(/^[-0-9.]+$/) ? "px" : "") : "inherit";
 }
 function renderSPAN(data, icon, useMask) {
   const node = document.createElement("span");
@@ -1656,7 +1677,18 @@ function renderSPAN(data, icon, useMask) {
 }
 function renderSVG(data) {
   const node = document.createElement("span");
-  node.innerHTML = iconToHTML(data.body, data.attributes);
+  const attr = data.attributes;
+  let style = "";
+  if (!attr.width) {
+    style = "width: inherit;";
+  }
+  if (!attr.height) {
+    style += "height: inherit;";
+  }
+  if (style) {
+    attr.style = style;
+  }
+  node.innerHTML = iconToHTML(data.body, attr);
   return node.firstChild;
 }
 function renderIcon(parent, state) {
@@ -1691,16 +1723,6 @@ function renderIcon(parent, state) {
   } else {
     parent.appendChild(node);
   }
-}
-const nodeAttr = "data-style";
-function updateStyle(parent, inline) {
-  let styleNode = Array.from(parent.childNodes).find((node) => node.hasAttribute && node.hasAttribute(nodeAttr));
-  if (!styleNode) {
-    styleNode = document.createElement("style");
-    styleNode.setAttribute(nodeAttr, nodeAttr);
-    parent.appendChild(styleNode);
-  }
-  styleNode.textContent = ":host{display:inline-block;vertical-align:" + (inline ? "-0.125em" : "0") + "}span,svg{display:block}";
 }
 function setPendingState(icon, inline, lastState) {
   const lastRender = lastState && (lastState.rendered ? lastState : lastState.lastRender);
@@ -1787,7 +1809,11 @@ function defineIconifyIcon(name = "iconify-icon") {
       return getInline(this);
     }
     set inline(value) {
-      this.setAttribute("inline", value ? "true" : null);
+      if (value) {
+        this.setAttribute("inline", "true");
+      } else {
+        this.removeAttribute("inline");
+      }
     }
     restartAnimation() {
       const state = this._state;
@@ -1882,7 +1908,11 @@ function defineIconifyIcon(name = "iconify-icon") {
           return this.getAttribute(attr);
         },
         set: function(value) {
-          this.setAttribute(attr, value);
+          if (value !== null) {
+            this.setAttribute(attr, value);
+          } else {
+            this.removeAttribute(attr);
+          }
         }
       });
     }
