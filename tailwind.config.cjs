@@ -31,6 +31,10 @@ module.exports = {
         'scheme-foreground': 'rgba(var(--color-foreground), <alpha-value>)',
         'scheme-background': 'rgba(var(--color-background), <alpha-value>)',
         'scheme-text': 'rgba(var(--color-text), <alpha-value>)',
+
+        custom: {
+          c1: '#F7F8FB',
+        },
       },
       screens: {
         md: '750px',
@@ -46,11 +50,6 @@ module.exports = {
         page_desktop: '5rem',
       },
     },
-    colors: {
-      custom: {
-        'c1': '#F7F8FB'
-      }
-    }
   },
   corePlugins: {
     // preflight: false,

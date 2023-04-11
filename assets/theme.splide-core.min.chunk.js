@@ -1,1 +1,1 @@
-const splideCore_min = "";
+

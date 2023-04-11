@@ -9,11 +9,17 @@
   x-transition:leave-end='tw-opacity-0'
 >
   <img
-    class='tw-object-cover tw-w-full tw-h-full'
+    class='tw-object-cover tw-w-full tw-h-full tw-duration-300 tw-ease-in-out tw-transition-transform'
     src='{{ src | asset_url }}'
     alt='{{ store.name }}'
     loading='lazy'
     width='713'
     height='auto'
+    {% if name == 'stone' %}
+      :style='{
+        transform: `rotate(${rotate}deg)`,
+        transformOrigin: `66% 49.5%`
+      }'
+    {% endif %}
   >
 </div>
