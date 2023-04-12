@@ -135,7 +135,7 @@
             "type": "announcement",
             "settings": {
               "text": "Become our partner!",
-              "text_alignment": "center",
+              "text_alignment": "right",
               "color_scheme": "accent-1",
               "link": "shopify:\/\/pages\/contact"
             }
@@ -152,7 +152,7 @@
         "settings": {
           "color_scheme": "background-1",
           "logo": "{{ shop.brand.logo }}",
-          "logo_width": 250,
+          "logo_width": 500,
           "logo_position": "top-center",
           "menu": "main-menu",
           "menu_type_desktop": "mega",
